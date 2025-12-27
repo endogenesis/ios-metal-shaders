@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WaveDemoView: View {
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var amplitude = 10.0
 
     var body: some View {
@@ -16,7 +15,7 @@ struct WaveDemoView: View {
             "Wave",
             summary: "Offsets each sampled pixel with a moving sine wave."
         ) {
-            TimelineView(.animation(minimumInterval: 1 / 30, paused: reduceMotion)) { timeline in
+            TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
                 ShaderCanvasView()
                     .distortionEffect(
                         ShaderLibrary.wave(
@@ -39,7 +38,6 @@ struct WaveDemoView: View {
     }
 
     private func shaderTime(for date: Date) -> Float {
-        guard !reduceMotion else { return 0 }
         return Float(date.timeIntervalSinceReferenceDate.truncatingRemainder(dividingBy: 60))
     }
 }

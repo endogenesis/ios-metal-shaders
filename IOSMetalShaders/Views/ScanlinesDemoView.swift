@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ScanlinesDemoView: View {
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var intensity = 0.45
 
     var body: some View {
@@ -16,7 +15,7 @@ struct ScanlinesDemoView: View {
             "Scanlines",
             summary: "Darkens horizontal bands and moves them over time."
         ) {
-            TimelineView(.animation(minimumInterval: 1 / 30, paused: reduceMotion)) { timeline in
+            TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
                 ShaderCanvasView()
                     .colorEffect(
                         ShaderLibrary.scanlines(
@@ -37,7 +36,6 @@ struct ScanlinesDemoView: View {
     }
 
     private func shaderTime(for date: Date) -> Float {
-        guard !reduceMotion else { return 0 }
         return Float(date.timeIntervalSinceReferenceDate.truncatingRemainder(dividingBy: 60))
     }
 }

@@ -1,4 +1,5 @@
 # Xcode
+SHADER_PLAN.md
 DerivedData/
 build/
 *.xcuserstate
@@ -7,6 +8,7 @@ xcuserdata/
 # Swift Package Manager
 .build/
 .swiftpm/
+
 
 # macOS
 .DS_Store
