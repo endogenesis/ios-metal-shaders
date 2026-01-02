@@ -16,6 +16,8 @@
 		A10000000000000000000007 /* ScanlinesDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* ScanlinesDemoView.swift */; };
 		A10000000000000000000008 /* WaveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* WaveDemoView.swift */; };
 		A10000000000000000000009 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* Shaders.metal */; };
+		A10000000000000000000011 /* OilPaintDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* OilPaintDemoView.swift */; };
+		A10000000000000000000012 /* OilPaint.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* OilPaint.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B10000000000000000000007 /* ScanlinesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanlinesDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000008 /* WaveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000009 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		B10000000000000000000011 /* OilPaintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilPaintDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* OilPaint.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OilPaint.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 				B10000000000000000000006 /* GrayscaleDemoView.swift */,
 				B10000000000000000000007 /* ScanlinesDemoView.swift */,
 				B10000000000000000000008 /* WaveDemoView.swift */,
+				B10000000000000000000011 /* OilPaintDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B10000000000000000000009 /* Shaders.metal */,
+				B10000000000000000000012 /* OilPaint.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 				A10000000000000000000007 /* ScanlinesDemoView.swift in Sources */,
 				A10000000000000000000008 /* WaveDemoView.swift in Sources */,
 				A10000000000000000000009 /* Shaders.metal in Sources */,
+				A10000000000000000000011 /* OilPaintDemoView.swift in Sources */,
+				A10000000000000000000012 /* OilPaint.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

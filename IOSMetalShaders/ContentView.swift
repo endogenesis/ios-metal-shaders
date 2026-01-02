@@ -13,7 +13,7 @@ struct ContentView: View {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: AppTheme.cardSpacing) {
                     VStack(alignment: .leading) {
-                        Text("Three small GPU effects built with SwiftUI and Metal.")
+                        Text("GPU effects built with SwiftUI and Metal.")
                             .font(.headline)
 
                         Text("Move the sliders to see how Swift values become shader uniforms.")
@@ -23,6 +23,7 @@ struct ContentView: View {
                     GrayscaleDemoView()
                     ScanlinesDemoView()
                     WaveDemoView()
+                    OilPaintDemoView()
                 }
                 .padding()
             }
