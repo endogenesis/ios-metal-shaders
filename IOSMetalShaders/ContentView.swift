@@ -24,6 +24,7 @@ struct ContentView: View {
                     ScanlinesDemoView()
                     WaveDemoView()
                     OilPaintDemoView()
+                    HueRotationDemoView()
                 }
                 .padding()
             }
