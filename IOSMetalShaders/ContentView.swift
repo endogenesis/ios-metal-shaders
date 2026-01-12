@@ -27,6 +27,7 @@ struct ContentView: View {
                     HueRotationDemoView()
                     PencilSketchDemoView()
                     MacroblockErrorDemoView()
+                    FrostedNoiseDemoView()
                 }
                 .padding()
             }

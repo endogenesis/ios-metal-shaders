@@ -24,6 +24,8 @@
 		A10000000000000000000016 /* PencilSketch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* PencilSketch.metal */; };
 		A10000000000000000000017 /* MacroblockErrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* MacroblockErrorDemoView.swift */; };
 		A10000000000000000000018 /* MacroblockError.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* MacroblockError.metal */; };
+		A10000000000000000000019 /* FrostedNoiseDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* FrostedNoiseDemoView.swift */; };
+		A10000000000000000000020 /* FrostedNoise.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* FrostedNoise.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		B10000000000000000000016 /* PencilSketch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PencilSketch.metal; sourceTree = "<group>"; };
 		B10000000000000000000017 /* MacroblockErrorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroblockErrorDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000018 /* MacroblockError.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MacroblockError.metal; sourceTree = "<group>"; };
+		B10000000000000000000019 /* FrostedNoiseDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostedNoiseDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000020 /* FrostedNoise.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FrostedNoise.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 				B10000000000000000000013 /* HueRotationDemoView.swift */,
 				B10000000000000000000015 /* PencilSketchDemoView.swift */,
 				B10000000000000000000017 /* MacroblockErrorDemoView.swift */,
+				B10000000000000000000019 /* FrostedNoiseDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				B10000000000000000000014 /* HueRotation.metal */,
 				B10000000000000000000016 /* PencilSketch.metal */,
 				B10000000000000000000018 /* MacroblockError.metal */,
+				B10000000000000000000020 /* FrostedNoise.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 				A10000000000000000000016 /* PencilSketch.metal in Sources */,
 				A10000000000000000000017 /* MacroblockErrorDemoView.swift in Sources */,
 				A10000000000000000000018 /* MacroblockError.metal in Sources */,
+				A10000000000000000000019 /* FrostedNoiseDemoView.swift in Sources */,
+				A10000000000000000000020 /* FrostedNoise.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
