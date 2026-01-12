@@ -26,6 +26,8 @@
 		A10000000000000000000018 /* MacroblockError.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* MacroblockError.metal */; };
 		A10000000000000000000019 /* FrostedNoiseDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* FrostedNoiseDemoView.swift */; };
 		A10000000000000000000020 /* FrostedNoise.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000020 /* FrostedNoise.metal */; };
+		A10000000000000000000021 /* TapeWrinkleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000021 /* TapeWrinkleDemoView.swift */; };
+		A10000000000000000000022 /* TapeWrinkle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* TapeWrinkle.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		B10000000000000000000018 /* MacroblockError.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MacroblockError.metal; sourceTree = "<group>"; };
 		B10000000000000000000019 /* FrostedNoiseDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostedNoiseDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000020 /* FrostedNoise.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FrostedNoise.metal; sourceTree = "<group>"; };
+		B10000000000000000000021 /* TapeWrinkleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeWrinkleDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000022 /* TapeWrinkle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TapeWrinkle.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,7 @@
 				B10000000000000000000015 /* PencilSketchDemoView.swift */,
 				B10000000000000000000017 /* MacroblockErrorDemoView.swift */,
 				B10000000000000000000019 /* FrostedNoiseDemoView.swift */,
+				B10000000000000000000021 /* TapeWrinkleDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 				B10000000000000000000016 /* PencilSketch.metal */,
 				B10000000000000000000018 /* MacroblockError.metal */,
 				B10000000000000000000020 /* FrostedNoise.metal */,
+				B10000000000000000000022 /* TapeWrinkle.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 				A10000000000000000000018 /* MacroblockError.metal in Sources */,
 				A10000000000000000000019 /* FrostedNoiseDemoView.swift in Sources */,
 				A10000000000000000000020 /* FrostedNoise.metal in Sources */,
+				A10000000000000000000021 /* TapeWrinkleDemoView.swift in Sources */,
+				A10000000000000000000022 /* TapeWrinkle.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

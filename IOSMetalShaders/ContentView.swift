@@ -28,6 +28,7 @@ struct ContentView: View {
                     PencilSketchDemoView()
                     MacroblockErrorDemoView()
                     FrostedNoiseDemoView()
+                    TapeWrinkleDemoView()
                 }
                 .padding()
             }
