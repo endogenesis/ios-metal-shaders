@@ -29,6 +29,7 @@ struct ContentView: View {
                     MacroblockErrorDemoView()
                     FrostedNoiseDemoView()
                     TapeWrinkleDemoView()
+                    ChannelFreezeDemoView()
                 }
                 .padding()
             }
