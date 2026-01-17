@@ -30,6 +30,7 @@ struct ContentView: View {
                     FrostedNoiseDemoView()
                     TapeWrinkleDemoView()
                     ChannelFreezeDemoView()
+                    SignalScrambleDemoView()
                 }
                 .padding()
             }

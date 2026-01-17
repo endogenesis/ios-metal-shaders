@@ -30,6 +30,8 @@
 		A10000000000000000000022 /* TapeWrinkle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000022 /* TapeWrinkle.metal */; };
 		A10000000000000000000023 /* ChannelFreezeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000023 /* ChannelFreezeDemoView.swift */; };
 		A10000000000000000000024 /* ChannelFreeze.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000024 /* ChannelFreeze.metal */; };
+		A10000000000000000000025 /* SignalScrambleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000025 /* SignalScrambleDemoView.swift */; };
+		A10000000000000000000026 /* SignalScramble.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* SignalScramble.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		B10000000000000000000022 /* TapeWrinkle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TapeWrinkle.metal; sourceTree = "<group>"; };
 		B10000000000000000000023 /* ChannelFreezeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelFreezeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000024 /* ChannelFreeze.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelFreeze.metal; sourceTree = "<group>"; };
+		B10000000000000000000025 /* SignalScrambleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalScrambleDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000026 /* SignalScramble.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SignalScramble.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,7 @@
 				B10000000000000000000019 /* FrostedNoiseDemoView.swift */,
 				B10000000000000000000021 /* TapeWrinkleDemoView.swift */,
 				B10000000000000000000023 /* ChannelFreezeDemoView.swift */,
+				B10000000000000000000025 /* SignalScrambleDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				B10000000000000000000020 /* FrostedNoise.metal */,
 				B10000000000000000000022 /* TapeWrinkle.metal */,
 				B10000000000000000000024 /* ChannelFreeze.metal */,
+				B10000000000000000000026 /* SignalScramble.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 				A10000000000000000000022 /* TapeWrinkle.metal in Sources */,
 				A10000000000000000000023 /* ChannelFreezeDemoView.swift in Sources */,
 				A10000000000000000000024 /* ChannelFreeze.metal in Sources */,
+				A10000000000000000000025 /* SignalScrambleDemoView.swift in Sources */,
+				A10000000000000000000026 /* SignalScramble.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
