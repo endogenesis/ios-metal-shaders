@@ -31,6 +31,7 @@ struct ContentView: View {
                     TapeWrinkleDemoView()
                     ChannelFreezeDemoView()
                     SignalScrambleDemoView()
+                    BurnDissolveDemoView()
                 }
                 .padding()
             }
