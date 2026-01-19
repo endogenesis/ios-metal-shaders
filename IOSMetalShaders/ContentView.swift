@@ -32,6 +32,7 @@ struct ContentView: View {
                     ChannelFreezeDemoView()
                     SignalScrambleDemoView()
                     BurnDissolveDemoView()
+                    ChromaticAberrationDemoView()
                 }
                 .padding()
             }

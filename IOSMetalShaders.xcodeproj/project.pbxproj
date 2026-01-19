@@ -34,6 +34,8 @@
 		A10000000000000000000026 /* SignalScramble.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000026 /* SignalScramble.metal */; };
 		A10000000000000000000027 /* BurnDissolveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000027 /* BurnDissolveDemoView.swift */; };
 		A10000000000000000000028 /* BurnDissolve.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000028 /* BurnDissolve.metal */; };
+		A10000000000000000000029 /* ChromaticAberrationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000029 /* ChromaticAberrationDemoView.swift */; };
+		A10000000000000000000030 /* ChromaticAberration.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030 /* ChromaticAberration.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		B10000000000000000000026 /* SignalScramble.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SignalScramble.metal; sourceTree = "<group>"; };
 		B10000000000000000000027 /* BurnDissolveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnDissolveDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000028 /* BurnDissolve.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BurnDissolve.metal; sourceTree = "<group>"; };
+		B10000000000000000000029 /* ChromaticAberrationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaticAberrationDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000030 /* ChromaticAberration.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChromaticAberration.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,7 @@
 				B10000000000000000000023 /* ChannelFreezeDemoView.swift */,
 				B10000000000000000000025 /* SignalScrambleDemoView.swift */,
 				B10000000000000000000027 /* BurnDissolveDemoView.swift */,
+				B10000000000000000000029 /* ChromaticAberrationDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				B10000000000000000000024 /* ChannelFreeze.metal */,
 				B10000000000000000000026 /* SignalScramble.metal */,
 				B10000000000000000000028 /* BurnDissolve.metal */,
+				B10000000000000000000030 /* ChromaticAberration.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -239,6 +245,8 @@
 				A10000000000000000000026 /* SignalScramble.metal in Sources */,
 				A10000000000000000000027 /* BurnDissolveDemoView.swift in Sources */,
 				A10000000000000000000028 /* BurnDissolve.metal in Sources */,
+				A10000000000000000000029 /* ChromaticAberrationDemoView.swift in Sources */,
+				A10000000000000000000030 /* ChromaticAberration.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
