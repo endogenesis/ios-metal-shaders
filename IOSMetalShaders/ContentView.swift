@@ -33,6 +33,7 @@ struct ContentView: View {
                     SignalScrambleDemoView()
                     BurnDissolveDemoView()
                     ChromaticAberrationDemoView()
+                    BarcodeGlitchDemoView()
                 }
                 .padding()
             }
