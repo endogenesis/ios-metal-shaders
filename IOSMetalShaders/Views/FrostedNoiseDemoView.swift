@@ -29,8 +29,6 @@ struct FrostedNoiseDemoView: View {
         } controls: {
             LabeledContent("Scatter radius") {
                 Slider(value: $radius, in: 0...12)
-                    .accessibilityLabel("Frosted noise scatter radius")
-                    .accessibilityValue(Text(radius, format: .number.precision(.fractionLength(0))))
             }
         }
     }

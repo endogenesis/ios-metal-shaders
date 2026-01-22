@@ -27,10 +27,6 @@ struct ScanlinesDemoView: View {
         } controls: {
             LabeledContent("Intensity") {
                 Slider(value: $intensity, in: 0...0.8)
-                    .accessibilityLabel("Scanline intensity")
-                    .accessibilityValue(
-                        Text(intensity, format: .percent.precision(.fractionLength(0)))
-                    )
             }
         }
     }

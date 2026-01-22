@@ -20,7 +20,6 @@ struct ShaderCanvasView: View {
                 .font(.system(size: 76))
                 .bold()
                 .foregroundStyle(.white)
-                .accessibilityHidden(true)
 
             VStack {
                 Spacer()
@@ -35,7 +34,5 @@ struct ShaderCanvasView: View {
         .frame(maxWidth: .infinity)
         .aspectRatio(16 / 10, contentMode: .fit)
         .clipShape(.rect(cornerRadius: AppTheme.previewCornerRadius))
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Shader preview")
     }
 }

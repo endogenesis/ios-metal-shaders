@@ -25,8 +25,6 @@ struct BurnDissolveDemoView: View {
         } controls: {
             LabeledContent("Progress") {
                 Slider(value: $progress, in: 0...1)
-                    .accessibilityLabel("Burn dissolve progress")
-                    .accessibilityValue(Text(progress, format: .percent.precision(.fractionLength(0))))
             }
         }
     }

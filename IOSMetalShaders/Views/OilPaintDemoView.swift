@@ -25,8 +25,6 @@ struct OilPaintDemoView: View {
         } controls: {
             LabeledContent("Brush size") {
                 Slider(value: $radius, in: 1...6, step: 1)
-                    .accessibilityLabel("Oil paint brush size")
-                    .accessibilityValue(Text(radius, format: .number))
             }
         }
     }

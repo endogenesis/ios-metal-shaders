@@ -28,8 +28,6 @@ struct TapeWrinkleDemoView: View {
         } controls: {
             LabeledContent("Wrinkle depth") {
                 Slider(value: $depth, in: 0...18)
-                    .accessibilityLabel("Tape wrinkle depth")
-                    .accessibilityValue(Text(depth, format: .number.precision(.fractionLength(0))))
             }
         }
     }

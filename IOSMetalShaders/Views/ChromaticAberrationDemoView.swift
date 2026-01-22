@@ -28,8 +28,6 @@ struct ChromaticAberrationDemoView: View {
         } controls: {
             LabeledContent("Separation") {
                 Slider(value: $amount, in: 0...20)
-                    .accessibilityLabel("Chromatic aberration separation")
-                    .accessibilityValue(Text(amount, format: .number.precision(.fractionLength(0))))
             }
         }
     }

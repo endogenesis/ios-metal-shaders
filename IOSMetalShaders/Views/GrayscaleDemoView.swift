@@ -24,10 +24,6 @@ struct GrayscaleDemoView: View {
         } controls: {
             LabeledContent("Intensity") {
                 Slider(value: $intensity, in: 0...1)
-                    .accessibilityLabel("Grayscale intensity")
-                    .accessibilityValue(
-                        Text(intensity, format: .percent.precision(.fractionLength(0)))
-                    )
             }
         }
     }

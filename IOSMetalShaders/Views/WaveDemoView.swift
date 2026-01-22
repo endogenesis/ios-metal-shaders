@@ -29,10 +29,6 @@ struct WaveDemoView: View {
         } controls: {
             LabeledContent("Amplitude") {
                 Slider(value: $amplitude, in: 0...20)
-                    .accessibilityLabel("Wave amplitude")
-                    .accessibilityValue(
-                        Text(amplitude, format: .number.precision(.fractionLength(0)))
-                    )
             }
         }
     }

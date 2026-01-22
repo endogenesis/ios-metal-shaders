@@ -29,8 +29,6 @@ struct MacroblockErrorDemoView: View {
         } controls: {
             LabeledContent("Displacement") {
                 Slider(value: $displacement, in: 0...28)
-                    .accessibilityLabel("Macroblock displacement")
-                    .accessibilityValue(Text(displacement, format: .number.precision(.fractionLength(0))))
             }
         }
     }

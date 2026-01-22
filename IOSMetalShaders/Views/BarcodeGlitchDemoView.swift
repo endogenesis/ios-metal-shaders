@@ -28,8 +28,6 @@ struct BarcodeGlitchDemoView: View {
         } controls: {
             LabeledContent("Bar displacement") {
                 Slider(value: $strength, in: 0...28)
-                    .accessibilityLabel("Barcode glitch displacement")
-                    .accessibilityValue(Text(strength, format: .number.precision(.fractionLength(0))))
             }
         }
     }

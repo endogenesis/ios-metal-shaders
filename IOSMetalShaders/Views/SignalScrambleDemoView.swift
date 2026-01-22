@@ -28,8 +28,6 @@ struct SignalScrambleDemoView: View {
         } controls: {
             LabeledContent("Scramble strength") {
                 Slider(value: $strength, in: 0...32)
-                    .accessibilityLabel("Signal scramble strength")
-                    .accessibilityValue(Text(strength, format: .number.precision(.fractionLength(0))))
             }
         }
     }

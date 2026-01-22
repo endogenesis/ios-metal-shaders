@@ -24,8 +24,6 @@ struct HueRotationDemoView: View {
         } controls: {
             LabeledContent("Angle") {
                 Slider(value: $angle, in: 0...360)
-                    .accessibilityLabel("Hue rotation angle")
-                    .accessibilityValue(Text(angle, format: .number.precision(.fractionLength(0))))
             }
         }
     }

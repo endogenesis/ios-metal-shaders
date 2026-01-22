@@ -28,8 +28,6 @@ struct ChannelFreezeDemoView: View {
         } controls: {
             LabeledContent("Freeze amount") {
                 Slider(value: $amount, in: 0...1)
-                    .accessibilityLabel("Channel freeze amount")
-                    .accessibilityValue(Text(amount, format: .percent.precision(.fractionLength(0))))
             }
         }
     }

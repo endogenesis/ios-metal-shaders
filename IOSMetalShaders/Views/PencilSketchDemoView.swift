@@ -25,8 +25,6 @@ struct PencilSketchDemoView: View {
         } controls: {
             LabeledContent("Stroke strength") {
                 Slider(value: $strength, in: 0.5...2.5)
-                    .accessibilityLabel("Pencil stroke strength")
-                    .accessibilityValue(Text(strength, format: .number.precision(.fractionLength(1))))
             }
         }
     }
