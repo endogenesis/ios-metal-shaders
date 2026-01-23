@@ -38,6 +38,8 @@
 		A10000000000000000000030 /* ChromaticAberration.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000030 /* ChromaticAberration.metal */; };
 		A10000000000000000000031 /* BarcodeGlitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000031 /* BarcodeGlitchDemoView.swift */; };
 		A10000000000000000000032 /* BarcodeGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000032 /* BarcodeGlitch.metal */; };
+		A10000000000000000000033 /* HexBokehDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000033 /* HexBokehDemoView.swift */; };
+		A10000000000000000000034 /* HexBokeh.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000034 /* HexBokeh.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		B10000000000000000000031 /* BarcodeGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000032 /* BarcodeGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BarcodeGlitch.metal; sourceTree = "<group>"; };
 		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000033 /* HexBokehDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexBokehDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000034 /* HexBokeh.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HexBokeh.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				B10000000000000000000027 /* BurnDissolveDemoView.swift */,
 				B10000000000000000000029 /* ChromaticAberrationDemoView.swift */,
 				B10000000000000000000031 /* BarcodeGlitchDemoView.swift */,
+				B10000000000000000000033 /* HexBokehDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				B10000000000000000000028 /* BurnDissolve.metal */,
 				B10000000000000000000030 /* ChromaticAberration.metal */,
 				B10000000000000000000032 /* BarcodeGlitch.metal */,
+				B10000000000000000000034 /* HexBokeh.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				A10000000000000000000030 /* ChromaticAberration.metal in Sources */,
 				A10000000000000000000031 /* BarcodeGlitchDemoView.swift in Sources */,
 				A10000000000000000000032 /* BarcodeGlitch.metal in Sources */,
+				A10000000000000000000033 /* HexBokehDemoView.swift in Sources */,
+				A10000000000000000000034 /* HexBokeh.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

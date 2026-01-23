@@ -34,6 +34,7 @@ struct ContentView: View {
                     BurnDissolveDemoView()
                     ChromaticAberrationDemoView()
                     BarcodeGlitchDemoView()
+                    HexBokehDemoView()
                 }
                 .padding()
             }
