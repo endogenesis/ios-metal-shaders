@@ -36,6 +36,7 @@ struct ContentView: View {
                     BarcodeGlitchDemoView()
                     HexBokehDemoView()
                     FeedbackLoopDemoView()
+                    PixelSortingDemoView()
                 }
                 .padding()
             }
