@@ -44,6 +44,8 @@
 		A10000000000000000000036 /* FeedbackLoop.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000036 /* FeedbackLoop.metal */; };
 		A10000000000000000000037 /* PixelSortingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000037 /* PixelSortingDemoView.swift */; };
 		A10000000000000000000038 /* PixelSorting.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000038 /* PixelSorting.metal */; };
+		A10000000000000000000039 /* CrosshatchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000039 /* CrosshatchDemoView.swift */; };
+		A10000000000000000000040 /* Crosshatch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000040 /* Crosshatch.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		B10000000000000000000036 /* FeedbackLoop.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FeedbackLoop.metal; sourceTree = "<group>"; };
 		B10000000000000000000037 /* PixelSortingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelSortingDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000038 /* PixelSorting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PixelSorting.metal; sourceTree = "<group>"; };
+		B10000000000000000000039 /* CrosshatchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosshatchDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000040 /* Crosshatch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Crosshatch.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				B10000000000000000000033 /* HexBokehDemoView.swift */,
 				B10000000000000000000035 /* FeedbackLoopDemoView.swift */,
 				B10000000000000000000037 /* PixelSortingDemoView.swift */,
+				B10000000000000000000039 /* CrosshatchDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				B10000000000000000000034 /* HexBokeh.metal */,
 				B10000000000000000000036 /* FeedbackLoop.metal */,
 				B10000000000000000000038 /* PixelSorting.metal */,
+				B10000000000000000000040 /* Crosshatch.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 				A10000000000000000000036 /* FeedbackLoop.metal in Sources */,
 				A10000000000000000000037 /* PixelSortingDemoView.swift in Sources */,
 				A10000000000000000000038 /* PixelSorting.metal in Sources */,
+				A10000000000000000000039 /* CrosshatchDemoView.swift in Sources */,
+				A10000000000000000000040 /* Crosshatch.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
