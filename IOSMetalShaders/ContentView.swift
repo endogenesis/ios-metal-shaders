@@ -39,6 +39,7 @@ struct ContentView: View {
                     PixelSortingDemoView()
                     CrosshatchDemoView()
                     SharpenDemoView()
+                    RollingScanlinesDemoView()
                 }
                 .padding()
             }

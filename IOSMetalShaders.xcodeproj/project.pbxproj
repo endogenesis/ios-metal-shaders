@@ -48,6 +48,8 @@
 		A10000000000000000000040 /* Crosshatch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000040 /* Crosshatch.metal */; };
 		A10000000000000000000041 /* SharpenDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000041 /* SharpenDemoView.swift */; };
 		A10000000000000000000042 /* Sharpen.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000042 /* Sharpen.metal */; };
+		A10000000000000000000043 /* RollingScanlinesDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000043 /* RollingScanlinesDemoView.swift */; };
+		A10000000000000000000044 /* RollingScanlines.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000044 /* RollingScanlines.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +95,8 @@
 		B10000000000000000000040 /* Crosshatch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Crosshatch.metal; sourceTree = "<group>"; };
 		B10000000000000000000041 /* SharpenDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpenDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000042 /* Sharpen.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sharpen.metal; sourceTree = "<group>"; };
+		B10000000000000000000043 /* RollingScanlinesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingScanlinesDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000044 /* RollingScanlines.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RollingScanlines.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				B10000000000000000000037 /* PixelSortingDemoView.swift */,
 				B10000000000000000000039 /* CrosshatchDemoView.swift */,
 				B10000000000000000000041 /* SharpenDemoView.swift */,
+				B10000000000000000000043 /* RollingScanlinesDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				B10000000000000000000038 /* PixelSorting.metal */,
 				B10000000000000000000040 /* Crosshatch.metal */,
 				B10000000000000000000042 /* Sharpen.metal */,
+				B10000000000000000000044 /* RollingScanlines.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 				A10000000000000000000040 /* Crosshatch.metal in Sources */,
 				A10000000000000000000041 /* SharpenDemoView.swift in Sources */,
 				A10000000000000000000042 /* Sharpen.metal in Sources */,
+				A10000000000000000000043 /* RollingScanlinesDemoView.swift in Sources */,
+				A10000000000000000000044 /* RollingScanlines.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
