@@ -40,6 +40,7 @@ struct ContentView: View {
                     CrosshatchDemoView()
                     SharpenDemoView()
                     RollingScanlinesDemoView()
+                    DuotoneDemoView()
                 }
                 .padding()
             }

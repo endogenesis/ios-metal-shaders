@@ -50,6 +50,8 @@
 		A10000000000000000000042 /* Sharpen.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000042 /* Sharpen.metal */; };
 		A10000000000000000000043 /* RollingScanlinesDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000043 /* RollingScanlinesDemoView.swift */; };
 		A10000000000000000000044 /* RollingScanlines.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000044 /* RollingScanlines.metal */; };
+		A10000000000000000000045 /* DuotoneDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000045 /* DuotoneDemoView.swift */; };
+		A10000000000000000000046 /* Duotone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000046 /* Duotone.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,8 @@
 		B10000000000000000000042 /* Sharpen.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sharpen.metal; sourceTree = "<group>"; };
 		B10000000000000000000043 /* RollingScanlinesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingScanlinesDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000044 /* RollingScanlines.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RollingScanlines.metal; sourceTree = "<group>"; };
+		B10000000000000000000045 /* DuotoneDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuotoneDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000046 /* Duotone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Duotone.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				B10000000000000000000039 /* CrosshatchDemoView.swift */,
 				B10000000000000000000041 /* SharpenDemoView.swift */,
 				B10000000000000000000043 /* RollingScanlinesDemoView.swift */,
+				B10000000000000000000045 /* DuotoneDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				B10000000000000000000040 /* Crosshatch.metal */,
 				B10000000000000000000042 /* Sharpen.metal */,
 				B10000000000000000000044 /* RollingScanlines.metal */,
+				B10000000000000000000046 /* Duotone.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -303,6 +309,8 @@
 				A10000000000000000000042 /* Sharpen.metal in Sources */,
 				A10000000000000000000043 /* RollingScanlinesDemoView.swift in Sources */,
 				A10000000000000000000044 /* RollingScanlines.metal in Sources */,
+				A10000000000000000000045 /* DuotoneDemoView.swift in Sources */,
+				A10000000000000000000046 /* Duotone.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
