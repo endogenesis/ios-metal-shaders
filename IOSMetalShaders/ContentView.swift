@@ -41,6 +41,7 @@ struct ContentView: View {
                     SharpenDemoView()
                     RollingScanlinesDemoView()
                     DuotoneDemoView()
+                    BlockDisplacementDemoView()
                 }
                 .padding()
             }
