@@ -54,6 +54,8 @@
 		A10000000000000000000046 /* Duotone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000046 /* Duotone.metal */; };
 		A10000000000000000000047 /* BlockDisplacementDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000047 /* BlockDisplacementDemoView.swift */; };
 		A10000000000000000000048 /* BlockDisplacement.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000048 /* BlockDisplacement.metal */; };
+		A10000000000000000000049 /* PageCurlDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000049 /* PageCurlDemoView.swift */; };
+		A10000000000000000000050 /* PageCurl.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000050 /* PageCurl.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,8 @@
 		B10000000000000000000046 /* Duotone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Duotone.metal; sourceTree = "<group>"; };
 		B10000000000000000000047 /* BlockDisplacementDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDisplacementDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000048 /* BlockDisplacement.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BlockDisplacement.metal; sourceTree = "<group>"; };
+		B10000000000000000000049 /* PageCurlDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCurlDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000050 /* PageCurl.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PageCurl.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				B10000000000000000000043 /* RollingScanlinesDemoView.swift */,
 				B10000000000000000000045 /* DuotoneDemoView.swift */,
 				B10000000000000000000047 /* BlockDisplacementDemoView.swift */,
+				B10000000000000000000049 /* PageCurlDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				B10000000000000000000044 /* RollingScanlines.metal */,
 				B10000000000000000000046 /* Duotone.metal */,
 				B10000000000000000000048 /* BlockDisplacement.metal */,
+				B10000000000000000000050 /* PageCurl.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				A10000000000000000000046 /* Duotone.metal in Sources */,
 				A10000000000000000000047 /* BlockDisplacementDemoView.swift in Sources */,
 				A10000000000000000000048 /* BlockDisplacement.metal in Sources */,
+				A10000000000000000000049 /* PageCurlDemoView.swift in Sources */,
+				A10000000000000000000050 /* PageCurl.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
