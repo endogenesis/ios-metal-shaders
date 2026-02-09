@@ -45,6 +45,7 @@ struct ContentView: View {
                     PageCurlDemoView()
                     SobelEdgesDemoView()
                     WaterDropletsDemoView()
+                    CRTSyncLossDemoView()
                 }
                 .padding()
             }

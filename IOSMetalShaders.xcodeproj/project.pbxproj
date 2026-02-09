@@ -60,6 +60,8 @@
 		A10000000000000000000052 /* SobelEdges.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000052 /* SobelEdges.metal */; };
 		A10000000000000000000053 /* WaterDropletsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000053 /* WaterDropletsDemoView.swift */; };
 		A10000000000000000000054 /* WaterDroplets.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000054 /* WaterDroplets.metal */; };
+		A10000000000000000000055 /* CRTSyncLossDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000055 /* CRTSyncLossDemoView.swift */; };
+		A10000000000000000000056 /* CRTSyncLoss.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000056 /* CRTSyncLoss.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,8 @@
 		B10000000000000000000052 /* SobelEdges.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SobelEdges.metal; sourceTree = "<group>"; };
 		B10000000000000000000053 /* WaterDropletsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDropletsDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000054 /* WaterDroplets.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaterDroplets.metal; sourceTree = "<group>"; };
+		B10000000000000000000055 /* CRTSyncLossDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTSyncLossDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000056 /* CRTSyncLoss.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTSyncLoss.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 				B10000000000000000000049 /* PageCurlDemoView.swift */,
 				B10000000000000000000051 /* SobelEdgesDemoView.swift */,
 				B10000000000000000000053 /* WaterDropletsDemoView.swift */,
+				B10000000000000000000055 /* CRTSyncLossDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				B10000000000000000000050 /* PageCurl.metal */,
 				B10000000000000000000052 /* SobelEdges.metal */,
 				B10000000000000000000054 /* WaterDroplets.metal */,
+				B10000000000000000000056 /* CRTSyncLoss.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -343,6 +349,8 @@
 				A10000000000000000000052 /* SobelEdges.metal in Sources */,
 				A10000000000000000000053 /* WaterDropletsDemoView.swift in Sources */,
 				A10000000000000000000054 /* WaterDroplets.metal in Sources */,
+				A10000000000000000000055 /* CRTSyncLossDemoView.swift in Sources */,
+				A10000000000000000000056 /* CRTSyncLoss.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
