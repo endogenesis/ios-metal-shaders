@@ -46,6 +46,7 @@ struct ContentView: View {
                     SobelEdgesDemoView()
                     WaterDropletsDemoView()
                     CRTSyncLossDemoView()
+                    FireDemoView()
                 }
                 .padding()
             }
