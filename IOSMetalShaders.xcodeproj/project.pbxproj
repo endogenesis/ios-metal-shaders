@@ -64,6 +64,8 @@
 		A10000000000000000000056 /* CRTSyncLoss.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000056 /* CRTSyncLoss.metal */; };
 		A10000000000000000000057 /* FireDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000057 /* FireDemoView.swift */; };
 		A10000000000000000000058 /* Fire.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000058 /* Fire.metal */; };
+		A10000000000000000000059 /* ChannelSwapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000059 /* ChannelSwapDemoView.swift */; };
+		A10000000000000000000060 /* ChannelSwap.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000060 /* ChannelSwap.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +127,8 @@
 		B10000000000000000000056 /* CRTSyncLoss.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTSyncLoss.metal; sourceTree = "<group>"; };
 		B10000000000000000000057 /* FireDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000058 /* Fire.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fire.metal; sourceTree = "<group>"; };
+		B10000000000000000000059 /* ChannelSwapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSwapDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000060 /* ChannelSwap.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelSwap.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 				B10000000000000000000053 /* WaterDropletsDemoView.swift */,
 				B10000000000000000000055 /* CRTSyncLossDemoView.swift */,
 				B10000000000000000000057 /* FireDemoView.swift */,
+				B10000000000000000000059 /* ChannelSwapDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				B10000000000000000000054 /* WaterDroplets.metal */,
 				B10000000000000000000056 /* CRTSyncLoss.metal */,
 				B10000000000000000000058 /* Fire.metal */,
+				B10000000000000000000060 /* ChannelSwap.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -359,6 +365,8 @@
 				A10000000000000000000056 /* CRTSyncLoss.metal in Sources */,
 				A10000000000000000000057 /* FireDemoView.swift in Sources */,
 				A10000000000000000000058 /* Fire.metal in Sources */,
+				A10000000000000000000059 /* ChannelSwapDemoView.swift in Sources */,
+				A10000000000000000000060 /* ChannelSwap.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

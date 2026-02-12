@@ -47,6 +47,7 @@ struct ContentView: View {
                     WaterDropletsDemoView()
                     CRTSyncLossDemoView()
                     FireDemoView()
+                    ChannelSwapDemoView()
                 }
                 .padding()
             }
