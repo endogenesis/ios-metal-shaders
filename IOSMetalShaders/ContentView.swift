@@ -48,6 +48,7 @@ struct ContentView: View {
                     CRTSyncLossDemoView()
                     FireDemoView()
                     ChannelSwapDemoView()
+                    TiltShiftDemoView()
                 }
                 .padding()
             }

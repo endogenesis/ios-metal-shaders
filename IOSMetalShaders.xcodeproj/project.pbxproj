@@ -66,6 +66,8 @@
 		A10000000000000000000058 /* Fire.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000058 /* Fire.metal */; };
 		A10000000000000000000059 /* ChannelSwapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000059 /* ChannelSwapDemoView.swift */; };
 		A10000000000000000000060 /* ChannelSwap.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000060 /* ChannelSwap.metal */; };
+		A10000000000000000000061 /* TiltShiftDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000061 /* TiltShiftDemoView.swift */; };
+		A10000000000000000000062 /* TiltShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000062 /* TiltShift.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +131,8 @@
 		B10000000000000000000058 /* Fire.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fire.metal; sourceTree = "<group>"; };
 		B10000000000000000000059 /* ChannelSwapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSwapDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000060 /* ChannelSwap.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelSwap.metal; sourceTree = "<group>"; };
+		B10000000000000000000061 /* TiltShiftDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShiftDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000062 /* TiltShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TiltShift.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 				B10000000000000000000055 /* CRTSyncLossDemoView.swift */,
 				B10000000000000000000057 /* FireDemoView.swift */,
 				B10000000000000000000059 /* ChannelSwapDemoView.swift */,
+				B10000000000000000000061 /* TiltShiftDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				B10000000000000000000056 /* CRTSyncLoss.metal */,
 				B10000000000000000000058 /* Fire.metal */,
 				B10000000000000000000060 /* ChannelSwap.metal */,
+				B10000000000000000000062 /* TiltShift.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -367,6 +373,8 @@
 				A10000000000000000000058 /* Fire.metal in Sources */,
 				A10000000000000000000059 /* ChannelSwapDemoView.swift in Sources */,
 				A10000000000000000000060 /* ChannelSwap.metal in Sources */,
+				A10000000000000000000061 /* TiltShiftDemoView.swift in Sources */,
+				A10000000000000000000062 /* TiltShift.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
