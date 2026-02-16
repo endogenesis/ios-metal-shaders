@@ -49,6 +49,7 @@ struct ContentView: View {
                     FireDemoView()
                     ChannelSwapDemoView()
                     TiltShiftDemoView()
+                    VignetteDemoView()
                 }
                 .padding()
             }

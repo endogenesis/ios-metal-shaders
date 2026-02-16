@@ -68,6 +68,8 @@
 		A10000000000000000000060 /* ChannelSwap.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000060 /* ChannelSwap.metal */; };
 		A10000000000000000000061 /* TiltShiftDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000061 /* TiltShiftDemoView.swift */; };
 		A10000000000000000000062 /* TiltShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000062 /* TiltShift.metal */; };
+		A10000000000000000000063 /* VignetteDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000063 /* VignetteDemoView.swift */; };
+		A10000000000000000000064 /* Vignette.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000064 /* Vignette.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +135,8 @@
 		B10000000000000000000060 /* ChannelSwap.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelSwap.metal; sourceTree = "<group>"; };
 		B10000000000000000000061 /* TiltShiftDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShiftDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000062 /* TiltShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TiltShift.metal; sourceTree = "<group>"; };
+		B10000000000000000000063 /* VignetteDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VignetteDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000064 /* Vignette.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vignette.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 				B10000000000000000000057 /* FireDemoView.swift */,
 				B10000000000000000000059 /* ChannelSwapDemoView.swift */,
 				B10000000000000000000061 /* TiltShiftDemoView.swift */,
+				B10000000000000000000063 /* VignetteDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				B10000000000000000000058 /* Fire.metal */,
 				B10000000000000000000060 /* ChannelSwap.metal */,
 				B10000000000000000000062 /* TiltShift.metal */,
+				B10000000000000000000064 /* Vignette.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -375,6 +381,8 @@
 				A10000000000000000000060 /* ChannelSwap.metal in Sources */,
 				A10000000000000000000061 /* TiltShiftDemoView.swift in Sources */,
 				A10000000000000000000062 /* TiltShift.metal in Sources */,
+				A10000000000000000000063 /* VignetteDemoView.swift in Sources */,
+				A10000000000000000000064 /* Vignette.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
