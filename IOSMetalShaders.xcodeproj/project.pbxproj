@@ -70,6 +70,8 @@
 		A10000000000000000000062 /* TiltShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000062 /* TiltShift.metal */; };
 		A10000000000000000000063 /* VignetteDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000063 /* VignetteDemoView.swift */; };
 		A10000000000000000000064 /* Vignette.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000064 /* Vignette.metal */; };
+		A10000000000000000000065 /* WatercolorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000065 /* WatercolorDemoView.swift */; };
+		A10000000000000000000066 /* Watercolor.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000066 /* Watercolor.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +139,8 @@
 		B10000000000000000000062 /* TiltShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TiltShift.metal; sourceTree = "<group>"; };
 		B10000000000000000000063 /* VignetteDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VignetteDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000064 /* Vignette.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Vignette.metal; sourceTree = "<group>"; };
+		B10000000000000000000065 /* WatercolorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatercolorDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000066 /* Watercolor.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Watercolor.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 				B10000000000000000000059 /* ChannelSwapDemoView.swift */,
 				B10000000000000000000061 /* TiltShiftDemoView.swift */,
 				B10000000000000000000063 /* VignetteDemoView.swift */,
+				B10000000000000000000065 /* WatercolorDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				B10000000000000000000060 /* ChannelSwap.metal */,
 				B10000000000000000000062 /* TiltShift.metal */,
 				B10000000000000000000064 /* Vignette.metal */,
+				B10000000000000000000066 /* Watercolor.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -383,6 +389,8 @@
 				A10000000000000000000062 /* TiltShift.metal in Sources */,
 				A10000000000000000000063 /* VignetteDemoView.swift in Sources */,
 				A10000000000000000000064 /* Vignette.metal in Sources */,
+				A10000000000000000000065 /* WatercolorDemoView.swift in Sources */,
+				A10000000000000000000066 /* Watercolor.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

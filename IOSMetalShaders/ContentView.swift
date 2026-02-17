@@ -50,6 +50,7 @@ struct ContentView: View {
                     ChannelSwapDemoView()
                     TiltShiftDemoView()
                     VignetteDemoView()
+                    WatercolorDemoView()
                 }
                 .padding()
             }
