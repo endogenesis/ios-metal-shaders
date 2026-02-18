@@ -51,6 +51,7 @@ struct ContentView: View {
                     TiltShiftDemoView()
                     VignetteDemoView()
                     WatercolorDemoView()
+                    LaplacianEdgesDemoView()
                 }
                 .padding()
             }
