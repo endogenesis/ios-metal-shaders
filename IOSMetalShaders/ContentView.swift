@@ -52,6 +52,7 @@ struct ContentView: View {
                     VignetteDemoView()
                     WatercolorDemoView()
                     LaplacianEdgesDemoView()
+                    VHSTrackingDemoView()
                 }
                 .padding()
             }
