@@ -76,6 +76,8 @@
 		A10000000000000000000068 /* LaplacianEdges.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000068 /* LaplacianEdges.metal */; };
 		A10000000000000000000069 /* VHSTrackingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000069 /* VHSTrackingDemoView.swift */; };
 		A10000000000000000000070 /* VHSTracking.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000070 /* VHSTracking.metal */; };
+		A10000000000000000000071 /* BoxBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000071 /* BoxBlurDemoView.swift */; };
+		A10000000000000000000072 /* BoxBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000072 /* BoxBlur.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +151,8 @@
 		B10000000000000000000068 /* LaplacianEdges.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LaplacianEdges.metal; sourceTree = "<group>"; };
 		B10000000000000000000069 /* VHSTrackingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHSTrackingDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000070 /* VHSTracking.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VHSTracking.metal; sourceTree = "<group>"; };
+		B10000000000000000000071 /* BoxBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlurDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000072 /* BoxBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BoxBlur.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 				B10000000000000000000065 /* WatercolorDemoView.swift */,
 				B10000000000000000000067 /* LaplacianEdgesDemoView.swift */,
 				B10000000000000000000069 /* VHSTrackingDemoView.swift */,
+				B10000000000000000000071 /* BoxBlurDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				B10000000000000000000066 /* Watercolor.metal */,
 				B10000000000000000000068 /* LaplacianEdges.metal */,
 				B10000000000000000000070 /* VHSTracking.metal */,
+				B10000000000000000000072 /* BoxBlur.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -407,6 +413,8 @@
 				A10000000000000000000068 /* LaplacianEdges.metal in Sources */,
 				A10000000000000000000069 /* VHSTrackingDemoView.swift in Sources */,
 				A10000000000000000000070 /* VHSTracking.metal in Sources */,
+				A10000000000000000000071 /* BoxBlurDemoView.swift in Sources */,
+				A10000000000000000000072 /* BoxBlur.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
