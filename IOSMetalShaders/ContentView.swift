@@ -54,6 +54,7 @@ struct ContentView: View {
                     LaplacianEdgesDemoView()
                     VHSTrackingDemoView()
                     BoxBlurDemoView()
+                    StarfieldDemoView()
                 }
                 .padding()
             }

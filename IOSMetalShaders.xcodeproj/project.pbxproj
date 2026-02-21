@@ -78,6 +78,8 @@
 		A10000000000000000000070 /* VHSTracking.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000070 /* VHSTracking.metal */; };
 		A10000000000000000000071 /* BoxBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000071 /* BoxBlurDemoView.swift */; };
 		A10000000000000000000072 /* BoxBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000072 /* BoxBlur.metal */; };
+		A10000000000000000000073 /* StarfieldDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000073 /* StarfieldDemoView.swift */; };
+		A10000000000000000000074 /* Starfield.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000074 /* Starfield.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +155,8 @@
 		B10000000000000000000070 /* VHSTracking.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VHSTracking.metal; sourceTree = "<group>"; };
 		B10000000000000000000071 /* BoxBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlurDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000072 /* BoxBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BoxBlur.metal; sourceTree = "<group>"; };
+		B10000000000000000000073 /* StarfieldDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarfieldDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000074 /* Starfield.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Starfield.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,7 @@
 				B10000000000000000000067 /* LaplacianEdgesDemoView.swift */,
 				B10000000000000000000069 /* VHSTrackingDemoView.swift */,
 				B10000000000000000000071 /* BoxBlurDemoView.swift */,
+				B10000000000000000000073 /* StarfieldDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				B10000000000000000000068 /* LaplacianEdges.metal */,
 				B10000000000000000000070 /* VHSTracking.metal */,
 				B10000000000000000000072 /* BoxBlur.metal */,
+				B10000000000000000000074 /* Starfield.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -415,6 +421,8 @@
 				A10000000000000000000070 /* VHSTracking.metal in Sources */,
 				A10000000000000000000071 /* BoxBlurDemoView.swift in Sources */,
 				A10000000000000000000072 /* BoxBlur.metal in Sources */,
+				A10000000000000000000073 /* StarfieldDemoView.swift in Sources */,
+				A10000000000000000000074 /* Starfield.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
