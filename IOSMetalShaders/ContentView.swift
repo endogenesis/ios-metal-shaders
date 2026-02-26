@@ -56,6 +56,7 @@ struct ContentView: View {
                     BoxBlurDemoView()
                     StarfieldDemoView()
                     PerspectiveTiltDemoView()
+                    HalftoneDemoView()
                 }
                 .padding()
             }

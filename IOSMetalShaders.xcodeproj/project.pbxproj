@@ -82,6 +82,8 @@
 		A10000000000000000000074 /* Starfield.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000074 /* Starfield.metal */; };
 		A10000000000000000000075 /* PerspectiveTiltDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000075 /* PerspectiveTiltDemoView.swift */; };
 		A10000000000000000000076 /* PerspectiveTilt.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000076 /* PerspectiveTilt.metal */; };
+		A10000000000000000000077 /* HalftoneDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000077 /* HalftoneDemoView.swift */; };
+		A10000000000000000000078 /* Halftone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000078 /* Halftone.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +163,8 @@
 		B10000000000000000000074 /* Starfield.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Starfield.metal; sourceTree = "<group>"; };
 		B10000000000000000000075 /* PerspectiveTiltDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerspectiveTiltDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000076 /* PerspectiveTilt.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PerspectiveTilt.metal; sourceTree = "<group>"; };
+		B10000000000000000000077 /* HalftoneDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalftoneDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000078 /* Halftone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Halftone.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 				B10000000000000000000071 /* BoxBlurDemoView.swift */,
 				B10000000000000000000073 /* StarfieldDemoView.swift */,
 				B10000000000000000000075 /* PerspectiveTiltDemoView.swift */,
+				B10000000000000000000077 /* HalftoneDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				B10000000000000000000072 /* BoxBlur.metal */,
 				B10000000000000000000074 /* Starfield.metal */,
 				B10000000000000000000076 /* PerspectiveTilt.metal */,
+				B10000000000000000000078 /* Halftone.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -431,6 +437,8 @@
 				A10000000000000000000074 /* Starfield.metal in Sources */,
 				A10000000000000000000075 /* PerspectiveTiltDemoView.swift in Sources */,
 				A10000000000000000000076 /* PerspectiveTilt.metal in Sources */,
+				A10000000000000000000077 /* HalftoneDemoView.swift in Sources */,
+				A10000000000000000000078 /* Halftone.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
