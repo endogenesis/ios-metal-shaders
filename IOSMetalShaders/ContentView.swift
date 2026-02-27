@@ -57,6 +57,7 @@ struct ContentView: View {
                     StarfieldDemoView()
                     PerspectiveTiltDemoView()
                     HalftoneDemoView()
+                    BayerDitherDemoView()
                 }
                 .padding()
             }

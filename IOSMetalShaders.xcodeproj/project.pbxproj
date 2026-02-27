@@ -84,6 +84,8 @@
 		A10000000000000000000076 /* PerspectiveTilt.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000076 /* PerspectiveTilt.metal */; };
 		A10000000000000000000077 /* HalftoneDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000077 /* HalftoneDemoView.swift */; };
 		A10000000000000000000078 /* Halftone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000078 /* Halftone.metal */; };
+		A10000000000000000000079 /* BayerDitherDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000079 /* BayerDitherDemoView.swift */; };
+		A10000000000000000000080 /* BayerDither.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000080 /* BayerDither.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +167,8 @@
 		B10000000000000000000076 /* PerspectiveTilt.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PerspectiveTilt.metal; sourceTree = "<group>"; };
 		B10000000000000000000077 /* HalftoneDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalftoneDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000078 /* Halftone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Halftone.metal; sourceTree = "<group>"; };
+		B10000000000000000000079 /* BayerDitherDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayerDitherDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000080 /* BayerDither.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BayerDither.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,7 @@
 				B10000000000000000000073 /* StarfieldDemoView.swift */,
 				B10000000000000000000075 /* PerspectiveTiltDemoView.swift */,
 				B10000000000000000000077 /* HalftoneDemoView.swift */,
+				B10000000000000000000079 /* BayerDitherDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				B10000000000000000000074 /* Starfield.metal */,
 				B10000000000000000000076 /* PerspectiveTilt.metal */,
 				B10000000000000000000078 /* Halftone.metal */,
+				B10000000000000000000080 /* BayerDither.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -439,6 +445,8 @@
 				A10000000000000000000076 /* PerspectiveTilt.metal in Sources */,
 				A10000000000000000000077 /* HalftoneDemoView.swift in Sources */,
 				A10000000000000000000078 /* Halftone.metal in Sources */,
+				A10000000000000000000079 /* BayerDitherDemoView.swift in Sources */,
+				A10000000000000000000080 /* BayerDither.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
