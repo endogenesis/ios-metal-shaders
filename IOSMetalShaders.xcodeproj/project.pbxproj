@@ -86,6 +86,8 @@
 		A10000000000000000000078 /* Halftone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000078 /* Halftone.metal */; };
 		A10000000000000000000079 /* BayerDitherDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000079 /* BayerDitherDemoView.swift */; };
 		A10000000000000000000080 /* BayerDither.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000080 /* BayerDither.metal */; };
+		A10000000000000000000081 /* ColorInvertDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000081 /* ColorInvertDemoView.swift */; };
+		A10000000000000000000082 /* ColorInvert.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000082 /* ColorInvert.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +171,8 @@
 		B10000000000000000000078 /* Halftone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Halftone.metal; sourceTree = "<group>"; };
 		B10000000000000000000079 /* BayerDitherDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayerDitherDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000080 /* BayerDither.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BayerDither.metal; sourceTree = "<group>"; };
+		B10000000000000000000081 /* ColorInvertDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInvertDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000082 /* ColorInvert.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorInvert.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +249,7 @@
 				B10000000000000000000075 /* PerspectiveTiltDemoView.swift */,
 				B10000000000000000000077 /* HalftoneDemoView.swift */,
 				B10000000000000000000079 /* BayerDitherDemoView.swift */,
+				B10000000000000000000081 /* ColorInvertDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				B10000000000000000000076 /* PerspectiveTilt.metal */,
 				B10000000000000000000078 /* Halftone.metal */,
 				B10000000000000000000080 /* BayerDither.metal */,
+				B10000000000000000000082 /* ColorInvert.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -447,6 +453,8 @@
 				A10000000000000000000078 /* Halftone.metal in Sources */,
 				A10000000000000000000079 /* BayerDitherDemoView.swift in Sources */,
 				A10000000000000000000080 /* BayerDither.metal in Sources */,
+				A10000000000000000000081 /* ColorInvertDemoView.swift in Sources */,
+				A10000000000000000000082 /* ColorInvert.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

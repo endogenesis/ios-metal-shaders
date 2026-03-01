@@ -58,6 +58,7 @@ struct ContentView: View {
                     PerspectiveTiltDemoView()
                     HalftoneDemoView()
                     BayerDitherDemoView()
+                    ColorInvertDemoView()
                 }
                 .padding()
             }
