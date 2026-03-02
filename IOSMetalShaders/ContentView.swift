@@ -60,6 +60,7 @@ struct ContentView: View {
                     BayerDitherDemoView()
                     ColorInvertDemoView()
                     EchoFramesDemoView()
+                    PixelTransitionDemoView()
                 }
                 .padding()
             }

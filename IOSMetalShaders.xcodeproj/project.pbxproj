@@ -90,6 +90,8 @@
 		A10000000000000000000082 /* ColorInvert.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000082 /* ColorInvert.metal */; };
 		A10000000000000000000083 /* EchoFramesDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000083 /* EchoFramesDemoView.swift */; };
 		A10000000000000000000084 /* EchoFrames.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000084 /* EchoFrames.metal */; };
+		A10000000000000000000085 /* PixelTransitionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000085 /* PixelTransitionDemoView.swift */; };
+		A10000000000000000000086 /* PixelTransition.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000086 /* PixelTransition.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,6 +179,8 @@
 		B10000000000000000000082 /* ColorInvert.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorInvert.metal; sourceTree = "<group>"; };
 		B10000000000000000000083 /* EchoFramesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoFramesDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000084 /* EchoFrames.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EchoFrames.metal; sourceTree = "<group>"; };
+		B10000000000000000000085 /* PixelTransitionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelTransitionDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000086 /* PixelTransition.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PixelTransition.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,7 @@
 				B10000000000000000000079 /* BayerDitherDemoView.swift */,
 				B10000000000000000000081 /* ColorInvertDemoView.swift */,
 				B10000000000000000000083 /* EchoFramesDemoView.swift */,
+				B10000000000000000000085 /* PixelTransitionDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				B10000000000000000000080 /* BayerDither.metal */,
 				B10000000000000000000082 /* ColorInvert.metal */,
 				B10000000000000000000084 /* EchoFrames.metal */,
+				B10000000000000000000086 /* PixelTransition.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -463,6 +469,8 @@
 				A10000000000000000000082 /* ColorInvert.metal in Sources */,
 				A10000000000000000000083 /* EchoFramesDemoView.swift in Sources */,
 				A10000000000000000000084 /* EchoFrames.metal in Sources */,
+				A10000000000000000000085 /* PixelTransitionDemoView.swift in Sources */,
+				A10000000000000000000086 /* PixelTransition.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
