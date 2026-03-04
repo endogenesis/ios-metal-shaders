@@ -61,6 +61,7 @@ struct ContentView: View {
                     ColorInvertDemoView()
                     EchoFramesDemoView()
                     PixelTransitionDemoView()
+                    IrisRevealDemoView()
                 }
                 .padding()
             }
