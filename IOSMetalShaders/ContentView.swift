@@ -63,6 +63,7 @@ struct ContentView: View {
                     PixelTransitionDemoView()
                     IrisRevealDemoView()
                     RippleDemoView()
+                    FilmGrainDemoView()
                 }
                 .padding()
             }
