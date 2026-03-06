@@ -94,6 +94,8 @@
 		A10000000000000000000086 /* PixelTransition.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000086 /* PixelTransition.metal */; };
 		A10000000000000000000087 /* IrisRevealDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000087 /* IrisRevealDemoView.swift */; };
 		A10000000000000000000088 /* IrisReveal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000088 /* IrisReveal.metal */; };
+		A10000000000000000000089 /* RippleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000089 /* RippleDemoView.swift */; };
+		A10000000000000000000090 /* Ripple.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000090 /* Ripple.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +187,8 @@
 		B10000000000000000000086 /* PixelTransition.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PixelTransition.metal; sourceTree = "<group>"; };
 		B10000000000000000000087 /* IrisRevealDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisRevealDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000088 /* IrisReveal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = IrisReveal.metal; sourceTree = "<group>"; };
+		B10000000000000000000089 /* RippleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000090 /* Ripple.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ripple.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,7 @@
 				B10000000000000000000083 /* EchoFramesDemoView.swift */,
 				B10000000000000000000085 /* PixelTransitionDemoView.swift */,
 				B10000000000000000000087 /* IrisRevealDemoView.swift */,
+				B10000000000000000000089 /* RippleDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				B10000000000000000000084 /* EchoFrames.metal */,
 				B10000000000000000000086 /* PixelTransition.metal */,
 				B10000000000000000000088 /* IrisReveal.metal */,
+				B10000000000000000000090 /* Ripple.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -479,6 +485,8 @@
 				A10000000000000000000086 /* PixelTransition.metal in Sources */,
 				A10000000000000000000087 /* IrisRevealDemoView.swift in Sources */,
 				A10000000000000000000088 /* IrisReveal.metal in Sources */,
+				A10000000000000000000089 /* RippleDemoView.swift in Sources */,
+				A10000000000000000000090 /* Ripple.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

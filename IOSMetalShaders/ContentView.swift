@@ -62,6 +62,7 @@ struct ContentView: View {
                     EchoFramesDemoView()
                     PixelTransitionDemoView()
                     IrisRevealDemoView()
+                    RippleDemoView()
                 }
                 .padding()
             }
