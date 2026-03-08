@@ -98,6 +98,8 @@
 		A10000000000000000000090 /* Ripple.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000090 /* Ripple.metal */; };
 		A10000000000000000000091 /* FilmGrainDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000091 /* FilmGrainDemoView.swift */; };
 		A10000000000000000000092 /* FilmGrain.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000092 /* FilmGrain.metal */; };
+		A10000000000000000000093 /* BrightnessDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000093 /* BrightnessDemoView.swift */; };
+		A10000000000000000000094 /* Brightness.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000094 /* Brightness.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +195,8 @@
 		B10000000000000000000090 /* Ripple.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ripple.metal; sourceTree = "<group>"; };
 		B10000000000000000000091 /* FilmGrainDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmGrainDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000092 /* FilmGrain.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FilmGrain.metal; sourceTree = "<group>"; };
+		B10000000000000000000093 /* BrightnessDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000094 /* Brightness.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Brightness.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 				B10000000000000000000087 /* IrisRevealDemoView.swift */,
 				B10000000000000000000089 /* RippleDemoView.swift */,
 				B10000000000000000000091 /* FilmGrainDemoView.swift */,
+				B10000000000000000000093 /* BrightnessDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				B10000000000000000000088 /* IrisReveal.metal */,
 				B10000000000000000000090 /* Ripple.metal */,
 				B10000000000000000000092 /* FilmGrain.metal */,
+				B10000000000000000000094 /* Brightness.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -495,6 +501,8 @@
 				A10000000000000000000090 /* Ripple.metal in Sources */,
 				A10000000000000000000091 /* FilmGrainDemoView.swift in Sources */,
 				A10000000000000000000092 /* FilmGrain.metal in Sources */,
+				A10000000000000000000093 /* BrightnessDemoView.swift in Sources */,
+				A10000000000000000000094 /* Brightness.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
