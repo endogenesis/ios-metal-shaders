@@ -66,6 +66,7 @@ struct ContentView: View {
                     FilmGrainDemoView()
                     BrightnessDemoView()
                     DirectionalBlurDemoView()
+                    BlueNoiseDitherDemoView()
                 }
                 .padding()
             }
