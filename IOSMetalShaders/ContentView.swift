@@ -67,6 +67,7 @@ struct ContentView: View {
                     BrightnessDemoView()
                     DirectionalBlurDemoView()
                     BlueNoiseDitherDemoView()
+                    MagnifyingGlassDemoView()
                 }
                 .padding()
             }

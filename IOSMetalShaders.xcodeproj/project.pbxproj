@@ -104,6 +104,8 @@
 		A10000000000000000000096 /* DirectionalBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000096 /* DirectionalBlur.metal */; };
 		A10000000000000000000097 /* BlueNoiseDitherDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000097 /* BlueNoiseDitherDemoView.swift */; };
 		A10000000000000000000098 /* BlueNoiseDither.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000098 /* BlueNoiseDither.metal */; };
+		A10000000000000000000099 /* MagnifyingGlassDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000099 /* MagnifyingGlassDemoView.swift */; };
+		A10000000000000000000100 /* MagnifyingGlass.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000100 /* MagnifyingGlass.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +207,8 @@
 		B10000000000000000000096 /* DirectionalBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DirectionalBlur.metal; sourceTree = "<group>"; };
 		B10000000000000000000097 /* BlueNoiseDitherDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueNoiseDitherDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000098 /* BlueNoiseDither.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BlueNoiseDither.metal; sourceTree = "<group>"; };
+		B10000000000000000000099 /* MagnifyingGlassDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyingGlassDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000100 /* MagnifyingGlass.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MagnifyingGlass.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,7 @@
 				B10000000000000000000093 /* BrightnessDemoView.swift */,
 				B10000000000000000000095 /* DirectionalBlurDemoView.swift */,
 				B10000000000000000000097 /* BlueNoiseDitherDemoView.swift */,
+				B10000000000000000000099 /* MagnifyingGlassDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				B10000000000000000000094 /* Brightness.metal */,
 				B10000000000000000000096 /* DirectionalBlur.metal */,
 				B10000000000000000000098 /* BlueNoiseDither.metal */,
+				B10000000000000000000100 /* MagnifyingGlass.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -519,6 +525,8 @@
 				A10000000000000000000096 /* DirectionalBlur.metal in Sources */,
 				A10000000000000000000097 /* BlueNoiseDitherDemoView.swift in Sources */,
 				A10000000000000000000098 /* BlueNoiseDither.metal in Sources */,
+				A10000000000000000000099 /* MagnifyingGlassDemoView.swift in Sources */,
+				A10000000000000000000100 /* MagnifyingGlass.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
