@@ -108,6 +108,8 @@
 		A10000000000000000000100 /* MagnifyingGlass.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000100 /* MagnifyingGlass.metal */; };
 		A10000000000000000000101 /* StippleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000101 /* StippleDemoView.swift */; };
 		A10000000000000000000102 /* Stipple.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000102 /* Stipple.metal */; };
+		A10000000000000000000103 /* SpherizeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000103 /* SpherizeDemoView.swift */; };
+		A10000000000000000000104 /* Spherize.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000104 /* Spherize.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -213,6 +215,8 @@
 		B10000000000000000000100 /* MagnifyingGlass.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MagnifyingGlass.metal; sourceTree = "<group>"; };
 		B10000000000000000000101 /* StippleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StippleDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000102 /* Stipple.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Stipple.metal; sourceTree = "<group>"; };
+		B10000000000000000000103 /* SpherizeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpherizeDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000104 /* Spherize.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Spherize.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +304,7 @@
 				B10000000000000000000097 /* BlueNoiseDitherDemoView.swift */,
 				B10000000000000000000099 /* MagnifyingGlassDemoView.swift */,
 				B10000000000000000000101 /* StippleDemoView.swift */,
+				B10000000000000000000103 /* SpherizeDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				B10000000000000000000098 /* BlueNoiseDither.metal */,
 				B10000000000000000000100 /* MagnifyingGlass.metal */,
 				B10000000000000000000102 /* Stipple.metal */,
+				B10000000000000000000104 /* Spherize.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -535,6 +541,8 @@
 				A10000000000000000000100 /* MagnifyingGlass.metal in Sources */,
 				A10000000000000000000101 /* StippleDemoView.swift in Sources */,
 				A10000000000000000000102 /* Stipple.metal in Sources */,
+				A10000000000000000000103 /* SpherizeDemoView.swift in Sources */,
+				A10000000000000000000104 /* Spherize.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
