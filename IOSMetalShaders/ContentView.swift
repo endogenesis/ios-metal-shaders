@@ -70,6 +70,7 @@ struct ContentView: View {
                     MagnifyingGlassDemoView()
                     StippleDemoView()
                     SpherizeDemoView()
+                    ZoomBlurDemoView()
                 }
                 .padding()
             }
