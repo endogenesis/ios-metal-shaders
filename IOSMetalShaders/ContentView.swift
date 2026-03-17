@@ -71,6 +71,7 @@ struct ContentView: View {
                     StippleDemoView()
                     SpherizeDemoView()
                     ZoomBlurDemoView()
+                    BarrelDistortionDemoView()
                 }
                 .padding()
             }

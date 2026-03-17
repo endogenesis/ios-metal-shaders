@@ -112,6 +112,8 @@
 		A10000000000000000000104 /* Spherize.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000104 /* Spherize.metal */; };
 		A10000000000000000000105 /* ZoomBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000105 /* ZoomBlurDemoView.swift */; };
 		A10000000000000000000106 /* ZoomBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000106 /* ZoomBlur.metal */; };
+		A10000000000000000000107 /* BarrelDistortionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000107 /* BarrelDistortionDemoView.swift */; };
+		A10000000000000000000108 /* BarrelDistortion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000108 /* BarrelDistortion.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +223,8 @@
 		B10000000000000000000104 /* Spherize.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Spherize.metal; sourceTree = "<group>"; };
 		B10000000000000000000105 /* ZoomBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomBlurDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000106 /* ZoomBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ZoomBlur.metal; sourceTree = "<group>"; };
+		B10000000000000000000107 /* BarrelDistortionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrelDistortionDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000108 /* BarrelDistortion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BarrelDistortion.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +314,7 @@
 				B10000000000000000000101 /* StippleDemoView.swift */,
 				B10000000000000000000103 /* SpherizeDemoView.swift */,
 				B10000000000000000000105 /* ZoomBlurDemoView.swift */,
+				B10000000000000000000107 /* BarrelDistortionDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				B10000000000000000000102 /* Stipple.metal */,
 				B10000000000000000000104 /* Spherize.metal */,
 				B10000000000000000000106 /* ZoomBlur.metal */,
+				B10000000000000000000108 /* BarrelDistortion.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -551,6 +557,8 @@
 				A10000000000000000000104 /* Spherize.metal in Sources */,
 				A10000000000000000000105 /* ZoomBlurDemoView.swift in Sources */,
 				A10000000000000000000106 /* ZoomBlur.metal in Sources */,
+				A10000000000000000000107 /* BarrelDistortionDemoView.swift in Sources */,
+				A10000000000000000000108 /* BarrelDistortion.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
