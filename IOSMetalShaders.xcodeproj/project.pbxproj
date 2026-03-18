@@ -114,6 +114,8 @@
 		A10000000000000000000106 /* ZoomBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000106 /* ZoomBlur.metal */; };
 		A10000000000000000000107 /* BarrelDistortionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000107 /* BarrelDistortionDemoView.swift */; };
 		A10000000000000000000108 /* BarrelDistortion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000108 /* BarrelDistortion.metal */; };
+		A10000000000000000000109 /* VoronoiCellsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000109 /* VoronoiCellsDemoView.swift */; };
+		A10000000000000000000110 /* VoronoiCells.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000110 /* VoronoiCells.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +227,8 @@
 		B10000000000000000000106 /* ZoomBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ZoomBlur.metal; sourceTree = "<group>"; };
 		B10000000000000000000107 /* BarrelDistortionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrelDistortionDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000108 /* BarrelDistortion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BarrelDistortion.metal; sourceTree = "<group>"; };
+		B10000000000000000000109 /* VoronoiCellsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoronoiCellsDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000110 /* VoronoiCells.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VoronoiCells.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +319,7 @@
 				B10000000000000000000103 /* SpherizeDemoView.swift */,
 				B10000000000000000000105 /* ZoomBlurDemoView.swift */,
 				B10000000000000000000107 /* BarrelDistortionDemoView.swift */,
+				B10000000000000000000109 /* VoronoiCellsDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				B10000000000000000000104 /* Spherize.metal */,
 				B10000000000000000000106 /* ZoomBlur.metal */,
 				B10000000000000000000108 /* BarrelDistortion.metal */,
+				B10000000000000000000110 /* VoronoiCells.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -559,6 +565,8 @@
 				A10000000000000000000106 /* ZoomBlur.metal in Sources */,
 				A10000000000000000000107 /* BarrelDistortionDemoView.swift in Sources */,
 				A10000000000000000000108 /* BarrelDistortion.metal in Sources */,
+				A10000000000000000000109 /* VoronoiCellsDemoView.swift in Sources */,
+				A10000000000000000000110 /* VoronoiCells.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
