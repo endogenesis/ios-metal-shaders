@@ -118,6 +118,8 @@
 		A10000000000000000000110 /* VoronoiCells.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000110 /* VoronoiCells.metal */; };
 		A10000000000000000000111 /* CanvasTextureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000111 /* CanvasTextureDemoView.swift */; };
 		A10000000000000000000112 /* CanvasTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000112 /* CanvasTexture.metal */; };
+		A10000000000000000000113 /* MotionBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000113 /* MotionBlurDemoView.swift */; };
+		A10000000000000000000114 /* MotionBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000114 /* MotionBlur.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,6 +235,8 @@
 		B10000000000000000000110 /* VoronoiCells.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VoronoiCells.metal; sourceTree = "<group>"; };
 		B10000000000000000000111 /* CanvasTextureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTextureDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000112 /* CanvasTexture.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CanvasTexture.metal; sourceTree = "<group>"; };
+		B10000000000000000000113 /* MotionBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlurDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000114 /* MotionBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MotionBlur.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +329,7 @@
 				B10000000000000000000107 /* BarrelDistortionDemoView.swift */,
 				B10000000000000000000109 /* VoronoiCellsDemoView.swift */,
 				B10000000000000000000111 /* CanvasTextureDemoView.swift */,
+				B10000000000000000000113 /* MotionBlurDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				B10000000000000000000108 /* BarrelDistortion.metal */,
 				B10000000000000000000110 /* VoronoiCells.metal */,
 				B10000000000000000000112 /* CanvasTexture.metal */,
+				B10000000000000000000114 /* MotionBlur.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -575,6 +581,8 @@
 				A10000000000000000000110 /* VoronoiCells.metal in Sources */,
 				A10000000000000000000111 /* CanvasTextureDemoView.swift in Sources */,
 				A10000000000000000000112 /* CanvasTexture.metal in Sources */,
+				A10000000000000000000113 /* MotionBlurDemoView.swift in Sources */,
+				A10000000000000000000114 /* MotionBlur.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

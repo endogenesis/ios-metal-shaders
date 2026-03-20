@@ -74,6 +74,7 @@ struct ContentView: View {
                     BarrelDistortionDemoView()
                     VoronoiCellsDemoView()
                     CanvasTextureDemoView()
+                    MotionBlurDemoView()
                 }
                 .padding()
             }
