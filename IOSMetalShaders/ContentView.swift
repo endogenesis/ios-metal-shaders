@@ -75,6 +75,7 @@ struct ContentView: View {
                     VoronoiCellsDemoView()
                     CanvasTextureDemoView()
                     MotionBlurDemoView()
+                    LensFlareDemoView()
                 }
                 .padding()
             }
