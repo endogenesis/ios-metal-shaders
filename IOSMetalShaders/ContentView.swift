@@ -76,6 +76,7 @@ struct ContentView: View {
                     CanvasTextureDemoView()
                     MotionBlurDemoView()
                     LensFlareDemoView()
+                    SmokeDemoView()
                 }
                 .padding()
             }

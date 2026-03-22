@@ -122,6 +122,8 @@
 		A10000000000000000000114 /* MotionBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000114 /* MotionBlur.metal */; };
 		A10000000000000000000115 /* LensFlareDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000115 /* LensFlareDemoView.swift */; };
 		A10000000000000000000116 /* LensFlare.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000116 /* LensFlare.metal */; };
+		A10000000000000000000117 /* SmokeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000117 /* SmokeDemoView.swift */; };
+		A10000000000000000000118 /* Smoke.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000118 /* Smoke.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +243,8 @@
 		B10000000000000000000114 /* MotionBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MotionBlur.metal; sourceTree = "<group>"; };
 		B10000000000000000000115 /* LensFlareDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensFlareDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000116 /* LensFlare.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LensFlare.metal; sourceTree = "<group>"; };
+		B10000000000000000000117 /* SmokeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000118 /* Smoke.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Smoke.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +339,7 @@
 				B10000000000000000000111 /* CanvasTextureDemoView.swift */,
 				B10000000000000000000113 /* MotionBlurDemoView.swift */,
 				B10000000000000000000115 /* LensFlareDemoView.swift */,
+				B10000000000000000000117 /* SmokeDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				B10000000000000000000112 /* CanvasTexture.metal */,
 				B10000000000000000000114 /* MotionBlur.metal */,
 				B10000000000000000000116 /* LensFlare.metal */,
+				B10000000000000000000118 /* Smoke.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -591,6 +597,8 @@
 				A10000000000000000000114 /* MotionBlur.metal in Sources */,
 				A10000000000000000000115 /* LensFlareDemoView.swift in Sources */,
 				A10000000000000000000116 /* LensFlare.metal in Sources */,
+				A10000000000000000000117 /* SmokeDemoView.swift in Sources */,
+				A10000000000000000000118 /* Smoke.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
