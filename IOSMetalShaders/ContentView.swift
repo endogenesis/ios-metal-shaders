@@ -78,6 +78,7 @@ struct ContentView: View {
                     LensFlareDemoView()
                     SmokeDemoView()
                     TintDemoView()
+                    GammaDemoView()
                 }
                 .padding()
             }

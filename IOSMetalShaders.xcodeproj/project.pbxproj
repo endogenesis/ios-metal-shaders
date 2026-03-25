@@ -126,6 +126,8 @@
 		A10000000000000000000118 /* Smoke.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000118 /* Smoke.metal */; };
 		A10000000000000000000119 /* TintDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000119 /* TintDemoView.swift */; };
 		A10000000000000000000120 /* Tint.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000120 /* Tint.metal */; };
+		A10000000000000000000121 /* GammaDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000121 /* GammaDemoView.swift */; };
+		A10000000000000000000122 /* Gamma.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000122 /* Gamma.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -249,6 +251,8 @@
 		B10000000000000000000118 /* Smoke.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Smoke.metal; sourceTree = "<group>"; };
 		B10000000000000000000119 /* TintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000120 /* Tint.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Tint.metal; sourceTree = "<group>"; };
+		B10000000000000000000121 /* GammaDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000122 /* Gamma.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Gamma.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +349,7 @@
 				B10000000000000000000115 /* LensFlareDemoView.swift */,
 				B10000000000000000000117 /* SmokeDemoView.swift */,
 				B10000000000000000000119 /* TintDemoView.swift */,
+				B10000000000000000000121 /* GammaDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				B10000000000000000000116 /* LensFlare.metal */,
 				B10000000000000000000118 /* Smoke.metal */,
 				B10000000000000000000120 /* Tint.metal */,
+				B10000000000000000000122 /* Gamma.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -607,6 +613,8 @@
 				A10000000000000000000118 /* Smoke.metal in Sources */,
 				A10000000000000000000119 /* TintDemoView.swift in Sources */,
 				A10000000000000000000120 /* Tint.metal in Sources */,
+				A10000000000000000000121 /* GammaDemoView.swift in Sources */,
+				A10000000000000000000122 /* Gamma.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
