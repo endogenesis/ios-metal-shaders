@@ -79,6 +79,7 @@ struct ContentView: View {
                     SmokeDemoView()
                     TintDemoView()
                     GammaDemoView()
+                    SolarizeDemoView()
                 }
                 .padding()
             }
