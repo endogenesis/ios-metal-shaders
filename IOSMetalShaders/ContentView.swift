@@ -80,6 +80,7 @@ struct ContentView: View {
                     TintDemoView()
                     GammaDemoView()
                     SolarizeDemoView()
+                    ColorCurvesDemoView()
                 }
                 .padding()
             }

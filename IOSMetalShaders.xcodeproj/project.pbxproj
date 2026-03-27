@@ -130,6 +130,8 @@
 		A10000000000000000000122 /* Gamma.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000122 /* Gamma.metal */; };
 		A10000000000000000000123 /* SolarizeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000123 /* SolarizeDemoView.swift */; };
 		A10000000000000000000124 /* Solarize.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000124 /* Solarize.metal */; };
+		A10000000000000000000125 /* ColorCurvesDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000125 /* ColorCurvesDemoView.swift */; };
+		A10000000000000000000126 /* ColorCurves.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000126 /* ColorCurves.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +259,8 @@
 		B10000000000000000000122 /* Gamma.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Gamma.metal; sourceTree = "<group>"; };
 		B10000000000000000000123 /* SolarizeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarizeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000124 /* Solarize.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Solarize.metal; sourceTree = "<group>"; };
+		B10000000000000000000125 /* ColorCurvesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCurvesDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000126 /* ColorCurves.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorCurves.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +359,7 @@
 				B10000000000000000000119 /* TintDemoView.swift */,
 				B10000000000000000000121 /* GammaDemoView.swift */,
 				B10000000000000000000123 /* SolarizeDemoView.swift */,
+				B10000000000000000000125 /* ColorCurvesDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				B10000000000000000000120 /* Tint.metal */,
 				B10000000000000000000122 /* Gamma.metal */,
 				B10000000000000000000124 /* Solarize.metal */,
+				B10000000000000000000126 /* ColorCurves.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -623,6 +629,8 @@
 				A10000000000000000000122 /* Gamma.metal in Sources */,
 				A10000000000000000000123 /* SolarizeDemoView.swift in Sources */,
 				A10000000000000000000124 /* Solarize.metal in Sources */,
+				A10000000000000000000125 /* ColorCurvesDemoView.swift in Sources */,
+				A10000000000000000000126 /* ColorCurves.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
