@@ -134,6 +134,8 @@
 		A10000000000000000000126 /* ColorCurves.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000126 /* ColorCurves.metal */; };
 		A10000000000000000000127 /* ShadowsHighlightsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000127 /* ShadowsHighlightsDemoView.swift */; };
 		A10000000000000000000128 /* ShadowsHighlights.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000128 /* ShadowsHighlights.metal */; };
+		A10000000000000000000129 /* ColorBandShiftDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000129 /* ColorBandShiftDemoView.swift */; };
+		A10000000000000000000130 /* ColorBandShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000130 /* ColorBandShift.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,6 +267,8 @@
 		B10000000000000000000126 /* ColorCurves.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorCurves.metal; sourceTree = "<group>"; };
 		B10000000000000000000127 /* ShadowsHighlightsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowsHighlightsDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000128 /* ShadowsHighlights.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShadowsHighlights.metal; sourceTree = "<group>"; };
+		B10000000000000000000129 /* ColorBandShiftDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBandShiftDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000130 /* ColorBandShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBandShift.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +369,7 @@
 				B10000000000000000000123 /* SolarizeDemoView.swift */,
 				B10000000000000000000125 /* ColorCurvesDemoView.swift */,
 				B10000000000000000000127 /* ShadowsHighlightsDemoView.swift */,
+				B10000000000000000000129 /* ColorBandShiftDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				B10000000000000000000124 /* Solarize.metal */,
 				B10000000000000000000126 /* ColorCurves.metal */,
 				B10000000000000000000128 /* ShadowsHighlights.metal */,
+				B10000000000000000000130 /* ColorBandShift.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -639,6 +645,8 @@
 				A10000000000000000000126 /* ColorCurves.metal in Sources */,
 				A10000000000000000000127 /* ShadowsHighlightsDemoView.swift in Sources */,
 				A10000000000000000000128 /* ShadowsHighlights.metal in Sources */,
+				A10000000000000000000129 /* ColorBandShiftDemoView.swift in Sources */,
+				A10000000000000000000130 /* ColorBandShift.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

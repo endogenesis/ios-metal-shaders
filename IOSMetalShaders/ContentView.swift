@@ -82,6 +82,7 @@ struct ContentView: View {
                     SolarizeDemoView()
                     ColorCurvesDemoView()
                     ShadowsHighlightsDemoView()
+                    ColorBandShiftDemoView()
                 }
                 .padding()
             }
