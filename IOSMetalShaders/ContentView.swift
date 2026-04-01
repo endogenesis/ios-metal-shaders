@@ -8,86 +8,54 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var sortOrder = ShaderSortOrder.newest
+
+    private let topAnchor = "shader-gallery-top"
+
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: AppTheme.cardSpacing) {
-                    VStack(alignment: .leading) {
-                        Text("GPU effects built with SwiftUI and Metal.")
-                            .font(.headline)
+            ScrollViewReader { proxy in
+                ScrollView {
+                    LazyVStack(
+                        alignment: .leading,
+                        spacing: AppTheme.cardSpacing,
+                        pinnedViews: sortOrder == .category ? .sectionHeaders : []
+                    ) {
+                        VStack(alignment: .leading) {
+                            Text("GPU effects built with SwiftUI and Metal.")
+                                .font(.headline)
 
-                        Text("Move the sliders to see how Swift values become shader uniforms.")
-                            .foregroundStyle(.secondary)
+                            Text("Move the sliders to see how Swift values become shader uniforms.")
+                                .foregroundStyle(.secondary)
+                        }
+                        .id(topAnchor)
+
+                        ShaderDemoList(sortOrder: sortOrder)
                     }
-
-                    GrayscaleDemoView()
-                    ScanlinesDemoView()
-                    WaveDemoView()
-                    OilPaintDemoView()
-                    HueRotationDemoView()
-                    PencilSketchDemoView()
-                    MacroblockErrorDemoView()
-                    FrostedNoiseDemoView()
-                    TapeWrinkleDemoView()
-                    ChannelFreezeDemoView()
-                    SignalScrambleDemoView()
-                    BurnDissolveDemoView()
-                    ChromaticAberrationDemoView()
-                    BarcodeGlitchDemoView()
-                    HexBokehDemoView()
-                    FeedbackLoopDemoView()
-                    PixelSortingDemoView()
-                    CrosshatchDemoView()
-                    SharpenDemoView()
-                    RollingScanlinesDemoView()
-                    DuotoneDemoView()
-                    BlockDisplacementDemoView()
-                    PageCurlDemoView()
-                    SobelEdgesDemoView()
-                    WaterDropletsDemoView()
-                    CRTSyncLossDemoView()
-                    FireDemoView()
-                    ChannelSwapDemoView()
-                    TiltShiftDemoView()
-                    VignetteDemoView()
-                    WatercolorDemoView()
-                    LaplacianEdgesDemoView()
-                    VHSTrackingDemoView()
-                    BoxBlurDemoView()
-                    StarfieldDemoView()
-                    PerspectiveTiltDemoView()
-                    HalftoneDemoView()
-                    BayerDitherDemoView()
-                    ColorInvertDemoView()
-                    EchoFramesDemoView()
-                    PixelTransitionDemoView()
-                    IrisRevealDemoView()
-                    RippleDemoView()
-                    FilmGrainDemoView()
-                    BrightnessDemoView()
-                    DirectionalBlurDemoView()
-                    BlueNoiseDitherDemoView()
-                    MagnifyingGlassDemoView()
-                    StippleDemoView()
-                    SpherizeDemoView()
-                    ZoomBlurDemoView()
-                    BarrelDistortionDemoView()
-                    VoronoiCellsDemoView()
-                    CanvasTextureDemoView()
-                    MotionBlurDemoView()
-                    LensFlareDemoView()
-                    SmokeDemoView()
-                    TintDemoView()
-                    GammaDemoView()
-                    SolarizeDemoView()
-                    ColorCurvesDemoView()
-                    ShadowsHighlightsDemoView()
-                    ColorBandShiftDemoView()
-                    TritoneDemoView()
+                    .padding()
                 }
-                .padding()
+                .navigationTitle("Metal Shader Lab")
+                .toolbar {
+                    ToolbarItemGroup(placement: .topBarTrailing) {
+                        Menu("Sort Shaders", systemImage: "arrow.up.arrow.down") {
+                            Picker("Sort Order", selection: $sortOrder) {
+                                ForEach(ShaderSortOrder.allCases) { order in
+                                    Label(order.title, systemImage: order.systemImage)
+                                        .tag(order)
+                                }
+                            }
+                        }
+
+                        Button("Latest Shader", systemImage: "clock.arrow.circlepath") {
+                            sortOrder = .newest
+
+                            withAnimation {
+                                proxy.scrollTo(topAnchor, anchor: .top)
+                            }
+                        }
+                    }
+                }
             }
-            .navigationTitle("Metal Shader Lab")
         }
     }
 }
