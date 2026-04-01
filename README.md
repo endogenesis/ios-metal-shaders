@@ -1,14 +1,17 @@
 # iOS Metal Shaders
 
-A small, dependency-free SwiftUI gallery for learning Metal shaders on iOS.
+A dependency-free collection of 100+ Metal shaders demonstrated with SwiftUI on iOS.
 
-## Included examples
+## Categories
 
-- **Grayscale** — a `colorEffect` with adjustable intensity.
-- **Scanlines** — an animated `colorEffect`.
-- **Wave** — an animated `distortionEffect`.
-
-The app respects Reduce Motion by pausing time-driven shader animation.
+- **Glitch**
+- **Color & Tone**
+- **Blur & Light**
+- **Distortion**
+- **Pixel & Texture**
+- **Stylization & Edges**
+- **Transitions & Masks**
+- **Procedural & Animated**
 
 ## Requirements
 
