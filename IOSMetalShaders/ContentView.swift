@@ -83,6 +83,7 @@ struct ContentView: View {
                     ColorCurvesDemoView()
                     ShadowsHighlightsDemoView()
                     ColorBandShiftDemoView()
+                    TritoneDemoView()
                 }
                 .padding()
             }

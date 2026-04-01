@@ -136,6 +136,8 @@
 		A10000000000000000000128 /* ShadowsHighlights.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000128 /* ShadowsHighlights.metal */; };
 		A10000000000000000000129 /* ColorBandShiftDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000129 /* ColorBandShiftDemoView.swift */; };
 		A10000000000000000000130 /* ColorBandShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000130 /* ColorBandShift.metal */; };
+		A10000000000000000000131 /* TritoneDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000131 /* TritoneDemoView.swift */; };
+		A10000000000000000000132 /* Tritone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000132 /* Tritone.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +271,8 @@
 		B10000000000000000000128 /* ShadowsHighlights.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ShadowsHighlights.metal; sourceTree = "<group>"; };
 		B10000000000000000000129 /* ColorBandShiftDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBandShiftDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000130 /* ColorBandShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBandShift.metal; sourceTree = "<group>"; };
+		B10000000000000000000131 /* TritoneDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TritoneDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000132 /* Tritone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Tritone.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +374,7 @@
 				B10000000000000000000125 /* ColorCurvesDemoView.swift */,
 				B10000000000000000000127 /* ShadowsHighlightsDemoView.swift */,
 				B10000000000000000000129 /* ColorBandShiftDemoView.swift */,
+				B10000000000000000000131 /* TritoneDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -438,6 +443,7 @@
 				B10000000000000000000126 /* ColorCurves.metal */,
 				B10000000000000000000128 /* ShadowsHighlights.metal */,
 				B10000000000000000000130 /* ColorBandShift.metal */,
+				B10000000000000000000132 /* Tritone.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -647,6 +653,8 @@
 				A10000000000000000000128 /* ShadowsHighlights.metal in Sources */,
 				A10000000000000000000129 /* ColorBandShiftDemoView.swift in Sources */,
 				A10000000000000000000130 /* ColorBandShift.metal in Sources */,
+				A10000000000000000000131 /* TritoneDemoView.swift in Sources */,
+				A10000000000000000000132 /* Tritone.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
