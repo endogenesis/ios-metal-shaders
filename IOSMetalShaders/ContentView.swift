@@ -30,6 +30,8 @@ struct ContentView: View {
                         }
                         .id(topAnchor)
 
+                        TimeDisplacementDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
