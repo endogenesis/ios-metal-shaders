@@ -145,6 +145,8 @@
 		A20000000000000000000005 /* ShaderCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* ShaderCategoryHeader.swift */; };
 		A10000000000000000000133 /* TimeDisplacementDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000133 /* TimeDisplacementDemoView.swift */; };
 		A10000000000000000000134 /* TimeDisplacement.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000134 /* TimeDisplacement.metal */; };
+		A10000000000000000000135 /* BlueprintDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000135 /* BlueprintDemoView.swift */; };
+		A10000000000000000000136 /* Blueprint.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000136 /* Blueprint.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +289,8 @@
 		B20000000000000000000005 /* ShaderCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategoryHeader.swift; sourceTree = "<group>"; };
 		B10000000000000000000133 /* TimeDisplacementDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDisplacementDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000134 /* TimeDisplacement.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TimeDisplacement.metal; sourceTree = "<group>"; };
+		B10000000000000000000135 /* BlueprintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000136 /* Blueprint.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Blueprint.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +399,7 @@
 				B10000000000000000000129 /* ColorBandShiftDemoView.swift */,
 				B10000000000000000000131 /* TritoneDemoView.swift */,
 				B10000000000000000000133 /* TimeDisplacementDemoView.swift */,
+				B10000000000000000000135 /* BlueprintDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				B10000000000000000000130 /* ColorBandShift.metal */,
 				B10000000000000000000132 /* Tritone.metal */,
 				B10000000000000000000134 /* TimeDisplacement.metal */,
+				B10000000000000000000136 /* Blueprint.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -683,6 +689,8 @@
 				A20000000000000000000005 /* ShaderCategoryHeader.swift in Sources */,
 				A10000000000000000000133 /* TimeDisplacementDemoView.swift in Sources */,
 				A10000000000000000000134 /* TimeDisplacement.metal in Sources */,
+				A10000000000000000000135 /* BlueprintDemoView.swift in Sources */,
+				A10000000000000000000136 /* Blueprint.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

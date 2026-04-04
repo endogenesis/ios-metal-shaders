@@ -32,6 +32,8 @@ struct ContentView: View {
 
                         TimeDisplacementDemoView()
 
+                        BlueprintDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
