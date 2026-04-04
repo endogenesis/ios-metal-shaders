@@ -34,6 +34,8 @@ struct ContentView: View {
 
                         BlueprintDemoView()
 
+                        ExposureDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

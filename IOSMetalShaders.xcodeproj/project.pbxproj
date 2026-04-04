@@ -147,6 +147,8 @@
 		A10000000000000000000134 /* TimeDisplacement.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000134 /* TimeDisplacement.metal */; };
 		A10000000000000000000135 /* BlueprintDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000135 /* BlueprintDemoView.swift */; };
 		A10000000000000000000136 /* Blueprint.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000136 /* Blueprint.metal */; };
+		A10000000000000000000137 /* ExposureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000137 /* ExposureDemoView.swift */; };
+		A10000000000000000000138 /* Exposure.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000138 /* Exposure.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,6 +293,8 @@
 		B10000000000000000000134 /* TimeDisplacement.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TimeDisplacement.metal; sourceTree = "<group>"; };
 		B10000000000000000000135 /* BlueprintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000136 /* Blueprint.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Blueprint.metal; sourceTree = "<group>"; };
+		B10000000000000000000137 /* ExposureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000138 /* Exposure.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Exposure.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +404,7 @@
 				B10000000000000000000131 /* TritoneDemoView.swift */,
 				B10000000000000000000133 /* TimeDisplacementDemoView.swift */,
 				B10000000000000000000135 /* BlueprintDemoView.swift */,
+				B10000000000000000000137 /* ExposureDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				B10000000000000000000132 /* Tritone.metal */,
 				B10000000000000000000134 /* TimeDisplacement.metal */,
 				B10000000000000000000136 /* Blueprint.metal */,
+				B10000000000000000000138 /* Exposure.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -691,6 +697,8 @@
 				A10000000000000000000134 /* TimeDisplacement.metal in Sources */,
 				A10000000000000000000135 /* BlueprintDemoView.swift in Sources */,
 				A10000000000000000000136 /* Blueprint.metal in Sources */,
+				A10000000000000000000137 /* ExposureDemoView.swift in Sources */,
+				A10000000000000000000138 /* Exposure.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
