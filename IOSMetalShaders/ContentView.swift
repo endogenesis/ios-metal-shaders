@@ -36,6 +36,8 @@ struct ContentView: View {
 
                         ExposureDemoView()
 
+                        DisplacementNoiseDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
