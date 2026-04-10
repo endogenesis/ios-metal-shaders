@@ -151,6 +151,8 @@
 		A10000000000000000000138 /* Exposure.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000138 /* Exposure.metal */; };
 		A10000000000000000000139 /* DisplacementNoiseDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000139 /* DisplacementNoiseDemoView.swift */; };
 		A10000000000000000000140 /* DisplacementNoise.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000140 /* DisplacementNoise.metal */; };
+		A10000000000000000000141 /* PaperGrainDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000141 /* PaperGrainDemoView.swift */; };
+		A10000000000000000000142 /* PaperGrain.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000142 /* PaperGrain.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -299,6 +301,8 @@
 		B10000000000000000000138 /* Exposure.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Exposure.metal; sourceTree = "<group>"; };
 		B10000000000000000000139 /* DisplacementNoiseDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplacementNoiseDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000140 /* DisplacementNoise.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DisplacementNoise.metal; sourceTree = "<group>"; };
+		B10000000000000000000141 /* PaperGrainDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperGrainDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000142 /* PaperGrain.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PaperGrain.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +414,7 @@
 				B10000000000000000000135 /* BlueprintDemoView.swift */,
 				B10000000000000000000137 /* ExposureDemoView.swift */,
 				B10000000000000000000139 /* DisplacementNoiseDemoView.swift */,
+				B10000000000000000000141 /* PaperGrainDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				B10000000000000000000136 /* Blueprint.metal */,
 				B10000000000000000000138 /* Exposure.metal */,
 				B10000000000000000000140 /* DisplacementNoise.metal */,
+				B10000000000000000000142 /* PaperGrain.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -707,6 +713,8 @@
 				A10000000000000000000138 /* Exposure.metal in Sources */,
 				A10000000000000000000139 /* DisplacementNoiseDemoView.swift in Sources */,
 				A10000000000000000000140 /* DisplacementNoise.metal in Sources */,
+				A10000000000000000000141 /* PaperGrainDemoView.swift in Sources */,
+				A10000000000000000000142 /* PaperGrain.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

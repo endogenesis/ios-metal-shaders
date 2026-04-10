@@ -38,6 +38,8 @@ struct ContentView: View {
 
                         DisplacementNoiseDemoView()
 
+                        PaperGrainDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
