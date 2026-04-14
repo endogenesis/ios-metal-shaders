@@ -40,6 +40,8 @@ struct ContentView: View {
 
                         PaperGrainDemoView()
 
+                        PlasmaFieldDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
