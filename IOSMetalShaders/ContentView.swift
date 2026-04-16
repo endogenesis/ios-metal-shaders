@@ -42,6 +42,8 @@ struct ContentView: View {
 
                         PlasmaFieldDemoView()
 
+                        GaussianBlurDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

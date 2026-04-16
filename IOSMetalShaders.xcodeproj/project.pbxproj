@@ -155,6 +155,8 @@
 		A10000000000000000000142 /* PaperGrain.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000142 /* PaperGrain.metal */; };
 		A10000000000000000000143 /* PlasmaFieldDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000143 /* PlasmaFieldDemoView.swift */; };
 		A10000000000000000000144 /* PlasmaField.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000144 /* PlasmaField.metal */; };
+		A10000000000000000000145 /* GaussianBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000145 /* GaussianBlurDemoView.swift */; };
+		A10000000000000000000146 /* GaussianBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000146 /* GaussianBlur.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -307,6 +309,8 @@
 		B10000000000000000000142 /* PaperGrain.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PaperGrain.metal; sourceTree = "<group>"; };
 		B10000000000000000000143 /* PlasmaFieldDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasmaFieldDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000144 /* PlasmaField.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PlasmaField.metal; sourceTree = "<group>"; };
+		B10000000000000000000145 /* GaussianBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianBlurDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000146 /* GaussianBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GaussianBlur.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +424,7 @@
 				B10000000000000000000139 /* DisplacementNoiseDemoView.swift */,
 				B10000000000000000000141 /* PaperGrainDemoView.swift */,
 				B10000000000000000000143 /* PlasmaFieldDemoView.swift */,
+				B10000000000000000000145 /* GaussianBlurDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				B10000000000000000000140 /* DisplacementNoise.metal */,
 				B10000000000000000000142 /* PaperGrain.metal */,
 				B10000000000000000000144 /* PlasmaField.metal */,
+				B10000000000000000000146 /* GaussianBlur.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -723,6 +729,8 @@
 				A10000000000000000000142 /* PaperGrain.metal in Sources */,
 				A10000000000000000000143 /* PlasmaFieldDemoView.swift in Sources */,
 				A10000000000000000000144 /* PlasmaField.metal in Sources */,
+				A10000000000000000000145 /* GaussianBlurDemoView.swift in Sources */,
+				A10000000000000000000146 /* GaussianBlur.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
