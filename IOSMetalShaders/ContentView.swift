@@ -44,6 +44,8 @@ struct ContentView: View {
 
                         GaussianBlurDemoView()
 
+                        AuroraGradientDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
