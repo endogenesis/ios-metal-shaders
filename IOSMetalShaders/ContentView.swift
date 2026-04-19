@@ -46,6 +46,8 @@ struct ContentView: View {
 
                         AuroraGradientDemoView()
 
+                        MosaicDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

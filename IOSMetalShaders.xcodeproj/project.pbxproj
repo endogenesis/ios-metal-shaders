@@ -159,6 +159,8 @@
 		A10000000000000000000146 /* GaussianBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000146 /* GaussianBlur.metal */; };
 		A10000000000000000000147 /* AuroraGradientDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000147 /* AuroraGradientDemoView.swift */; };
 		A10000000000000000000148 /* AuroraGradient.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000148 /* AuroraGradient.metal */; };
+		A10000000000000000000149 /* MosaicDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000149 /* MosaicDemoView.swift */; };
+		A10000000000000000000150 /* Mosaic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000150 /* Mosaic.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -315,6 +317,8 @@
 		B10000000000000000000146 /* GaussianBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GaussianBlur.metal; sourceTree = "<group>"; };
 		B10000000000000000000147 /* AuroraGradientDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraGradientDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000148 /* AuroraGradient.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AuroraGradient.metal; sourceTree = "<group>"; };
+		B10000000000000000000149 /* MosaicDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000150 /* Mosaic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mosaic.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +434,7 @@
 				B10000000000000000000143 /* PlasmaFieldDemoView.swift */,
 				B10000000000000000000145 /* GaussianBlurDemoView.swift */,
 				B10000000000000000000147 /* AuroraGradientDemoView.swift */,
+				B10000000000000000000149 /* MosaicDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 				B10000000000000000000144 /* PlasmaField.metal */,
 				B10000000000000000000146 /* GaussianBlur.metal */,
 				B10000000000000000000148 /* AuroraGradient.metal */,
+				B10000000000000000000150 /* Mosaic.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -739,6 +745,8 @@
 				A10000000000000000000146 /* GaussianBlur.metal in Sources */,
 				A10000000000000000000147 /* AuroraGradientDemoView.swift in Sources */,
 				A10000000000000000000148 /* AuroraGradient.metal in Sources */,
+				A10000000000000000000149 /* MosaicDemoView.swift in Sources */,
+				A10000000000000000000150 /* Mosaic.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
