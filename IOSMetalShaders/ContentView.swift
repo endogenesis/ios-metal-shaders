@@ -48,6 +48,8 @@ struct ContentView: View {
 
                         MosaicDemoView()
 
+                        DatamoshDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
