@@ -50,6 +50,8 @@ struct ContentView: View {
 
                         DatamoshDemoView()
 
+                        LiquidGlassDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

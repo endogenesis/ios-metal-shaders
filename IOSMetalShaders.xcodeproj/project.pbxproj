@@ -163,6 +163,8 @@
 		A10000000000000000000150 /* Mosaic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000150 /* Mosaic.metal */; };
 		A10000000000000000000151 /* DatamoshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000151 /* DatamoshDemoView.swift */; };
 		A10000000000000000000152 /* Datamosh.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000152 /* Datamosh.metal */; };
+		A10000000000000000000153 /* LiquidGlassDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000153 /* LiquidGlassDemoView.swift */; };
+		A10000000000000000000154 /* LiquidGlass.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000154 /* LiquidGlass.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -323,6 +325,8 @@
 		B10000000000000000000150 /* Mosaic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mosaic.metal; sourceTree = "<group>"; };
 		B10000000000000000000151 /* DatamoshDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatamoshDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000152 /* Datamosh.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Datamosh.metal; sourceTree = "<group>"; };
+		B10000000000000000000153 /* LiquidGlassDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000154 /* LiquidGlass.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidGlass.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +444,7 @@
 				B10000000000000000000147 /* AuroraGradientDemoView.swift */,
 				B10000000000000000000149 /* MosaicDemoView.swift */,
 				B10000000000000000000151 /* DatamoshDemoView.swift */,
+				B10000000000000000000153 /* LiquidGlassDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				B10000000000000000000148 /* AuroraGradient.metal */,
 				B10000000000000000000150 /* Mosaic.metal */,
 				B10000000000000000000152 /* Datamosh.metal */,
+				B10000000000000000000154 /* LiquidGlass.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -755,6 +761,8 @@
 				A10000000000000000000150 /* Mosaic.metal in Sources */,
 				A10000000000000000000151 /* DatamoshDemoView.swift in Sources */,
 				A10000000000000000000152 /* Datamosh.metal in Sources */,
+				A10000000000000000000153 /* LiquidGlassDemoView.swift in Sources */,
+				A10000000000000000000154 /* LiquidGlass.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
