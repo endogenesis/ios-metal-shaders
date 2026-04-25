@@ -52,6 +52,8 @@ struct ContentView: View {
 
                         LiquidGlassDemoView()
 
+                        SwirlTunnelDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
