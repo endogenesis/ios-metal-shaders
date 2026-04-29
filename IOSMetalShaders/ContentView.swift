@@ -54,6 +54,8 @@ struct ContentView: View {
 
                         SwirlTunnelDemoView()
 
+                        CyberpunkGlitchDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
