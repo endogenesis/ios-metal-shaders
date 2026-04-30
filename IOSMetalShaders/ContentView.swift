@@ -56,6 +56,8 @@ struct ContentView: View {
 
                         CyberpunkGlitchDemoView()
 
+                        BloomDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

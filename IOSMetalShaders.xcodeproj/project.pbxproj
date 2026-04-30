@@ -169,6 +169,8 @@
 		A10000000000000000000156 /* SwirlTunnel.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000156 /* SwirlTunnel.metal */; };
 		A10000000000000000000157 /* CyberpunkGlitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000157 /* CyberpunkGlitchDemoView.swift */; };
 		A10000000000000000000158 /* CyberpunkGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000158 /* CyberpunkGlitch.metal */; };
+		A10000000000000000000159 /* BloomDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000159 /* BloomDemoView.swift */; };
+		A10000000000000000000160 /* Bloom.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000160 /* Bloom.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -335,6 +337,8 @@
 		B10000000000000000000156 /* SwirlTunnel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SwirlTunnel.metal; sourceTree = "<group>"; };
 		B10000000000000000000157 /* CyberpunkGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberpunkGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000158 /* CyberpunkGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CyberpunkGlitch.metal; sourceTree = "<group>"; };
+		B10000000000000000000159 /* BloomDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000160 /* Bloom.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Bloom.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +459,7 @@
 				B10000000000000000000153 /* LiquidGlassDemoView.swift */,
 				B10000000000000000000155 /* SwirlTunnelDemoView.swift */,
 				B10000000000000000000157 /* CyberpunkGlitchDemoView.swift */,
+				B10000000000000000000159 /* BloomDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				B10000000000000000000154 /* LiquidGlass.metal */,
 				B10000000000000000000156 /* SwirlTunnel.metal */,
 				B10000000000000000000158 /* CyberpunkGlitch.metal */,
+				B10000000000000000000160 /* Bloom.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -779,6 +785,8 @@
 				A10000000000000000000156 /* SwirlTunnel.metal in Sources */,
 				A10000000000000000000157 /* CyberpunkGlitchDemoView.swift in Sources */,
 				A10000000000000000000158 /* CyberpunkGlitch.metal in Sources */,
+				A10000000000000000000159 /* BloomDemoView.swift in Sources */,
+				A10000000000000000000160 /* Bloom.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
