@@ -58,6 +58,8 @@ struct ContentView: View {
 
                         BloomDemoView()
 
+                        PincushionDistortionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
