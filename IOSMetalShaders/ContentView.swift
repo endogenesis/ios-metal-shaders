@@ -60,6 +60,8 @@ struct ContentView: View {
 
                         PincushionDistortionDemoView()
 
+                        RadialBlurDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

@@ -173,6 +173,8 @@
 		A10000000000000000000160 /* Bloom.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000160 /* Bloom.metal */; };
 		A10000000000000000000161 /* PincushionDistortionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000161 /* PincushionDistortionDemoView.swift */; };
 		A10000000000000000000162 /* PincushionDistortion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000162 /* PincushionDistortion.metal */; };
+		A10000000000000000000163 /* RadialBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000163 /* RadialBlurDemoView.swift */; };
+		A10000000000000000000164 /* RadialBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000164 /* RadialBlur.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -343,6 +345,8 @@
 		B10000000000000000000160 /* Bloom.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Bloom.metal; sourceTree = "<group>"; };
 		B10000000000000000000161 /* PincushionDistortionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincushionDistortionDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000162 /* PincushionDistortion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PincushionDistortion.metal; sourceTree = "<group>"; };
+		B10000000000000000000163 /* RadialBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialBlurDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000164 /* RadialBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RadialBlur.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +469,7 @@
 				B10000000000000000000157 /* CyberpunkGlitchDemoView.swift */,
 				B10000000000000000000159 /* BloomDemoView.swift */,
 				B10000000000000000000161 /* PincushionDistortionDemoView.swift */,
+				B10000000000000000000163 /* RadialBlurDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				B10000000000000000000158 /* CyberpunkGlitch.metal */,
 				B10000000000000000000160 /* Bloom.metal */,
 				B10000000000000000000162 /* PincushionDistortion.metal */,
+				B10000000000000000000164 /* RadialBlur.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -795,6 +801,8 @@
 				A10000000000000000000160 /* Bloom.metal in Sources */,
 				A10000000000000000000161 /* PincushionDistortionDemoView.swift in Sources */,
 				A10000000000000000000162 /* PincushionDistortion.metal in Sources */,
+				A10000000000000000000163 /* RadialBlurDemoView.swift in Sources */,
+				A10000000000000000000164 /* RadialBlur.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
