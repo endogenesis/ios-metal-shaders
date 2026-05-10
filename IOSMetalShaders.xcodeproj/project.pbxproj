@@ -175,6 +175,8 @@
 		A10000000000000000000162 /* PincushionDistortion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000162 /* PincushionDistortion.metal */; };
 		A10000000000000000000163 /* RadialBlurDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000163 /* RadialBlurDemoView.swift */; };
 		A10000000000000000000164 /* RadialBlur.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000164 /* RadialBlur.metal */; };
+		A10000000000000000000165 /* CheckerPatternDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000165 /* CheckerPatternDemoView.swift */; };
+		A10000000000000000000166 /* CheckerPattern.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000166 /* CheckerPattern.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -347,6 +349,8 @@
 		B10000000000000000000162 /* PincushionDistortion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PincushionDistortion.metal; sourceTree = "<group>"; };
 		B10000000000000000000163 /* RadialBlurDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialBlurDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000164 /* RadialBlur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RadialBlur.metal; sourceTree = "<group>"; };
+		B10000000000000000000165 /* CheckerPatternDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerPatternDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000166 /* CheckerPattern.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CheckerPattern.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +474,7 @@
 				B10000000000000000000159 /* BloomDemoView.swift */,
 				B10000000000000000000161 /* PincushionDistortionDemoView.swift */,
 				B10000000000000000000163 /* RadialBlurDemoView.swift */,
+				B10000000000000000000165 /* CheckerPatternDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -555,6 +560,7 @@
 				B10000000000000000000160 /* Bloom.metal */,
 				B10000000000000000000162 /* PincushionDistortion.metal */,
 				B10000000000000000000164 /* RadialBlur.metal */,
+				B10000000000000000000166 /* CheckerPattern.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -803,6 +809,8 @@
 				A10000000000000000000162 /* PincushionDistortion.metal in Sources */,
 				A10000000000000000000163 /* RadialBlurDemoView.swift in Sources */,
 				A10000000000000000000164 /* RadialBlur.metal in Sources */,
+				A10000000000000000000165 /* CheckerPatternDemoView.swift in Sources */,
+				A10000000000000000000166 /* CheckerPattern.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

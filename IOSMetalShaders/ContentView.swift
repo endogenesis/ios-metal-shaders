@@ -62,6 +62,8 @@ struct ContentView: View {
 
                         RadialBlurDemoView()
 
+                        CheckerPatternDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
