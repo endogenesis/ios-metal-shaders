@@ -64,6 +64,8 @@ struct ContentView: View {
 
                         CheckerPatternDemoView()
 
+                        DataCorruptionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
