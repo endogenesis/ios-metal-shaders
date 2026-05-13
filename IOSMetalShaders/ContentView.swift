@@ -66,6 +66,8 @@ struct ContentView: View {
 
                         DataCorruptionDemoView()
 
+                        SoftGlowDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
