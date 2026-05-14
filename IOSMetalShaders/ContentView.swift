@@ -68,6 +68,8 @@ struct ContentView: View {
 
                         SoftGlowDemoView()
 
+                        RGBSplitDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

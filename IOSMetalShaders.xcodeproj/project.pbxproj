@@ -181,6 +181,8 @@
 		A10000000000000000000168 /* DataCorruption.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000168 /* DataCorruption.metal */; };
 		A10000000000000000000169 /* SoftGlowDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000169 /* SoftGlowDemoView.swift */; };
 		A10000000000000000000170 /* SoftGlow.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000170 /* SoftGlow.metal */; };
+		A10000000000000000000171 /* RGBSplitDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000171 /* RGBSplitDemoView.swift */; };
+		A10000000000000000000172 /* RGBSplit.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000172 /* RGBSplit.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -359,6 +361,8 @@
 		B10000000000000000000168 /* DataCorruption.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DataCorruption.metal; sourceTree = "<group>"; };
 		B10000000000000000000169 /* SoftGlowDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftGlowDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000170 /* SoftGlow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SoftGlow.metal; sourceTree = "<group>"; };
+		B10000000000000000000171 /* RGBSplitDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSplitDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000172 /* RGBSplit.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RGBSplit.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +489,7 @@
 				B10000000000000000000165 /* CheckerPatternDemoView.swift */,
 				B10000000000000000000167 /* DataCorruptionDemoView.swift */,
 				B10000000000000000000169 /* SoftGlowDemoView.swift */,
+				B10000000000000000000171 /* RGBSplitDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				B10000000000000000000166 /* CheckerPattern.metal */,
 				B10000000000000000000168 /* DataCorruption.metal */,
 				B10000000000000000000170 /* SoftGlow.metal */,
+				B10000000000000000000172 /* RGBSplit.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -827,6 +833,8 @@
 				A10000000000000000000168 /* DataCorruption.metal in Sources */,
 				A10000000000000000000169 /* SoftGlowDemoView.swift in Sources */,
 				A10000000000000000000170 /* SoftGlow.metal in Sources */,
+				A10000000000000000000171 /* RGBSplitDemoView.swift in Sources */,
+				A10000000000000000000172 /* RGBSplit.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
