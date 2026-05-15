@@ -183,6 +183,8 @@
 		A10000000000000000000170 /* SoftGlow.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000170 /* SoftGlow.metal */; };
 		A10000000000000000000171 /* RGBSplitDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000171 /* RGBSplitDemoView.swift */; };
 		A10000000000000000000172 /* RGBSplit.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000172 /* RGBSplit.metal */; };
+		A10000000000000000000173 /* ContrastDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000173 /* ContrastDemoView.swift */; };
+		A10000000000000000000174 /* Contrast.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000174 /* Contrast.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,6 +365,8 @@
 		B10000000000000000000170 /* SoftGlow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SoftGlow.metal; sourceTree = "<group>"; };
 		B10000000000000000000171 /* RGBSplitDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSplitDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000172 /* RGBSplit.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RGBSplit.metal; sourceTree = "<group>"; };
+		B10000000000000000000173 /* ContrastDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000174 /* Contrast.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Contrast.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +494,7 @@
 				B10000000000000000000167 /* DataCorruptionDemoView.swift */,
 				B10000000000000000000169 /* SoftGlowDemoView.swift */,
 				B10000000000000000000171 /* RGBSplitDemoView.swift */,
+				B10000000000000000000173 /* ContrastDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				B10000000000000000000168 /* DataCorruption.metal */,
 				B10000000000000000000170 /* SoftGlow.metal */,
 				B10000000000000000000172 /* RGBSplit.metal */,
+				B10000000000000000000174 /* Contrast.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -835,6 +841,8 @@
 				A10000000000000000000170 /* SoftGlow.metal in Sources */,
 				A10000000000000000000171 /* RGBSplitDemoView.swift in Sources */,
 				A10000000000000000000172 /* RGBSplit.metal in Sources */,
+				A10000000000000000000173 /* ContrastDemoView.swift in Sources */,
+				A10000000000000000000174 /* Contrast.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

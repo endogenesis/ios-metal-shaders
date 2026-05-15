@@ -70,6 +70,8 @@ struct ContentView: View {
 
                         RGBSplitDemoView()
 
+                        ContrastDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
