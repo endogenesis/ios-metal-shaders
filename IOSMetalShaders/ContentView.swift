@@ -74,6 +74,8 @@ struct ContentView: View {
 
                         NoiseWarpDemoView()
 
+                        EmbossDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
