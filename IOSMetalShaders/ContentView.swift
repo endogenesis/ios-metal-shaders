@@ -76,6 +76,8 @@ struct ContentView: View {
 
                         EmbossDemoView()
 
+                        ScanlineJitterDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

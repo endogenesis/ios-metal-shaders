@@ -189,6 +189,8 @@
 		A10000000000000000000176 /* NoiseWarp.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000176 /* NoiseWarp.metal */; };
 		A10000000000000000000177 /* EmbossDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000177 /* EmbossDemoView.swift */; };
 		A10000000000000000000178 /* Emboss.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000178 /* Emboss.metal */; };
+		A10000000000000000000179 /* ScanlineJitterDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000179 /* ScanlineJitterDemoView.swift */; };
+		A10000000000000000000180 /* ScanlineJitter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000180 /* ScanlineJitter.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -375,6 +377,8 @@
 		B10000000000000000000176 /* NoiseWarp.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NoiseWarp.metal; sourceTree = "<group>"; };
 		B10000000000000000000177 /* EmbossDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000178 /* Emboss.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Emboss.metal; sourceTree = "<group>"; };
+		B10000000000000000000179 /* ScanlineJitterDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanlineJitterDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000180 /* ScanlineJitter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ScanlineJitter.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +509,7 @@
 				B10000000000000000000173 /* ContrastDemoView.swift */,
 				B10000000000000000000175 /* NoiseWarpDemoView.swift */,
 				B10000000000000000000177 /* EmbossDemoView.swift */,
+				B10000000000000000000179 /* ScanlineJitterDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -597,6 +602,7 @@
 				B10000000000000000000174 /* Contrast.metal */,
 				B10000000000000000000176 /* NoiseWarp.metal */,
 				B10000000000000000000178 /* Emboss.metal */,
+				B10000000000000000000180 /* ScanlineJitter.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -859,6 +865,8 @@
 				A10000000000000000000176 /* NoiseWarp.metal in Sources */,
 				A10000000000000000000177 /* EmbossDemoView.swift in Sources */,
 				A10000000000000000000178 /* Emboss.metal in Sources */,
+				A10000000000000000000179 /* ScanlineJitterDemoView.swift in Sources */,
+				A10000000000000000000180 /* ScanlineJitter.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
