@@ -78,6 +78,8 @@ struct ContentView: View {
 
                         ScanlineJitterDemoView()
 
+                        RainGlassDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
