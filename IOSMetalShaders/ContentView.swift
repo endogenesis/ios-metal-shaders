@@ -80,6 +80,8 @@ struct ContentView: View {
 
                         RainGlassDemoView()
 
+                        UnsharpMaskDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
