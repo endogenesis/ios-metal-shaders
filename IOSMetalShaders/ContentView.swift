@@ -82,6 +82,8 @@ struct ContentView: View {
 
                         UnsharpMaskDemoView()
 
+                        ChannelDriftDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
