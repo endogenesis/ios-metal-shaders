@@ -197,6 +197,8 @@
 		A10000000000000000000184 /* UnsharpMask.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000184 /* UnsharpMask.metal */; };
 		A10000000000000000000185 /* ChannelDriftDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000185 /* ChannelDriftDemoView.swift */; };
 		A10000000000000000000186 /* ChannelDrift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000186 /* ChannelDrift.metal */; };
+		A10000000000000000000187 /* FluidGradientDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000187 /* FluidGradientDemoView.swift */; };
+		A10000000000000000000188 /* FluidGradient.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000188 /* FluidGradient.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -391,6 +393,8 @@
 		B10000000000000000000184 /* UnsharpMask.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = UnsharpMask.metal; sourceTree = "<group>"; };
 		B10000000000000000000185 /* ChannelDriftDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDriftDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000186 /* ChannelDrift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelDrift.metal; sourceTree = "<group>"; };
+		B10000000000000000000187 /* FluidGradientDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidGradientDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000188 /* FluidGradient.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FluidGradient.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +529,7 @@
 				B10000000000000000000181 /* RainGlassDemoView.swift */,
 				B10000000000000000000183 /* UnsharpMaskDemoView.swift */,
 				B10000000000000000000185 /* ChannelDriftDemoView.swift */,
+				B10000000000000000000187 /* FluidGradientDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -621,6 +626,7 @@
 				B10000000000000000000182 /* RainGlass.metal */,
 				B10000000000000000000184 /* UnsharpMask.metal */,
 				B10000000000000000000186 /* ChannelDrift.metal */,
+				B10000000000000000000188 /* FluidGradient.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -891,6 +897,8 @@
 				A10000000000000000000184 /* UnsharpMask.metal in Sources */,
 				A10000000000000000000185 /* ChannelDriftDemoView.swift in Sources */,
 				A10000000000000000000186 /* ChannelDrift.metal in Sources */,
+				A10000000000000000000187 /* FluidGradientDemoView.swift in Sources */,
+				A10000000000000000000188 /* FluidGradient.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

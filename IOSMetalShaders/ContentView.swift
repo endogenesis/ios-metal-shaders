@@ -84,6 +84,8 @@ struct ContentView: View {
 
                         ChannelDriftDemoView()
 
+                        FluidGradientDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
