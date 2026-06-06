@@ -88,6 +88,8 @@ struct ContentView: View {
 
                         PinchDemoView()
 
+                        WaveInterferenceDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

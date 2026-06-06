@@ -201,6 +201,8 @@
 		A10000000000000000000188 /* FluidGradient.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000188 /* FluidGradient.metal */; };
 		A10000000000000000000189 /* PinchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000189 /* PinchDemoView.swift */; };
 		A10000000000000000000190 /* Pinch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000190 /* Pinch.metal */; };
+		A10000000000000000000191 /* WaveInterferenceDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000191 /* WaveInterferenceDemoView.swift */; };
+		A10000000000000000000192 /* WaveInterference.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000192 /* WaveInterference.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -399,6 +401,8 @@
 		B10000000000000000000188 /* FluidGradient.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FluidGradient.metal; sourceTree = "<group>"; };
 		B10000000000000000000189 /* PinchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000190 /* Pinch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Pinch.metal; sourceTree = "<group>"; };
+		B10000000000000000000191 /* WaveInterferenceDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveInterferenceDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000192 /* WaveInterference.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaveInterference.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +539,7 @@
 				B10000000000000000000185 /* ChannelDriftDemoView.swift */,
 				B10000000000000000000187 /* FluidGradientDemoView.swift */,
 				B10000000000000000000189 /* PinchDemoView.swift */,
+				B10000000000000000000191 /* WaveInterferenceDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -633,6 +638,7 @@
 				B10000000000000000000186 /* ChannelDrift.metal */,
 				B10000000000000000000188 /* FluidGradient.metal */,
 				B10000000000000000000190 /* Pinch.metal */,
+				B10000000000000000000192 /* WaveInterference.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -907,6 +913,8 @@
 				A10000000000000000000188 /* FluidGradient.metal in Sources */,
 				A10000000000000000000189 /* PinchDemoView.swift in Sources */,
 				A10000000000000000000190 /* Pinch.metal in Sources */,
+				A10000000000000000000191 /* WaveInterferenceDemoView.swift in Sources */,
+				A10000000000000000000192 /* WaveInterference.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
