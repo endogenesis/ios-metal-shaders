@@ -203,6 +203,8 @@
 		A10000000000000000000190 /* Pinch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000190 /* Pinch.metal */; };
 		A10000000000000000000191 /* WaveInterferenceDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000191 /* WaveInterferenceDemoView.swift */; };
 		A10000000000000000000192 /* WaveInterference.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000192 /* WaveInterference.metal */; };
+		A10000000000000000000193 /* LumaKeyDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000193 /* LumaKeyDemoView.swift */; };
+		A10000000000000000000194 /* LumaKey.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000194 /* LumaKey.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -403,6 +405,8 @@
 		B10000000000000000000190 /* Pinch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Pinch.metal; sourceTree = "<group>"; };
 		B10000000000000000000191 /* WaveInterferenceDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveInterferenceDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000192 /* WaveInterference.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaveInterference.metal; sourceTree = "<group>"; };
+		B10000000000000000000193 /* LumaKeyDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumaKeyDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000194 /* LumaKey.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LumaKey.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +544,7 @@
 				B10000000000000000000187 /* FluidGradientDemoView.swift */,
 				B10000000000000000000189 /* PinchDemoView.swift */,
 				B10000000000000000000191 /* WaveInterferenceDemoView.swift */,
+				B10000000000000000000193 /* LumaKeyDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -639,6 +644,7 @@
 				B10000000000000000000188 /* FluidGradient.metal */,
 				B10000000000000000000190 /* Pinch.metal */,
 				B10000000000000000000192 /* WaveInterference.metal */,
+				B10000000000000000000194 /* LumaKey.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -915,6 +921,8 @@
 				A10000000000000000000190 /* Pinch.metal in Sources */,
 				A10000000000000000000191 /* WaveInterferenceDemoView.swift in Sources */,
 				A10000000000000000000192 /* WaveInterference.metal in Sources */,
+				A10000000000000000000193 /* LumaKeyDemoView.swift in Sources */,
+				A10000000000000000000194 /* LumaKey.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

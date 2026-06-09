@@ -90,6 +90,8 @@ struct ContentView: View {
 
                         WaveInterferenceDemoView()
 
+                        LumaKeyDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
