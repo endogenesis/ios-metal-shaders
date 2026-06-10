@@ -92,6 +92,8 @@ struct ContentView: View {
 
                         LumaKeyDemoView()
 
+                        BulgeDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
