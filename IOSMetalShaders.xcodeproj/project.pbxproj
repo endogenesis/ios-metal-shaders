@@ -207,6 +207,8 @@
 		A10000000000000000000194 /* LumaKey.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000194 /* LumaKey.metal */; };
 		A10000000000000000000195 /* BulgeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000195 /* BulgeDemoView.swift */; };
 		A10000000000000000000196 /* Bulge.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000196 /* Bulge.metal */; };
+		A10000000000000000000197 /* DigitalStaticDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000197 /* DigitalStaticDemoView.swift */; };
+		A10000000000000000000198 /* DigitalStatic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000198 /* DigitalStatic.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +413,8 @@
 		B10000000000000000000194 /* LumaKey.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LumaKey.metal; sourceTree = "<group>"; };
 		B10000000000000000000195 /* BulgeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulgeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000196 /* Bulge.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Bulge.metal; sourceTree = "<group>"; };
+		B10000000000000000000197 /* DigitalStaticDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalStaticDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000198 /* DigitalStatic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DigitalStatic.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -550,6 +554,7 @@
 				B10000000000000000000191 /* WaveInterferenceDemoView.swift */,
 				B10000000000000000000193 /* LumaKeyDemoView.swift */,
 				B10000000000000000000195 /* BulgeDemoView.swift */,
+				B10000000000000000000197 /* DigitalStaticDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 				B10000000000000000000192 /* WaveInterference.metal */,
 				B10000000000000000000194 /* LumaKey.metal */,
 				B10000000000000000000196 /* Bulge.metal */,
+				B10000000000000000000198 /* DigitalStatic.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -931,6 +937,8 @@
 				A10000000000000000000194 /* LumaKey.metal in Sources */,
 				A10000000000000000000195 /* BulgeDemoView.swift in Sources */,
 				A10000000000000000000196 /* Bulge.metal in Sources */,
+				A10000000000000000000197 /* DigitalStaticDemoView.swift in Sources */,
+				A10000000000000000000198 /* DigitalStatic.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

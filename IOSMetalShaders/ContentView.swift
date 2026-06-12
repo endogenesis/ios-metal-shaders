@@ -94,6 +94,8 @@ struct ContentView: View {
 
                         BulgeDemoView()
 
+                        DigitalStaticDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
