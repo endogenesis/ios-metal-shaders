@@ -98,6 +98,8 @@ struct ContentView: View {
 
                         CircleRevealDemoView()
 
+                        SepiaDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

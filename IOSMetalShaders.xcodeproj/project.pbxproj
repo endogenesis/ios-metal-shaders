@@ -211,6 +211,8 @@
 		A10000000000000000000198 /* DigitalStatic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000198 /* DigitalStatic.metal */; };
 		A10000000000000000000199 /* CircleRevealDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000199 /* CircleRevealDemoView.swift */; };
 		A10000000000000000000200 /* CircleReveal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000200 /* CircleReveal.metal */; };
+		A10000000000000000000201 /* SepiaDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000201 /* SepiaDemoView.swift */; };
+		A10000000000000000000202 /* Sepia.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000202 /* Sepia.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -419,6 +421,8 @@
 		B10000000000000000000198 /* DigitalStatic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DigitalStatic.metal; sourceTree = "<group>"; };
 		B10000000000000000000199 /* CircleRevealDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRevealDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000200 /* CircleReveal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CircleReveal.metal; sourceTree = "<group>"; };
+		B10000000000000000000201 /* SepiaDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000202 /* Sepia.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sepia.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +564,7 @@
 				B10000000000000000000195 /* BulgeDemoView.swift */,
 				B10000000000000000000197 /* DigitalStaticDemoView.swift */,
 				B10000000000000000000199 /* CircleRevealDemoView.swift */,
+				B10000000000000000000201 /* SepiaDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -663,6 +668,7 @@
 				B10000000000000000000196 /* Bulge.metal */,
 				B10000000000000000000198 /* DigitalStatic.metal */,
 				B10000000000000000000200 /* CircleReveal.metal */,
+				B10000000000000000000202 /* Sepia.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -947,6 +953,8 @@
 				A10000000000000000000198 /* DigitalStatic.metal in Sources */,
 				A10000000000000000000199 /* CircleRevealDemoView.swift in Sources */,
 				A10000000000000000000200 /* CircleReveal.metal in Sources */,
+				A10000000000000000000201 /* SepiaDemoView.swift in Sources */,
+				A10000000000000000000202 /* Sepia.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
