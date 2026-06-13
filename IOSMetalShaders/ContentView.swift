@@ -96,6 +96,8 @@ struct ContentView: View {
 
                         DigitalStaticDemoView()
 
+                        CircleRevealDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
