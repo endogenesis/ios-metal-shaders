@@ -100,6 +100,8 @@ struct ContentView: View {
 
                         SepiaDemoView()
 
+                        SnowfallDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

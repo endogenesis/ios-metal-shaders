@@ -213,6 +213,8 @@
 		A10000000000000000000200 /* CircleReveal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000200 /* CircleReveal.metal */; };
 		A10000000000000000000201 /* SepiaDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000201 /* SepiaDemoView.swift */; };
 		A10000000000000000000202 /* Sepia.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000202 /* Sepia.metal */; };
+		A10000000000000000000203 /* SnowfallDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000203 /* SnowfallDemoView.swift */; };
+		A10000000000000000000204 /* Snowfall.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000204 /* Snowfall.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -423,6 +425,8 @@
 		B10000000000000000000200 /* CircleReveal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CircleReveal.metal; sourceTree = "<group>"; };
 		B10000000000000000000201 /* SepiaDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000202 /* Sepia.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sepia.metal; sourceTree = "<group>"; };
+		B10000000000000000000203 /* SnowfallDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowfallDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000204 /* Snowfall.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Snowfall.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -565,6 +569,7 @@
 				B10000000000000000000197 /* DigitalStaticDemoView.swift */,
 				B10000000000000000000199 /* CircleRevealDemoView.swift */,
 				B10000000000000000000201 /* SepiaDemoView.swift */,
+				B10000000000000000000203 /* SnowfallDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 				B10000000000000000000198 /* DigitalStatic.metal */,
 				B10000000000000000000200 /* CircleReveal.metal */,
 				B10000000000000000000202 /* Sepia.metal */,
+				B10000000000000000000204 /* Snowfall.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -955,6 +961,8 @@
 				A10000000000000000000200 /* CircleReveal.metal in Sources */,
 				A10000000000000000000201 /* SepiaDemoView.swift in Sources */,
 				A10000000000000000000202 /* Sepia.metal in Sources */,
+				A10000000000000000000203 /* SnowfallDemoView.swift in Sources */,
+				A10000000000000000000204 /* Snowfall.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
