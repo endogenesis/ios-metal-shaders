@@ -104,6 +104,8 @@ struct ContentView: View {
 
                         PolarWarpDemoView()
 
+                        LightLeakDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

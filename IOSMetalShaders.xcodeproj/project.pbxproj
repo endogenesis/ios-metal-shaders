@@ -217,6 +217,8 @@
 		A10000000000000000000204 /* Snowfall.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000204 /* Snowfall.metal */; };
 		A10000000000000000000205 /* PolarWarpDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000205 /* PolarWarpDemoView.swift */; };
 		A10000000000000000000206 /* PolarWarp.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000206 /* PolarWarp.metal */; };
+		A10000000000000000000207 /* LightLeakDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000207 /* LightLeakDemoView.swift */; };
+		A10000000000000000000208 /* LightLeak.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000208 /* LightLeak.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -431,6 +433,8 @@
 		B10000000000000000000204 /* Snowfall.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Snowfall.metal; sourceTree = "<group>"; };
 		B10000000000000000000205 /* PolarWarpDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarWarpDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000206 /* PolarWarp.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PolarWarp.metal; sourceTree = "<group>"; };
+		B10000000000000000000207 /* LightLeakDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLeakDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000208 /* LightLeak.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LightLeak.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -575,6 +579,7 @@
 				B10000000000000000000201 /* SepiaDemoView.swift */,
 				B10000000000000000000203 /* SnowfallDemoView.swift */,
 				B10000000000000000000205 /* PolarWarpDemoView.swift */,
+				B10000000000000000000207 /* LightLeakDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				B10000000000000000000202 /* Sepia.metal */,
 				B10000000000000000000204 /* Snowfall.metal */,
 				B10000000000000000000206 /* PolarWarp.metal */,
+				B10000000000000000000208 /* LightLeak.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -971,6 +977,8 @@
 				A10000000000000000000204 /* Snowfall.metal in Sources */,
 				A10000000000000000000205 /* PolarWarpDemoView.swift in Sources */,
 				A10000000000000000000206 /* PolarWarp.metal in Sources */,
+				A10000000000000000000207 /* LightLeakDemoView.swift in Sources */,
+				A10000000000000000000208 /* LightLeak.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
