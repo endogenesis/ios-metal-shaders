@@ -106,6 +106,8 @@ struct ContentView: View {
 
                         LightLeakDemoView()
 
+                        ColorQuantizationGlitchDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
