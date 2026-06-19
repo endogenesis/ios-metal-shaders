@@ -221,6 +221,8 @@
 		A10000000000000000000208 /* LightLeak.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000208 /* LightLeak.metal */; };
 		A10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift */; };
 		A10000000000000000000210 /* ColorQuantizationGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000210 /* ColorQuantizationGlitch.metal */; };
+		A10000000000000000000211 /* GodRaysDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000211 /* GodRaysDemoView.swift */; };
+		A10000000000000000000212 /* GodRays.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000212 /* GodRays.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -439,6 +441,8 @@
 		B10000000000000000000208 /* LightLeak.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LightLeak.metal; sourceTree = "<group>"; };
 		B10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorQuantizationGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000210 /* ColorQuantizationGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorQuantizationGlitch.metal; sourceTree = "<group>"; };
+		B10000000000000000000211 /* GodRaysDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodRaysDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000212 /* GodRays.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GodRays.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +589,7 @@
 				B10000000000000000000205 /* PolarWarpDemoView.swift */,
 				B10000000000000000000207 /* LightLeakDemoView.swift */,
 				B10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift */,
+				B10000000000000000000211 /* GodRaysDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				B10000000000000000000206 /* PolarWarp.metal */,
 				B10000000000000000000208 /* LightLeak.metal */,
 				B10000000000000000000210 /* ColorQuantizationGlitch.metal */,
+				B10000000000000000000212 /* GodRays.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -987,6 +993,8 @@
 				A10000000000000000000208 /* LightLeak.metal in Sources */,
 				A10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift in Sources */,
 				A10000000000000000000210 /* ColorQuantizationGlitch.metal in Sources */,
+				A10000000000000000000211 /* GodRaysDemoView.swift in Sources */,
+				A10000000000000000000212 /* GodRays.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

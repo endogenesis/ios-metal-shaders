@@ -108,6 +108,8 @@ struct ContentView: View {
 
                         ColorQuantizationGlitchDemoView()
 
+                        GodRaysDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
