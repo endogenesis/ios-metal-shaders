@@ -110,6 +110,8 @@ struct ContentView: View {
 
                         GodRaysDemoView()
 
+                        FlagDistortionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
