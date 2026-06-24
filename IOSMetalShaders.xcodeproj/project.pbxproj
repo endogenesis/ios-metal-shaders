@@ -225,6 +225,8 @@
 		A10000000000000000000212 /* GodRays.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000212 /* GodRays.metal */; };
 		A10000000000000000000213 /* FlagDistortionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000213 /* FlagDistortionDemoView.swift */; };
 		A10000000000000000000214 /* FlagDistortion.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000214 /* FlagDistortion.metal */; };
+		A10000000000000000000215 /* AnalogStaticDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000215 /* AnalogStaticDemoView.swift */; };
+		A10000000000000000000216 /* AnalogStatic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000216 /* AnalogStatic.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -447,6 +449,8 @@
 		B10000000000000000000212 /* GodRays.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GodRays.metal; sourceTree = "<group>"; };
 		B10000000000000000000213 /* FlagDistortionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDistortionDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000214 /* FlagDistortion.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FlagDistortion.metal; sourceTree = "<group>"; };
+		B10000000000000000000215 /* AnalogStaticDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStaticDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000216 /* AnalogStatic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AnalogStatic.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -595,6 +599,7 @@
 				B10000000000000000000209 /* ColorQuantizationGlitchDemoView.swift */,
 				B10000000000000000000211 /* GodRaysDemoView.swift */,
 				B10000000000000000000213 /* FlagDistortionDemoView.swift */,
+				B10000000000000000000215 /* AnalogStaticDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				B10000000000000000000210 /* ColorQuantizationGlitch.metal */,
 				B10000000000000000000212 /* GodRays.metal */,
 				B10000000000000000000214 /* FlagDistortion.metal */,
+				B10000000000000000000216 /* AnalogStatic.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1003,6 +1009,8 @@
 				A10000000000000000000212 /* GodRays.metal in Sources */,
 				A10000000000000000000213 /* FlagDistortionDemoView.swift in Sources */,
 				A10000000000000000000214 /* FlagDistortion.metal in Sources */,
+				A10000000000000000000215 /* AnalogStaticDemoView.swift in Sources */,
+				A10000000000000000000216 /* AnalogStatic.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

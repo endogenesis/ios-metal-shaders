@@ -112,6 +112,8 @@ struct ContentView: View {
 
                         FlagDistortionDemoView()
 
+                        AnalogStaticDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
