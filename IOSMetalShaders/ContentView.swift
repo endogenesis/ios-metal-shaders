@@ -114,6 +114,8 @@ struct ContentView: View {
 
                         AnalogStaticDemoView()
 
+                        StuckPixelsDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
