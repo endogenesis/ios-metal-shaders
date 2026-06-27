@@ -116,6 +116,8 @@ struct ContentView: View {
 
                         StuckPixelsDemoView()
 
+                        TerminalGlitchDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
