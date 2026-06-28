@@ -231,6 +231,8 @@
 		A10000000000000000000218 /* StuckPixels.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000218 /* StuckPixels.metal */; };
 		A10000000000000000000219 /* TerminalGlitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000219 /* TerminalGlitchDemoView.swift */; };
 		A10000000000000000000220 /* TerminalGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000220 /* TerminalGlitch.metal */; };
+		A10000000000000000000221 /* DotMatrixDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000221 /* DotMatrixDemoView.swift */; };
+		A10000000000000000000222 /* DotMatrix.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000222 /* DotMatrix.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -459,6 +461,8 @@
 		B10000000000000000000218 /* StuckPixels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StuckPixels.metal; sourceTree = "<group>"; };
 		B10000000000000000000219 /* TerminalGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000220 /* TerminalGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TerminalGlitch.metal; sourceTree = "<group>"; };
+		B10000000000000000000221 /* DotMatrixDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotMatrixDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000222 /* DotMatrix.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DotMatrix.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -610,6 +614,7 @@
 				B10000000000000000000215 /* AnalogStaticDemoView.swift */,
 				B10000000000000000000217 /* StuckPixelsDemoView.swift */,
 				B10000000000000000000219 /* TerminalGlitchDemoView.swift */,
+				B10000000000000000000221 /* DotMatrixDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -723,6 +728,7 @@
 				B10000000000000000000216 /* AnalogStatic.metal */,
 				B10000000000000000000218 /* StuckPixels.metal */,
 				B10000000000000000000220 /* TerminalGlitch.metal */,
+				B10000000000000000000222 /* DotMatrix.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1027,6 +1033,8 @@
 				A10000000000000000000218 /* StuckPixels.metal in Sources */,
 				A10000000000000000000219 /* TerminalGlitchDemoView.swift in Sources */,
 				A10000000000000000000220 /* TerminalGlitch.metal in Sources */,
+				A10000000000000000000221 /* DotMatrixDemoView.swift in Sources */,
+				A10000000000000000000222 /* DotMatrix.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

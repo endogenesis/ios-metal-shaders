@@ -118,6 +118,8 @@ struct ContentView: View {
 
                         TerminalGlitchDemoView()
 
+                        DotMatrixDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
