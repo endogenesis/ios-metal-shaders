@@ -120,6 +120,8 @@ struct ContentView: View {
 
                         DotMatrixDemoView()
 
+                        SignalNoiseDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
