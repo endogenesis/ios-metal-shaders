@@ -122,6 +122,8 @@ struct ContentView: View {
 
                         SignalNoiseDemoView()
 
+                        MetaballsDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
