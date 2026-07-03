@@ -126,6 +126,8 @@ struct ContentView: View {
 
                         PosterizeDemoView()
 
+                        RadialWipeDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

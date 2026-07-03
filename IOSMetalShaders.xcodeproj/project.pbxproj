@@ -239,6 +239,8 @@
 		A10000000000000000000226 /* Metaballs.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000226 /* Metaballs.metal */; };
 		A10000000000000000000227 /* PosterizeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000227 /* PosterizeDemoView.swift */; };
 		A10000000000000000000228 /* Posterize.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000228 /* Posterize.metal */; };
+		A10000000000000000000229 /* RadialWipeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000229 /* RadialWipeDemoView.swift */; };
+		A10000000000000000000230 /* RadialWipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000230 /* RadialWipe.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -475,6 +477,8 @@
 		B10000000000000000000226 /* Metaballs.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Metaballs.metal; sourceTree = "<group>"; };
 		B10000000000000000000227 /* PosterizeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterizeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000228 /* Posterize.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Posterize.metal; sourceTree = "<group>"; };
+		B10000000000000000000229 /* RadialWipeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialWipeDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000230 /* RadialWipe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RadialWipe.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +634,7 @@
 				B10000000000000000000223 /* SignalNoiseDemoView.swift */,
 				B10000000000000000000225 /* MetaballsDemoView.swift */,
 				B10000000000000000000227 /* PosterizeDemoView.swift */,
+				B10000000000000000000229 /* RadialWipeDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -747,6 +752,7 @@
 				B10000000000000000000224 /* SignalNoise.metal */,
 				B10000000000000000000226 /* Metaballs.metal */,
 				B10000000000000000000228 /* Posterize.metal */,
+				B10000000000000000000230 /* RadialWipe.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1059,6 +1065,8 @@
 				A10000000000000000000226 /* Metaballs.metal in Sources */,
 				A10000000000000000000227 /* PosterizeDemoView.swift in Sources */,
 				A10000000000000000000228 /* Posterize.metal in Sources */,
+				A10000000000000000000229 /* RadialWipeDemoView.swift in Sources */,
+				A10000000000000000000230 /* RadialWipe.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
