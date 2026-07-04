@@ -128,6 +128,8 @@ struct ContentView: View {
 
                         RadialWipeDemoView()
 
+                        LineDropoutDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

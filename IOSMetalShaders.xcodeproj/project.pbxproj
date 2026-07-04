@@ -241,6 +241,8 @@
 		A10000000000000000000228 /* Posterize.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000228 /* Posterize.metal */; };
 		A10000000000000000000229 /* RadialWipeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000229 /* RadialWipeDemoView.swift */; };
 		A10000000000000000000230 /* RadialWipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000230 /* RadialWipe.metal */; };
+		A10000000000000000000231 /* LineDropoutDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000231 /* LineDropoutDemoView.swift */; };
+		A10000000000000000000232 /* LineDropout.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000232 /* LineDropout.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -479,6 +481,8 @@
 		B10000000000000000000228 /* Posterize.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Posterize.metal; sourceTree = "<group>"; };
 		B10000000000000000000229 /* RadialWipeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialWipeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000230 /* RadialWipe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RadialWipe.metal; sourceTree = "<group>"; };
+		B10000000000000000000231 /* LineDropoutDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDropoutDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000232 /* LineDropout.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LineDropout.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -635,6 +639,7 @@
 				B10000000000000000000225 /* MetaballsDemoView.swift */,
 				B10000000000000000000227 /* PosterizeDemoView.swift */,
 				B10000000000000000000229 /* RadialWipeDemoView.swift */,
+				B10000000000000000000231 /* LineDropoutDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -753,6 +758,7 @@
 				B10000000000000000000226 /* Metaballs.metal */,
 				B10000000000000000000228 /* Posterize.metal */,
 				B10000000000000000000230 /* RadialWipe.metal */,
+				B10000000000000000000232 /* LineDropout.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1067,6 +1073,8 @@
 				A10000000000000000000228 /* Posterize.metal in Sources */,
 				A10000000000000000000229 /* RadialWipeDemoView.swift in Sources */,
 				A10000000000000000000230 /* RadialWipe.metal in Sources */,
+				A10000000000000000000231 /* LineDropoutDemoView.swift in Sources */,
+				A10000000000000000000232 /* LineDropout.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
