@@ -243,6 +243,8 @@
 		A10000000000000000000230 /* RadialWipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000230 /* RadialWipe.metal */; };
 		A10000000000000000000231 /* LineDropoutDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000231 /* LineDropoutDemoView.swift */; };
 		A10000000000000000000232 /* LineDropout.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000232 /* LineDropout.metal */; };
+		A10000000000000000000233 /* LevelsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000233 /* LevelsDemoView.swift */; };
+		A10000000000000000000234 /* Levels.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000234 /* Levels.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -483,6 +485,8 @@
 		B10000000000000000000230 /* RadialWipe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RadialWipe.metal; sourceTree = "<group>"; };
 		B10000000000000000000231 /* LineDropoutDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDropoutDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000232 /* LineDropout.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LineDropout.metal; sourceTree = "<group>"; };
+		B10000000000000000000233 /* LevelsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000234 /* Levels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Levels.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +644,7 @@
 				B10000000000000000000227 /* PosterizeDemoView.swift */,
 				B10000000000000000000229 /* RadialWipeDemoView.swift */,
 				B10000000000000000000231 /* LineDropoutDemoView.swift */,
+				B10000000000000000000233 /* LevelsDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -759,6 +764,7 @@
 				B10000000000000000000228 /* Posterize.metal */,
 				B10000000000000000000230 /* RadialWipe.metal */,
 				B10000000000000000000232 /* LineDropout.metal */,
+				B10000000000000000000234 /* Levels.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1075,6 +1081,8 @@
 				A10000000000000000000230 /* RadialWipe.metal in Sources */,
 				A10000000000000000000231 /* LineDropoutDemoView.swift in Sources */,
 				A10000000000000000000232 /* LineDropout.metal in Sources */,
+				A10000000000000000000233 /* LevelsDemoView.swift in Sources */,
+				A10000000000000000000234 /* Levels.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

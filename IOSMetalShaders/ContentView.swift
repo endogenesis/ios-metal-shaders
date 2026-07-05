@@ -130,6 +130,8 @@ struct ContentView: View {
 
                         LineDropoutDemoView()
 
+                        LevelsDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
