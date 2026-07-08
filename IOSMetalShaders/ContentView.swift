@@ -132,6 +132,8 @@ struct ContentView: View {
 
                         LevelsDemoView()
 
+                        GhostingDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
