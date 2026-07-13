@@ -247,6 +247,8 @@
 		A10000000000000000000234 /* Levels.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000234 /* Levels.metal */; };
 		A10000000000000000000235 /* GhostingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000235 /* GhostingDemoView.swift */; };
 		A10000000000000000000236 /* Ghosting.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000236 /* Ghosting.metal */; };
+		A10000000000000000000237 /* DoubleVisionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000237 /* DoubleVisionDemoView.swift */; };
+		A10000000000000000000238 /* DoubleVision.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000238 /* DoubleVision.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -491,6 +493,8 @@
 		B10000000000000000000234 /* Levels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Levels.metal; sourceTree = "<group>"; };
 		B10000000000000000000235 /* GhostingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostingDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000236 /* Ghosting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Ghosting.metal; sourceTree = "<group>"; };
+		B10000000000000000000237 /* DoubleVisionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleVisionDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000238 /* DoubleVision.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DoubleVision.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +654,7 @@
 				B10000000000000000000231 /* LineDropoutDemoView.swift */,
 				B10000000000000000000233 /* LevelsDemoView.swift */,
 				B10000000000000000000235 /* GhostingDemoView.swift */,
+				B10000000000000000000237 /* DoubleVisionDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -771,6 +776,7 @@
 				B10000000000000000000232 /* LineDropout.metal */,
 				B10000000000000000000234 /* Levels.metal */,
 				B10000000000000000000236 /* Ghosting.metal */,
+				B10000000000000000000238 /* DoubleVision.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1091,6 +1097,8 @@
 				A10000000000000000000234 /* Levels.metal in Sources */,
 				A10000000000000000000235 /* GhostingDemoView.swift in Sources */,
 				A10000000000000000000236 /* Ghosting.metal in Sources */,
+				A10000000000000000000237 /* DoubleVisionDemoView.swift in Sources */,
+				A10000000000000000000238 /* DoubleVision.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
