@@ -251,6 +251,8 @@
 		A10000000000000000000238 /* DoubleVision.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000238 /* DoubleVision.metal */; };
 		A10000000000000000000239 /* HorizontalTearDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000239 /* HorizontalTearDemoView.swift */; };
 		A10000000000000000000240 /* HorizontalTear.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000240 /* HorizontalTear.metal */; };
+		A10000000000000000000241 /* CompressionArtifactsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000241 /* CompressionArtifactsDemoView.swift */; };
+		A10000000000000000000242 /* CompressionArtifacts.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000242 /* CompressionArtifacts.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -499,6 +501,8 @@
 		B10000000000000000000238 /* DoubleVision.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DoubleVision.metal; sourceTree = "<group>"; };
 		B10000000000000000000239 /* HorizontalTearDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTearDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000240 /* HorizontalTear.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HorizontalTear.metal; sourceTree = "<group>"; };
+		B10000000000000000000241 /* CompressionArtifactsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionArtifactsDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000242 /* CompressionArtifacts.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CompressionArtifacts.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,6 +664,7 @@
 				B10000000000000000000235 /* GhostingDemoView.swift */,
 				B10000000000000000000237 /* DoubleVisionDemoView.swift */,
 				B10000000000000000000239 /* HorizontalTearDemoView.swift */,
+				B10000000000000000000241 /* CompressionArtifactsDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -783,6 +788,7 @@
 				B10000000000000000000236 /* Ghosting.metal */,
 				B10000000000000000000238 /* DoubleVision.metal */,
 				B10000000000000000000240 /* HorizontalTear.metal */,
+				B10000000000000000000242 /* CompressionArtifacts.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1107,6 +1113,8 @@
 				A10000000000000000000238 /* DoubleVision.metal in Sources */,
 				A10000000000000000000239 /* HorizontalTearDemoView.swift in Sources */,
 				A10000000000000000000240 /* HorizontalTear.metal in Sources */,
+				A10000000000000000000241 /* CompressionArtifactsDemoView.swift in Sources */,
+				A10000000000000000000242 /* CompressionArtifacts.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
