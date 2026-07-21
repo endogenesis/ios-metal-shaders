@@ -140,6 +140,8 @@ struct ContentView: View {
 
                         CompressionArtifactsDemoView()
 
+                        ChromaKeyDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
