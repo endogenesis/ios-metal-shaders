@@ -255,6 +255,8 @@
 		A10000000000000000000242 /* CompressionArtifacts.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000242 /* CompressionArtifacts.metal */; };
 		A10000000000000000000243 /* ChromaKeyDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000243 /* ChromaKeyDemoView.swift */; };
 		A10000000000000000000244 /* ChromaKey.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000244 /* ChromaKey.metal */; };
+		A10000000000000000000245 /* FisheyeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000245 /* FisheyeDemoView.swift */; };
+		A10000000000000000000246 /* Fisheye.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000246 /* Fisheye.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -507,6 +509,8 @@
 		B10000000000000000000242 /* CompressionArtifacts.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CompressionArtifacts.metal; sourceTree = "<group>"; };
 		B10000000000000000000243 /* ChromaKeyDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromaKeyDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000244 /* ChromaKey.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChromaKey.metal; sourceTree = "<group>"; };
+		B10000000000000000000245 /* FisheyeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisheyeDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000246 /* Fisheye.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fisheye.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +674,7 @@
 				B10000000000000000000239 /* HorizontalTearDemoView.swift */,
 				B10000000000000000000241 /* CompressionArtifactsDemoView.swift */,
 				B10000000000000000000243 /* ChromaKeyDemoView.swift */,
+				B10000000000000000000245 /* FisheyeDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -795,6 +800,7 @@
 				B10000000000000000000240 /* HorizontalTear.metal */,
 				B10000000000000000000242 /* CompressionArtifacts.metal */,
 				B10000000000000000000244 /* ChromaKey.metal */,
+				B10000000000000000000246 /* Fisheye.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1123,6 +1129,8 @@
 				A10000000000000000000242 /* CompressionArtifacts.metal in Sources */,
 				A10000000000000000000243 /* ChromaKeyDemoView.swift in Sources */,
 				A10000000000000000000244 /* ChromaKey.metal in Sources */,
+				A10000000000000000000245 /* FisheyeDemoView.swift in Sources */,
+				A10000000000000000000246 /* Fisheye.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
