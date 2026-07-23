@@ -144,6 +144,8 @@ struct ContentView: View {
 
                         FisheyeDemoView()
 
+                        DeadPixelsDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
