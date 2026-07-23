@@ -259,6 +259,8 @@
 		A10000000000000000000246 /* Fisheye.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000246 /* Fisheye.metal */; };
 		A10000000000000000000247 /* DeadPixelsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000247 /* DeadPixelsDemoView.swift */; };
 		A10000000000000000000248 /* DeadPixels.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000248 /* DeadPixels.metal */; };
+		A10000000000000000000249 /* VerticalTearDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000249 /* VerticalTearDemoView.swift */; };
+		A10000000000000000000250 /* VerticalTear.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000250 /* VerticalTear.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -515,6 +517,8 @@
 		B10000000000000000000246 /* Fisheye.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Fisheye.metal; sourceTree = "<group>"; };
 		B10000000000000000000247 /* DeadPixelsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadPixelsDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000248 /* DeadPixels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DeadPixels.metal; sourceTree = "<group>"; };
+		B10000000000000000000249 /* VerticalTearDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTearDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000250 /* VerticalTear.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VerticalTear.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -680,6 +684,7 @@
 				B10000000000000000000243 /* ChromaKeyDemoView.swift */,
 				B10000000000000000000245 /* FisheyeDemoView.swift */,
 				B10000000000000000000247 /* DeadPixelsDemoView.swift */,
+				B10000000000000000000249 /* VerticalTearDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -807,6 +812,7 @@
 				B10000000000000000000244 /* ChromaKey.metal */,
 				B10000000000000000000246 /* Fisheye.metal */,
 				B10000000000000000000248 /* DeadPixels.metal */,
+				B10000000000000000000250 /* VerticalTear.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1139,6 +1145,8 @@
 				A10000000000000000000246 /* Fisheye.metal in Sources */,
 				A10000000000000000000247 /* DeadPixelsDemoView.swift in Sources */,
 				A10000000000000000000248 /* DeadPixels.metal in Sources */,
+				A10000000000000000000249 /* VerticalTearDemoView.swift in Sources */,
+				A10000000000000000000250 /* VerticalTear.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

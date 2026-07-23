@@ -146,6 +146,8 @@ struct ContentView: View {
 
                         DeadPixelsDemoView()
 
+                        VerticalTearDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
