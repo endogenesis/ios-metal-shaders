@@ -148,6 +148,8 @@ struct ContentView: View {
 
                         VerticalTearDemoView()
 
+                        KaleidoscopeDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
