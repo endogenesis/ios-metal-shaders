@@ -150,6 +150,8 @@ struct ContentView: View {
 
                         KaleidoscopeDemoView()
 
+                        GlitchMosaicDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

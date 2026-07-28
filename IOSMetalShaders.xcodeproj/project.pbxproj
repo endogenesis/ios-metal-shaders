@@ -263,6 +263,8 @@
 		A10000000000000000000250 /* VerticalTear.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000250 /* VerticalTear.metal */; };
 		A10000000000000000000251 /* KaleidoscopeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000251 /* KaleidoscopeDemoView.swift */; };
 		A10000000000000000000252 /* Kaleidoscope.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000252 /* Kaleidoscope.metal */; };
+		A10000000000000000000253 /* GlitchMosaicDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000253 /* GlitchMosaicDemoView.swift */; };
+		A10000000000000000000254 /* GlitchMosaic.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000254 /* GlitchMosaic.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -523,6 +525,8 @@
 		B10000000000000000000250 /* VerticalTear.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VerticalTear.metal; sourceTree = "<group>"; };
 		B10000000000000000000251 /* KaleidoscopeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaleidoscopeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000252 /* Kaleidoscope.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Kaleidoscope.metal; sourceTree = "<group>"; };
+		B10000000000000000000253 /* GlitchMosaicDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchMosaicDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000254 /* GlitchMosaic.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GlitchMosaic.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -690,6 +694,7 @@
 				B10000000000000000000247 /* DeadPixelsDemoView.swift */,
 				B10000000000000000000249 /* VerticalTearDemoView.swift */,
 				B10000000000000000000251 /* KaleidoscopeDemoView.swift */,
+				B10000000000000000000253 /* GlitchMosaicDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -819,6 +824,7 @@
 				B10000000000000000000248 /* DeadPixels.metal */,
 				B10000000000000000000250 /* VerticalTear.metal */,
 				B10000000000000000000252 /* Kaleidoscope.metal */,
+				B10000000000000000000254 /* GlitchMosaic.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1155,6 +1161,8 @@
 				A10000000000000000000250 /* VerticalTear.metal in Sources */,
 				A10000000000000000000251 /* KaleidoscopeDemoView.swift in Sources */,
 				A10000000000000000000252 /* Kaleidoscope.metal in Sources */,
+				A10000000000000000000253 /* GlitchMosaicDemoView.swift in Sources */,
+				A10000000000000000000254 /* GlitchMosaic.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
