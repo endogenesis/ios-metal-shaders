@@ -154,6 +154,8 @@ struct ContentView: View {
 
                         HeatHazeDemoView()
 
+                        SliceGlitchDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
