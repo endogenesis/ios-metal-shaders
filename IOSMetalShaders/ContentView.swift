@@ -156,6 +156,8 @@ struct ContentView: View {
 
                         SliceGlitchDemoView()
 
+                        ColorBalanceDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

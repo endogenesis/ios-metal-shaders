@@ -269,6 +269,8 @@
 		A10000000000000000000256 /* HeatHaze.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000256 /* HeatHaze.metal */; };
 		A10000000000000000000257 /* SliceGlitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000257 /* SliceGlitchDemoView.swift */; };
 		A10000000000000000000258 /* SliceGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000258 /* SliceGlitch.metal */; };
+		A10000000000000000000259 /* ColorBalanceDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000259 /* ColorBalanceDemoView.swift */; };
+		A10000000000000000000260 /* ColorBalance.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000260 /* ColorBalance.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -535,6 +537,8 @@
 		B10000000000000000000256 /* HeatHaze.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HeatHaze.metal; sourceTree = "<group>"; };
 		B10000000000000000000257 /* SliceGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000258 /* SliceGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SliceGlitch.metal; sourceTree = "<group>"; };
+		B10000000000000000000259 /* ColorBalanceDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBalanceDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000260 /* ColorBalance.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBalance.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -705,6 +709,7 @@
 				B10000000000000000000253 /* GlitchMosaicDemoView.swift */,
 				B10000000000000000000255 /* HeatHazeDemoView.swift */,
 				B10000000000000000000257 /* SliceGlitchDemoView.swift */,
+				B10000000000000000000259 /* ColorBalanceDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -837,6 +842,7 @@
 				B10000000000000000000254 /* GlitchMosaic.metal */,
 				B10000000000000000000256 /* HeatHaze.metal */,
 				B10000000000000000000258 /* SliceGlitch.metal */,
+				B10000000000000000000260 /* ColorBalance.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1179,6 +1185,8 @@
 				A10000000000000000000256 /* HeatHaze.metal in Sources */,
 				A10000000000000000000257 /* SliceGlitchDemoView.swift in Sources */,
 				A10000000000000000000258 /* SliceGlitch.metal in Sources */,
+				A10000000000000000000259 /* ColorBalanceDemoView.swift in Sources */,
+				A10000000000000000000260 /* ColorBalance.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
