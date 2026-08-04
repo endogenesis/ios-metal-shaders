@@ -158,6 +158,8 @@ struct ContentView: View {
 
                         ColorBalanceDemoView()
 
+                        ToonShadeDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
