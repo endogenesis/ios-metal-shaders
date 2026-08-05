@@ -160,6 +160,8 @@ struct ContentView: View {
 
                         ToonShadeDemoView()
 
+                        VHSHeadSwitchDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

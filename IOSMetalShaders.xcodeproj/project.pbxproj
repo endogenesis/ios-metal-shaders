@@ -273,6 +273,8 @@
 		A10000000000000000000260 /* ColorBalance.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000260 /* ColorBalance.metal */; };
 		A10000000000000000000261 /* ToonShadeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000261 /* ToonShadeDemoView.swift */; };
 		A10000000000000000000262 /* ToonShade.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000262 /* ToonShade.metal */; };
+		A10000000000000000000263 /* VHSHeadSwitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */; };
+		A10000000000000000000264 /* VHSHeadSwitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000264 /* VHSHeadSwitch.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -543,6 +545,8 @@
 		B10000000000000000000260 /* ColorBalance.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBalance.metal; sourceTree = "<group>"; };
 		B10000000000000000000261 /* ToonShadeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToonShadeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000262 /* ToonShade.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ToonShade.metal; sourceTree = "<group>"; };
+		B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHSHeadSwitchDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000264 /* VHSHeadSwitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VHSHeadSwitch.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -715,6 +719,7 @@
 				B10000000000000000000257 /* SliceGlitchDemoView.swift */,
 				B10000000000000000000259 /* ColorBalanceDemoView.swift */,
 				B10000000000000000000261 /* ToonShadeDemoView.swift */,
+				B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -849,6 +854,7 @@
 				B10000000000000000000258 /* SliceGlitch.metal */,
 				B10000000000000000000260 /* ColorBalance.metal */,
 				B10000000000000000000262 /* ToonShade.metal */,
+				B10000000000000000000264 /* VHSHeadSwitch.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1195,6 +1201,8 @@
 				A10000000000000000000260 /* ColorBalance.metal in Sources */,
 				A10000000000000000000261 /* ToonShadeDemoView.swift in Sources */,
 				A10000000000000000000262 /* ToonShade.metal in Sources */,
+				A10000000000000000000263 /* VHSHeadSwitchDemoView.swift in Sources */,
+				A10000000000000000000264 /* VHSHeadSwitch.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
