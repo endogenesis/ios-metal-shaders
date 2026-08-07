@@ -162,6 +162,8 @@ struct ContentView: View {
 
                         VHSHeadSwitchDemoView()
 
+                        PixelateDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

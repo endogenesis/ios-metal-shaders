@@ -275,6 +275,8 @@
 		A10000000000000000000262 /* ToonShade.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000262 /* ToonShade.metal */; };
 		A10000000000000000000263 /* VHSHeadSwitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */; };
 		A10000000000000000000264 /* VHSHeadSwitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000264 /* VHSHeadSwitch.metal */; };
+		A10000000000000000000265 /* PixelateDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000265 /* PixelateDemoView.swift */; };
+		A10000000000000000000266 /* Pixelate.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000266 /* Pixelate.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -547,6 +549,8 @@
 		B10000000000000000000262 /* ToonShade.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ToonShade.metal; sourceTree = "<group>"; };
 		B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHSHeadSwitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000264 /* VHSHeadSwitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VHSHeadSwitch.metal; sourceTree = "<group>"; };
+		B10000000000000000000265 /* PixelateDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelateDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000266 /* Pixelate.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Pixelate.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -720,6 +724,7 @@
 				B10000000000000000000259 /* ColorBalanceDemoView.swift */,
 				B10000000000000000000261 /* ToonShadeDemoView.swift */,
 				B10000000000000000000263 /* VHSHeadSwitchDemoView.swift */,
+				B10000000000000000000265 /* PixelateDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -855,6 +860,7 @@
 				B10000000000000000000260 /* ColorBalance.metal */,
 				B10000000000000000000262 /* ToonShade.metal */,
 				B10000000000000000000264 /* VHSHeadSwitch.metal */,
+				B10000000000000000000266 /* Pixelate.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1203,6 +1209,8 @@
 				A10000000000000000000262 /* ToonShade.metal in Sources */,
 				A10000000000000000000263 /* VHSHeadSwitchDemoView.swift in Sources */,
 				A10000000000000000000264 /* VHSHeadSwitch.metal in Sources */,
+				A10000000000000000000265 /* PixelateDemoView.swift in Sources */,
+				A10000000000000000000266 /* Pixelate.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
