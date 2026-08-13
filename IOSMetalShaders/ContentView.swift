@@ -166,6 +166,8 @@ struct ContentView: View {
 
                         VibranceDemoView()
 
+                        NoiseDissolveDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
