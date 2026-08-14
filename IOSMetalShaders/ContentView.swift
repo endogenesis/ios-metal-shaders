@@ -170,6 +170,8 @@ struct ContentView: View {
 
                         InterlacingDemoView()
 
+                        LensRefractionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
