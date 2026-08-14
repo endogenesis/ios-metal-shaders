@@ -168,6 +168,8 @@ struct ContentView: View {
 
                         NoiseDissolveDemoView()
 
+                        InterlacingDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
