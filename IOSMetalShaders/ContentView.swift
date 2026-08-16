@@ -172,6 +172,8 @@ struct ContentView: View {
 
                         LensRefractionDemoView()
 
+                        DisplacementTransitionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

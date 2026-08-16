@@ -285,6 +285,8 @@
 		A10000000000000000000272 /* Interlacing.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000272 /* Interlacing.metal */; };
 		A10000000000000000000273 /* LensRefractionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000273 /* LensRefractionDemoView.swift */; };
 		A10000000000000000000274 /* LensRefraction.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000274 /* LensRefraction.metal */; };
+		A10000000000000000000275 /* DisplacementTransitionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000275 /* DisplacementTransitionDemoView.swift */; };
+		A10000000000000000000276 /* DisplacementTransition.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000276 /* DisplacementTransition.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -567,6 +569,8 @@
 		B10000000000000000000272 /* Interlacing.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Interlacing.metal; sourceTree = "<group>"; };
 		B10000000000000000000273 /* LensRefractionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensRefractionDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000274 /* LensRefraction.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LensRefraction.metal; sourceTree = "<group>"; };
+		B10000000000000000000275 /* DisplacementTransitionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplacementTransitionDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000276 /* DisplacementTransition.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DisplacementTransition.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -745,6 +749,7 @@
 				B10000000000000000000269 /* NoiseDissolveDemoView.swift */,
 				B10000000000000000000271 /* InterlacingDemoView.swift */,
 				B10000000000000000000273 /* LensRefractionDemoView.swift */,
+				B10000000000000000000275 /* DisplacementTransitionDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -885,6 +890,7 @@
 				B10000000000000000000270 /* NoiseDissolve.metal */,
 				B10000000000000000000272 /* Interlacing.metal */,
 				B10000000000000000000274 /* LensRefraction.metal */,
+				B10000000000000000000276 /* DisplacementTransition.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1243,6 +1249,8 @@
 				A10000000000000000000272 /* Interlacing.metal in Sources */,
 				A10000000000000000000273 /* LensRefractionDemoView.swift in Sources */,
 				A10000000000000000000274 /* LensRefraction.metal in Sources */,
+				A10000000000000000000275 /* DisplacementTransitionDemoView.swift in Sources */,
+				A10000000000000000000276 /* DisplacementTransition.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
