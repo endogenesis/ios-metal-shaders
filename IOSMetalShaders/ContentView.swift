@@ -174,6 +174,8 @@ struct ContentView: View {
 
                         DisplacementTransitionDemoView()
 
+                        SaturationDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
