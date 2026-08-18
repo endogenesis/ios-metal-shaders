@@ -289,6 +289,8 @@
 		A10000000000000000000276 /* DisplacementTransition.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000276 /* DisplacementTransition.metal */; };
 		A10000000000000000000277 /* SaturationDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000277 /* SaturationDemoView.swift */; };
 		A10000000000000000000278 /* Saturation.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000278 /* Saturation.metal */; };
+		A10000000000000000000279 /* MirrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000279 /* MirrorDemoView.swift */; };
+		A10000000000000000000280 /* Mirror.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000280 /* Mirror.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -575,6 +577,8 @@
 		B10000000000000000000276 /* DisplacementTransition.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DisplacementTransition.metal; sourceTree = "<group>"; };
 		B10000000000000000000277 /* SaturationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000278 /* Saturation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Saturation.metal; sourceTree = "<group>"; };
+		B10000000000000000000279 /* MirrorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000280 /* Mirror.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mirror.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -755,6 +759,7 @@
 				B10000000000000000000273 /* LensRefractionDemoView.swift */,
 				B10000000000000000000275 /* DisplacementTransitionDemoView.swift */,
 				B10000000000000000000277 /* SaturationDemoView.swift */,
+				B10000000000000000000279 /* MirrorDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -897,6 +902,7 @@
 				B10000000000000000000274 /* LensRefraction.metal */,
 				B10000000000000000000276 /* DisplacementTransition.metal */,
 				B10000000000000000000278 /* Saturation.metal */,
+				B10000000000000000000280 /* Mirror.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1259,6 +1265,8 @@
 				A10000000000000000000276 /* DisplacementTransition.metal in Sources */,
 				A10000000000000000000277 /* SaturationDemoView.swift in Sources */,
 				A10000000000000000000278 /* Saturation.metal in Sources */,
+				A10000000000000000000279 /* MirrorDemoView.swift in Sources */,
+				A10000000000000000000280 /* Mirror.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

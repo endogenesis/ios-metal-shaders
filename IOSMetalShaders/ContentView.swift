@@ -176,6 +176,8 @@ struct ContentView: View {
 
                         SaturationDemoView()
 
+                        MirrorDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
