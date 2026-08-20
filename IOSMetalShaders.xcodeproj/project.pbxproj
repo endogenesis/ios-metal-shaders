@@ -291,6 +291,8 @@
 		A10000000000000000000278 /* Saturation.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000278 /* Saturation.metal */; };
 		A10000000000000000000279 /* MirrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000279 /* MirrorDemoView.swift */; };
 		A10000000000000000000280 /* Mirror.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000280 /* Mirror.metal */; };
+		A10000000000000000000281 /* TemperatureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000281 /* TemperatureDemoView.swift */; };
+		A10000000000000000000282 /* Temperature.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000282 /* Temperature.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -579,6 +581,8 @@
 		B10000000000000000000278 /* Saturation.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Saturation.metal; sourceTree = "<group>"; };
 		B10000000000000000000279 /* MirrorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000280 /* Mirror.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mirror.metal; sourceTree = "<group>"; };
+		B10000000000000000000281 /* TemperatureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000282 /* Temperature.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Temperature.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -760,6 +764,7 @@
 				B10000000000000000000275 /* DisplacementTransitionDemoView.swift */,
 				B10000000000000000000277 /* SaturationDemoView.swift */,
 				B10000000000000000000279 /* MirrorDemoView.swift */,
+				B10000000000000000000281 /* TemperatureDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -903,6 +908,7 @@
 				B10000000000000000000276 /* DisplacementTransition.metal */,
 				B10000000000000000000278 /* Saturation.metal */,
 				B10000000000000000000280 /* Mirror.metal */,
+				B10000000000000000000282 /* Temperature.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1267,6 +1273,8 @@
 				A10000000000000000000278 /* Saturation.metal in Sources */,
 				A10000000000000000000279 /* MirrorDemoView.swift in Sources */,
 				A10000000000000000000280 /* Mirror.metal in Sources */,
+				A10000000000000000000281 /* TemperatureDemoView.swift in Sources */,
+				A10000000000000000000282 /* Temperature.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
