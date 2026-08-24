@@ -180,6 +180,8 @@ struct ContentView: View {
 
                         TemperatureDemoView()
 
+                        BitCrushDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

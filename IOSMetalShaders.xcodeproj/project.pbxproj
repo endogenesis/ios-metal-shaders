@@ -293,6 +293,8 @@
 		A10000000000000000000280 /* Mirror.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000280 /* Mirror.metal */; };
 		A10000000000000000000281 /* TemperatureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000281 /* TemperatureDemoView.swift */; };
 		A10000000000000000000282 /* Temperature.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000282 /* Temperature.metal */; };
+		A10000000000000000000283 /* BitCrushDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000283 /* BitCrushDemoView.swift */; };
+		A10000000000000000000284 /* BitCrush.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000284 /* BitCrush.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -583,6 +585,8 @@
 		B10000000000000000000280 /* Mirror.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mirror.metal; sourceTree = "<group>"; };
 		B10000000000000000000281 /* TemperatureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000282 /* Temperature.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Temperature.metal; sourceTree = "<group>"; };
+		B10000000000000000000283 /* BitCrushDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCrushDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000284 /* BitCrush.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BitCrush.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -765,6 +769,7 @@
 				B10000000000000000000277 /* SaturationDemoView.swift */,
 				B10000000000000000000279 /* MirrorDemoView.swift */,
 				B10000000000000000000281 /* TemperatureDemoView.swift */,
+				B10000000000000000000283 /* BitCrushDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -909,6 +914,7 @@
 				B10000000000000000000278 /* Saturation.metal */,
 				B10000000000000000000280 /* Mirror.metal */,
 				B10000000000000000000282 /* Temperature.metal */,
+				B10000000000000000000284 /* BitCrush.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1275,6 +1281,8 @@
 				A10000000000000000000280 /* Mirror.metal in Sources */,
 				A10000000000000000000281 /* TemperatureDemoView.swift in Sources */,
 				A10000000000000000000282 /* Temperature.metal in Sources */,
+				A10000000000000000000283 /* BitCrushDemoView.swift in Sources */,
+				A10000000000000000000284 /* BitCrush.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
