@@ -182,6 +182,8 @@ struct ContentView: View {
 
                         BitCrushDemoView()
 
+                        OutlineDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
