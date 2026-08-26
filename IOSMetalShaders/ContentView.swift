@@ -184,6 +184,8 @@ struct ContentView: View {
 
                         OutlineDemoView()
 
+                        ThresholdDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

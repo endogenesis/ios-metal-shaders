@@ -297,6 +297,8 @@
 		A10000000000000000000284 /* BitCrush.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000284 /* BitCrush.metal */; };
 		A10000000000000000000285 /* OutlineDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000285 /* OutlineDemoView.swift */; };
 		A10000000000000000000286 /* Outline.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000286 /* Outline.metal */; };
+		A10000000000000000000287 /* ThresholdDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000287 /* ThresholdDemoView.swift */; };
+		A10000000000000000000288 /* Threshold.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000288 /* Threshold.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -591,6 +593,8 @@
 		B10000000000000000000284 /* BitCrush.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BitCrush.metal; sourceTree = "<group>"; };
 		B10000000000000000000285 /* OutlineDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000286 /* Outline.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Outline.metal; sourceTree = "<group>"; };
+		B10000000000000000000287 /* ThresholdDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000288 /* Threshold.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Threshold.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -775,6 +779,7 @@
 				B10000000000000000000281 /* TemperatureDemoView.swift */,
 				B10000000000000000000283 /* BitCrushDemoView.swift */,
 				B10000000000000000000285 /* OutlineDemoView.swift */,
+				B10000000000000000000287 /* ThresholdDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -921,6 +926,7 @@
 				B10000000000000000000282 /* Temperature.metal */,
 				B10000000000000000000284 /* BitCrush.metal */,
 				B10000000000000000000286 /* Outline.metal */,
+				B10000000000000000000288 /* Threshold.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1291,6 +1297,8 @@
 				A10000000000000000000284 /* BitCrush.metal in Sources */,
 				A10000000000000000000285 /* OutlineDemoView.swift in Sources */,
 				A10000000000000000000286 /* Outline.metal in Sources */,
+				A10000000000000000000287 /* ThresholdDemoView.swift in Sources */,
+				A10000000000000000000288 /* Threshold.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
