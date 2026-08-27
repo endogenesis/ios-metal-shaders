@@ -299,6 +299,8 @@
 		A10000000000000000000286 /* Outline.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000286 /* Outline.metal */; };
 		A10000000000000000000287 /* ThresholdDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000287 /* ThresholdDemoView.swift */; };
 		A10000000000000000000288 /* Threshold.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000288 /* Threshold.metal */; };
+		A10000000000000000000289 /* FragmentShuffleDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000289 /* FragmentShuffleDemoView.swift */; };
+		A10000000000000000000290 /* FragmentShuffle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000290 /* FragmentShuffle.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -595,6 +597,8 @@
 		B10000000000000000000286 /* Outline.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Outline.metal; sourceTree = "<group>"; };
 		B10000000000000000000287 /* ThresholdDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000288 /* Threshold.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Threshold.metal; sourceTree = "<group>"; };
+		B10000000000000000000289 /* FragmentShuffleDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentShuffleDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000290 /* FragmentShuffle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FragmentShuffle.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -780,6 +784,7 @@
 				B10000000000000000000283 /* BitCrushDemoView.swift */,
 				B10000000000000000000285 /* OutlineDemoView.swift */,
 				B10000000000000000000287 /* ThresholdDemoView.swift */,
+				B10000000000000000000289 /* FragmentShuffleDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 				B10000000000000000000284 /* BitCrush.metal */,
 				B10000000000000000000286 /* Outline.metal */,
 				B10000000000000000000288 /* Threshold.metal */,
+				B10000000000000000000290 /* FragmentShuffle.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1299,6 +1305,8 @@
 				A10000000000000000000286 /* Outline.metal in Sources */,
 				A10000000000000000000287 /* ThresholdDemoView.swift in Sources */,
 				A10000000000000000000288 /* Threshold.metal in Sources */,
+				A10000000000000000000289 /* FragmentShuffleDemoView.swift in Sources */,
+				A10000000000000000000290 /* FragmentShuffle.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
