@@ -188,6 +188,8 @@ struct ContentView: View {
 
                         FragmentShuffleDemoView()
 
+                        TwirlDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
