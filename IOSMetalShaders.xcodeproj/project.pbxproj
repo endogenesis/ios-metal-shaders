@@ -303,6 +303,8 @@
 		A10000000000000000000290 /* FragmentShuffle.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000290 /* FragmentShuffle.metal */; };
 		A10000000000000000000291 /* TwirlDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000291 /* TwirlDemoView.swift */; };
 		A10000000000000000000292 /* Twirl.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000292 /* Twirl.metal */; };
+		A10000000000000000000293 /* ThermalVisionDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000293 /* ThermalVisionDemoView.swift */; };
+		A10000000000000000000294 /* ThermalVision.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000294 /* ThermalVision.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -603,6 +605,8 @@
 		B10000000000000000000290 /* FragmentShuffle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FragmentShuffle.metal; sourceTree = "<group>"; };
 		B10000000000000000000291 /* TwirlDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwirlDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000292 /* Twirl.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Twirl.metal; sourceTree = "<group>"; };
+		B10000000000000000000293 /* ThermalVisionDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermalVisionDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000294 /* ThermalVision.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ThermalVision.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -790,6 +794,7 @@
 				B10000000000000000000287 /* ThresholdDemoView.swift */,
 				B10000000000000000000289 /* FragmentShuffleDemoView.swift */,
 				B10000000000000000000291 /* TwirlDemoView.swift */,
+				B10000000000000000000293 /* ThermalVisionDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -939,6 +944,7 @@
 				B10000000000000000000288 /* Threshold.metal */,
 				B10000000000000000000290 /* FragmentShuffle.metal */,
 				B10000000000000000000292 /* Twirl.metal */,
+				B10000000000000000000294 /* ThermalVision.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1315,6 +1321,8 @@
 				A10000000000000000000290 /* FragmentShuffle.metal in Sources */,
 				A10000000000000000000291 /* TwirlDemoView.swift in Sources */,
 				A10000000000000000000292 /* Twirl.metal in Sources */,
+				A10000000000000000000293 /* ThermalVisionDemoView.swift in Sources */,
+				A10000000000000000000294 /* ThermalVision.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

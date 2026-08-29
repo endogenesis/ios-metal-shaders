@@ -190,6 +190,8 @@ struct ContentView: View {
 
                         TwirlDemoView()
 
+                        ThermalVisionDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
