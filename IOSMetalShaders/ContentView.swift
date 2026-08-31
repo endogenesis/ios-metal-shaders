@@ -192,6 +192,8 @@ struct ContentView: View {
 
                         ThermalVisionDemoView()
 
+                        FrameJitterDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
