@@ -307,6 +307,8 @@
 		A10000000000000000000294 /* ThermalVision.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000294 /* ThermalVision.metal */; };
 		A10000000000000000000295 /* FrameJitterDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000295 /* FrameJitterDemoView.swift */; };
 		A10000000000000000000296 /* FrameJitter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000296 /* FrameJitter.metal */; };
+		A10000000000000000000297 /* CRTPhosphorMaskDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000297 /* CRTPhosphorMaskDemoView.swift */; };
+		A10000000000000000000298 /* CRTPhosphorMask.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000298 /* CRTPhosphorMask.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -611,6 +613,8 @@
 		B10000000000000000000294 /* ThermalVision.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ThermalVision.metal; sourceTree = "<group>"; };
 		B10000000000000000000295 /* FrameJitterDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameJitterDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000296 /* FrameJitter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FrameJitter.metal; sourceTree = "<group>"; };
+		B10000000000000000000297 /* CRTPhosphorMaskDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTPhosphorMaskDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000298 /* CRTPhosphorMask.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTPhosphorMask.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -800,6 +804,7 @@
 				B10000000000000000000291 /* TwirlDemoView.swift */,
 				B10000000000000000000293 /* ThermalVisionDemoView.swift */,
 				B10000000000000000000295 /* FrameJitterDemoView.swift */,
+				B10000000000000000000297 /* CRTPhosphorMaskDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -951,6 +956,7 @@
 				B10000000000000000000292 /* Twirl.metal */,
 				B10000000000000000000294 /* ThermalVision.metal */,
 				B10000000000000000000296 /* FrameJitter.metal */,
+				B10000000000000000000298 /* CRTPhosphorMask.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1331,6 +1337,8 @@
 				A10000000000000000000294 /* ThermalVision.metal in Sources */,
 				A10000000000000000000295 /* FrameJitterDemoView.swift in Sources */,
 				A10000000000000000000296 /* FrameJitter.metal in Sources */,
+				A10000000000000000000297 /* CRTPhosphorMaskDemoView.swift in Sources */,
+				A10000000000000000000298 /* CRTPhosphorMask.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

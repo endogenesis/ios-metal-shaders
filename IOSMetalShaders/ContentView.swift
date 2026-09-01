@@ -194,6 +194,8 @@ struct ContentView: View {
 
                         FrameJitterDemoView()
 
+                        CRTPhosphorMaskDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
