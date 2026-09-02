@@ -196,6 +196,8 @@ struct ContentView: View {
 
                         CRTPhosphorMaskDemoView()
 
+                        LinearWipeDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
