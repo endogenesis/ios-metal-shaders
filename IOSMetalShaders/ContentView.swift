@@ -198,6 +198,8 @@ struct ContentView: View {
 
                         LinearWipeDemoView()
 
+                        WaterCausticsDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

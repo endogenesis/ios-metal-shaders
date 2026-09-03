@@ -311,6 +311,8 @@
 		A10000000000000000000298 /* CRTPhosphorMask.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000298 /* CRTPhosphorMask.metal */; };
 		A10000000000000000000299 /* LinearWipeDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000299 /* LinearWipeDemoView.swift */; };
 		A10000000000000000000300 /* LinearWipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000300 /* LinearWipe.metal */; };
+		A10000000000000000000301 /* WaterCausticsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000301 /* WaterCausticsDemoView.swift */; };
+		A10000000000000000000302 /* WaterCaustics.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000302 /* WaterCaustics.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -619,6 +621,8 @@
 		B10000000000000000000298 /* CRTPhosphorMask.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTPhosphorMask.metal; sourceTree = "<group>"; };
 		B10000000000000000000299 /* LinearWipeDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearWipeDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000300 /* LinearWipe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LinearWipe.metal; sourceTree = "<group>"; };
+		B10000000000000000000301 /* WaterCausticsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCausticsDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000302 /* WaterCaustics.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaterCaustics.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -810,6 +814,7 @@
 				B10000000000000000000295 /* FrameJitterDemoView.swift */,
 				B10000000000000000000297 /* CRTPhosphorMaskDemoView.swift */,
 				B10000000000000000000299 /* LinearWipeDemoView.swift */,
+				B10000000000000000000301 /* WaterCausticsDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -963,6 +968,7 @@
 				B10000000000000000000296 /* FrameJitter.metal */,
 				B10000000000000000000298 /* CRTPhosphorMask.metal */,
 				B10000000000000000000300 /* LinearWipe.metal */,
+				B10000000000000000000302 /* WaterCaustics.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1347,6 +1353,8 @@
 				A10000000000000000000298 /* CRTPhosphorMask.metal in Sources */,
 				A10000000000000000000299 /* LinearWipeDemoView.swift in Sources */,
 				A10000000000000000000300 /* LinearWipe.metal in Sources */,
+				A10000000000000000000301 /* WaterCausticsDemoView.swift in Sources */,
+				A10000000000000000000302 /* WaterCaustics.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
