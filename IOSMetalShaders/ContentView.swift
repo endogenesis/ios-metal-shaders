@@ -200,6 +200,8 @@ struct ContentView: View {
 
                         WaterCausticsDemoView()
 
+                        CRTCurvatureDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()

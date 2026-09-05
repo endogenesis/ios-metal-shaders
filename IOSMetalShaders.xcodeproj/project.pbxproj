@@ -313,6 +313,8 @@
 		A10000000000000000000300 /* LinearWipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000300 /* LinearWipe.metal */; };
 		A10000000000000000000301 /* WaterCausticsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000301 /* WaterCausticsDemoView.swift */; };
 		A10000000000000000000302 /* WaterCaustics.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000302 /* WaterCaustics.metal */; };
+		A10000000000000000000303 /* CRTCurvatureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000303 /* CRTCurvatureDemoView.swift */; };
+		A10000000000000000000304 /* CRTCurvature.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000304 /* CRTCurvature.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -623,6 +625,8 @@
 		B10000000000000000000300 /* LinearWipe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LinearWipe.metal; sourceTree = "<group>"; };
 		B10000000000000000000301 /* WaterCausticsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCausticsDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000302 /* WaterCaustics.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = WaterCaustics.metal; sourceTree = "<group>"; };
+		B10000000000000000000303 /* CRTCurvatureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRTCurvatureDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000304 /* CRTCurvature.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTCurvature.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -815,6 +819,7 @@
 				B10000000000000000000297 /* CRTPhosphorMaskDemoView.swift */,
 				B10000000000000000000299 /* LinearWipeDemoView.swift */,
 				B10000000000000000000301 /* WaterCausticsDemoView.swift */,
+				B10000000000000000000303 /* CRTCurvatureDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -969,6 +974,7 @@
 				B10000000000000000000298 /* CRTPhosphorMask.metal */,
 				B10000000000000000000300 /* LinearWipe.metal */,
 				B10000000000000000000302 /* WaterCaustics.metal */,
+				B10000000000000000000304 /* CRTCurvature.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1355,6 +1361,8 @@
 				A10000000000000000000300 /* LinearWipe.metal in Sources */,
 				A10000000000000000000301 /* WaterCausticsDemoView.swift in Sources */,
 				A10000000000000000000302 /* WaterCaustics.metal in Sources */,
+				A10000000000000000000303 /* CRTCurvatureDemoView.swift in Sources */,
+				A10000000000000000000304 /* CRTCurvature.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
