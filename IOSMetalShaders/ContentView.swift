@@ -202,6 +202,8 @@ struct ContentView: View {
 
                         CRTCurvatureDemoView()
 
+                        BrokenLCDDemoView()
+
                         ShaderDemoList(sortOrder: sortOrder)
                     }
                     .padding()
