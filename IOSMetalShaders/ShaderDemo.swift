@@ -24,7 +24,6 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case barcodeGlitch
     case hexBokeh
     case feedbackLoop
-    case pixelSorting
     case crosshatch
     case sharpen
     case rollingScanlines
@@ -159,6 +158,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case waterCaustics
     case crtCurvature
     case brokenLCD
+    case pixelSorting
 
     var id: Self { self }
 
@@ -271,8 +271,6 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             HexBokehDemoView()
         case .feedbackLoop:
             FeedbackLoopDemoView()
-        case .pixelSorting:
-            PixelSortingDemoView()
         case .crosshatch:
             CrosshatchDemoView()
         case .sharpen:
@@ -541,6 +539,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             CRTCurvatureDemoView()
         case .brokenLCD:
             BrokenLCDDemoView()
+        case .pixelSorting:
+            PixelSortingDemoView()
         }
     }
 }

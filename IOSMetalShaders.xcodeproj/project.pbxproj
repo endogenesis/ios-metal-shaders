@@ -317,6 +317,7 @@
 		A10000000000000000000304 /* CRTCurvature.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000304 /* CRTCurvature.metal */; };
 		A10000000000000000000305 /* BrokenLCDDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000305 /* BrokenLCDDemoView.swift */; };
 		A10000000000000000000306 /* BrokenLCD.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000306 /* BrokenLCD.metal */; };
+		A10000000000000000000307 /* PixelSortingMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000307 /* PixelSortingMetalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -631,6 +632,7 @@
 		B10000000000000000000304 /* CRTCurvature.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTCurvature.metal; sourceTree = "<group>"; };
 		B10000000000000000000305 /* BrokenLCDDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenLCDDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000306 /* BrokenLCD.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BrokenLCD.metal; sourceTree = "<group>"; };
+		B10000000000000000000307 /* PixelSortingMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelSortingMetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -825,6 +827,7 @@
 				B10000000000000000000301 /* WaterCausticsDemoView.swift */,
 				B10000000000000000000303 /* CRTCurvatureDemoView.swift */,
 				B10000000000000000000305 /* BrokenLCDDemoView.swift */,
+				B10000000000000000000307 /* PixelSortingMetalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1371,6 +1374,7 @@
 				A10000000000000000000304 /* CRTCurvature.metal in Sources */,
 				A10000000000000000000305 /* BrokenLCDDemoView.swift in Sources */,
 				A10000000000000000000306 /* BrokenLCD.metal in Sources */,
+				A10000000000000000000307 /* PixelSortingMetalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
