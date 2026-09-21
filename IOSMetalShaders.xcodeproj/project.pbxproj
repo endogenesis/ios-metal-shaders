@@ -318,6 +318,10 @@
 		A10000000000000000000305 /* BrokenLCDDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000305 /* BrokenLCDDemoView.swift */; };
 		A10000000000000000000306 /* BrokenLCD.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000306 /* BrokenLCD.metal */; };
 		A10000000000000000000307 /* PixelSortingMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000307 /* PixelSortingMetalView.swift */; };
+		A10000000000000000000308 /* MetalEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000308 /* MetalEffectView.swift */; };
+		A10000000000000000000309 /* MetalEffectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000309 /* MetalEffectRenderer.swift */; };
+		A10000000000000000000310 /* DualTextureMorph.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000310 /* DualTextureMorph.metal */; };
+		A10000000000000000000311 /* DualTextureMorphDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000311 /* DualTextureMorphDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -633,6 +637,10 @@
 		B10000000000000000000305 /* BrokenLCDDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenLCDDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000306 /* BrokenLCD.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BrokenLCD.metal; sourceTree = "<group>"; };
 		B10000000000000000000307 /* PixelSortingMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelSortingMetalView.swift; sourceTree = "<group>"; };
+		B10000000000000000000308 /* MetalEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalEffectView.swift; sourceTree = "<group>"; };
+		B10000000000000000000309 /* MetalEffectRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalEffectRenderer.swift; sourceTree = "<group>"; };
+		B10000000000000000000310 /* DualTextureMorph.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DualTextureMorph.metal; sourceTree = "<group>"; };
+		B10000000000000000000311 /* DualTextureMorphDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualTextureMorphDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -828,6 +836,9 @@
 				B10000000000000000000303 /* CRTCurvatureDemoView.swift */,
 				B10000000000000000000305 /* BrokenLCDDemoView.swift */,
 				B10000000000000000000307 /* PixelSortingMetalView.swift */,
+				B10000000000000000000308 /* MetalEffectView.swift */,
+				B10000000000000000000309 /* MetalEffectRenderer.swift */,
+				B10000000000000000000311 /* DualTextureMorphDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -984,6 +995,7 @@
 				B10000000000000000000302 /* WaterCaustics.metal */,
 				B10000000000000000000304 /* CRTCurvature.metal */,
 				B10000000000000000000306 /* BrokenLCD.metal */,
+				B10000000000000000000310 /* DualTextureMorph.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1375,6 +1387,10 @@
 				A10000000000000000000305 /* BrokenLCDDemoView.swift in Sources */,
 				A10000000000000000000306 /* BrokenLCD.metal in Sources */,
 				A10000000000000000000307 /* PixelSortingMetalView.swift in Sources */,
+				A10000000000000000000308 /* MetalEffectView.swift in Sources */,
+				A10000000000000000000309 /* MetalEffectRenderer.swift in Sources */,
+				A10000000000000000000310 /* DualTextureMorph.metal in Sources */,
+				A10000000000000000000311 /* DualTextureMorphDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

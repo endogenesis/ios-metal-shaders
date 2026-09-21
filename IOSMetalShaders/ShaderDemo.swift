@@ -159,6 +159,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case crtCurvature
     case brokenLCD
     case pixelSorting
+    case dualTextureMorph
 
     var id: Self { self }
 
@@ -224,7 +225,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             .transitionsAndMasks
 
         case .lumaKey, .circleReveal, .radialWipe, .chromaKey, .noiseDissolve,
-             .displacementTransition, .linearWipe:
+             .displacementTransition, .linearWipe, .dualTextureMorph:
             .transitionsAndMasks
 
         case .fire, .starfield, .smoke:
@@ -541,6 +542,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             BrokenLCDDemoView()
         case .pixelSorting:
             PixelSortingDemoView()
+        case .dualTextureMorph:
+            DualTextureMorphDemoView()
         }
     }
 }
