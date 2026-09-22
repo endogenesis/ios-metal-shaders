@@ -14,6 +14,9 @@ final class MetalEffectRenderer {
     private let library: MTLLibrary
     private var computePipelines: [String: MTLComputePipelineState] = [:]
     private var fieldTexture: MTLTexture?
+    private var historyTextures: [MTLTexture] = []
+    private var historyIndex = 0
+    private var frameIndex: UInt32 = 0
 
     init?(device: MTLDevice) {
         guard let queue = device.makeCommandQueue(),
@@ -25,6 +28,9 @@ final class MetalEffectRenderer {
 
     func resetState() {
         fieldTexture = nil
+        historyTextures = []
+        historyIndex = 0
+        frameIndex = 0
     }
 
     func makeTexture(
@@ -54,11 +60,11 @@ final class MetalEffectRenderer {
         return pipeline
     }
 
-    func dispatch(
+    func dispatch<Uniforms>(
         _ name: String,
         into commandBuffer: MTLCommandBuffer,
         textures: [MTLTexture?],
-        uniforms: inout MorphUniforms,
+        uniforms: inout Uniforms,
         width: Int,
         height: Int
     ) {
@@ -68,7 +74,7 @@ final class MetalEffectRenderer {
         for (index, texture) in textures.enumerated() {
             encoder.setTexture(texture, index: index)
         }
-        encoder.setBytes(&uniforms, length: MemoryLayout<MorphUniforms>.stride, index: 0)
+        encoder.setBytes(&uniforms, length: MemoryLayout<Uniforms>.stride, index: 0)
         let groupWidth = min(8, pipeline.threadExecutionWidth)
         encoder.dispatchThreads(
             MTLSize(width: width, height: height, depth: 1),
@@ -94,7 +100,14 @@ final class MetalEffectRenderer {
                 output: drawable.texture,
                 commandBuffer: commandBuffer
             )
-        case .feedback, .reactionDiffusion, .particles:
+        case .feedback:
+            renderFeedback(
+                parameters,
+                source: source,
+                output: drawable.texture,
+                commandBuffer: commandBuffer
+            )
+        case .reactionDiffusion, .particles:
             return
         }
         commandBuffer.present(drawable)
@@ -146,6 +159,65 @@ final class MetalEffectRenderer {
         )
     }
 
+    private func renderFeedback(
+        _ parameters: MetalEffectParameters,
+        source: MTLTexture,
+        output: MTLTexture,
+        commandBuffer: MTLCommandBuffer
+    ) {
+        if historyTextures.first?.width != source.width
+            || historyTextures.first?.height != source.height {
+            guard let first = makeTexture(
+                width: source.width, height: source.height, format: .rgba16Float
+            ), let second = makeTexture(
+                width: source.width, height: source.height, format: .rgba16Float
+            ) else { return }
+            historyTextures = [first, second]
+            historyIndex = 0
+            frameIndex = 0
+        }
+        guard historyTextures.count == 2 else { return }
+
+        let previous = historyTextures[historyIndex]
+        let next = historyTextures[1 - historyIndex]
+        var uniforms = FeedbackUniforms(
+            width: UInt32(source.width),
+            height: UInt32(source.height),
+            frameIndex: frameIndex,
+            padding: 0,
+            center: parameters.center,
+            intensity: parameters.intensity,
+            decay: 0.84
+        )
+        if frameIndex == 0 {
+            dispatch(
+                "feedbackSeed",
+                into: commandBuffer,
+                textures: [source, previous],
+                uniforms: &uniforms,
+                width: source.width,
+                height: source.height
+            )
+        }
+        dispatch(
+            "temporalFeedback",
+            into: commandBuffer,
+            textures: [source, previous, next],
+            uniforms: &uniforms,
+            width: source.width,
+            height: source.height
+        )
+        dispatch(
+            "feedbackComposite",
+            into: commandBuffer,
+            textures: [next, output],
+            uniforms: &uniforms,
+            width: source.width,
+            height: source.height
+        )
+        historyIndex = 1 - historyIndex
+        frameIndex &+= 1
+    }
 }
 
 struct MorphUniforms {
@@ -157,4 +229,14 @@ struct MorphUniforms {
     var intensity: Float
     var mode: UInt32
     var padding: UInt32
+}
+
+struct FeedbackUniforms {
+    var width: UInt32
+    var height: UInt32
+    var frameIndex: UInt32
+    var padding: UInt32
+    var center: SIMD2<Float>
+    var intensity: Float
+    var decay: Float
 }

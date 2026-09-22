@@ -160,6 +160,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case brokenLCD
     case pixelSorting
     case dualTextureMorph
+    case temporalFeedbackPortal
 
     var id: Self { self }
 
@@ -179,7 +180,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
              .compressionArtifacts, .deadPixels, .verticalTear, .glitchMosaic,
              .sliceGlitch, .vhsHeadSwitch, .interlacing, .bitCrush,
              .fragmentShuffle, .frameJitter, .crtPhosphorMask, .crtCurvature,
-             .brokenLCD:
+             .brokenLCD, .temporalFeedbackPortal:
             .glitch
 
         case .grayscale, .hueRotation, .duotone, .colorInvert, .brightness, .tint,
@@ -544,6 +545,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             PixelSortingDemoView()
         case .dualTextureMorph:
             DualTextureMorphDemoView()
+        case .temporalFeedbackPortal:
+            TemporalFeedbackPortalDemoView()
         }
     }
 }

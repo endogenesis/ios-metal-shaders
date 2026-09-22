@@ -322,6 +322,8 @@
 		A10000000000000000000309 /* MetalEffectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000309 /* MetalEffectRenderer.swift */; };
 		A10000000000000000000310 /* DualTextureMorph.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000310 /* DualTextureMorph.metal */; };
 		A10000000000000000000311 /* DualTextureMorphDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000311 /* DualTextureMorphDemoView.swift */; };
+		A10000000000000000000312 /* TemporalFeedbackPortal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000312 /* TemporalFeedbackPortal.metal */; };
+		A10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -641,6 +643,8 @@
 		B10000000000000000000309 /* MetalEffectRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalEffectRenderer.swift; sourceTree = "<group>"; };
 		B10000000000000000000310 /* DualTextureMorph.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DualTextureMorph.metal; sourceTree = "<group>"; };
 		B10000000000000000000311 /* DualTextureMorphDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualTextureMorphDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000312 /* TemporalFeedbackPortal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TemporalFeedbackPortal.metal; sourceTree = "<group>"; };
+		B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalFeedbackPortalDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -839,6 +843,7 @@
 				B10000000000000000000308 /* MetalEffectView.swift */,
 				B10000000000000000000309 /* MetalEffectRenderer.swift */,
 				B10000000000000000000311 /* DualTextureMorphDemoView.swift */,
+				B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -996,6 +1001,7 @@
 				B10000000000000000000304 /* CRTCurvature.metal */,
 				B10000000000000000000306 /* BrokenLCD.metal */,
 				B10000000000000000000310 /* DualTextureMorph.metal */,
+				B10000000000000000000312 /* TemporalFeedbackPortal.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1391,6 +1397,8 @@
 				A10000000000000000000309 /* MetalEffectRenderer.swift in Sources */,
 				A10000000000000000000310 /* DualTextureMorph.metal in Sources */,
 				A10000000000000000000311 /* DualTextureMorphDemoView.swift in Sources */,
+				A10000000000000000000312 /* TemporalFeedbackPortal.metal in Sources */,
+				A10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
