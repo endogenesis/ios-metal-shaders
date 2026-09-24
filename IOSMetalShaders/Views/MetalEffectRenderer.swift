@@ -17,6 +17,8 @@ final class MetalEffectRenderer {
     private var historyTextures: [MTLTexture] = []
     private var historyIndex = 0
     private var frameIndex: UInt32 = 0
+    private var chemistryTextures: [MTLTexture] = []
+    private var chemistryIndex = 0
 
     init?(device: MTLDevice) {
         guard let queue = device.makeCommandQueue(),
@@ -31,6 +33,8 @@ final class MetalEffectRenderer {
         historyTextures = []
         historyIndex = 0
         frameIndex = 0
+        chemistryTextures = []
+        chemistryIndex = 0
     }
 
     func makeTexture(
@@ -107,7 +111,14 @@ final class MetalEffectRenderer {
                 output: drawable.texture,
                 commandBuffer: commandBuffer
             )
-        case .reactionDiffusion, .particles:
+        case .reactionDiffusion:
+            renderReactionDiffusion(
+                parameters,
+                source: source,
+                output: drawable.texture,
+                commandBuffer: commandBuffer
+            )
+        case .particles:
             return
         }
         commandBuffer.present(drawable)
@@ -218,6 +229,67 @@ final class MetalEffectRenderer {
         historyIndex = 1 - historyIndex
         frameIndex &+= 1
     }
+
+    private func renderReactionDiffusion(
+        _ parameters: MetalEffectParameters,
+        source: MTLTexture,
+        output: MTLTexture,
+        commandBuffer: MTLCommandBuffer
+    ) {
+        let width = max(source.width / 2, 1)
+        let height = max(source.height / 2, 1)
+        if chemistryTextures.first?.width != width
+            || chemistryTextures.first?.height != height {
+            guard let first = makeTexture(width: width, height: height, format: .rg16Float),
+                  let second = makeTexture(width: width, height: height, format: .rg16Float)
+            else { return }
+            chemistryTextures = [first, second]
+            chemistryIndex = 0
+            frameIndex = 0
+        }
+        guard chemistryTextures.count == 2 else { return }
+
+        var uniforms = ReactionUniforms(
+            width: UInt32(width),
+            height: UInt32(height),
+            mode: parameters.mode,
+            touching: parameters.touching ? 1 : 0,
+            touch: parameters.center,
+            step: 0,
+            frameIndex: frameIndex
+        )
+        if frameIndex == 0 {
+            dispatch(
+                "reactionSeed",
+                into: commandBuffer,
+                textures: [chemistryTextures[0]],
+                uniforms: &uniforms,
+                width: width,
+                height: height
+            )
+        }
+        for step in 0..<10 {
+            uniforms.step = UInt32(step)
+            dispatch(
+                "reactionStep",
+                into: commandBuffer,
+                textures: [chemistryTextures[chemistryIndex], chemistryTextures[1 - chemistryIndex]],
+                uniforms: &uniforms,
+                width: width,
+                height: height
+            )
+            chemistryIndex = 1 - chemistryIndex
+        }
+        dispatch(
+            "reactionComposite",
+            into: commandBuffer,
+            textures: [source, chemistryTextures[chemistryIndex], output],
+            uniforms: &uniforms,
+            width: source.width,
+            height: source.height
+        )
+        frameIndex &+= 1
+    }
 }
 
 struct MorphUniforms {
@@ -239,4 +311,14 @@ struct FeedbackUniforms {
     var center: SIMD2<Float>
     var intensity: Float
     var decay: Float
+}
+
+struct ReactionUniforms {
+    var width: UInt32
+    var height: UInt32
+    var mode: UInt32
+    var touching: UInt32
+    var touch: SIMD2<Float>
+    var step: UInt32
+    var frameIndex: UInt32
 }

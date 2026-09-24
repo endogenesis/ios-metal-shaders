@@ -161,6 +161,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case pixelSorting
     case dualTextureMorph
     case temporalFeedbackPortal
+    case reactionDiffusionInk
 
     var id: Self { self }
 
@@ -233,7 +234,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             .proceduralAndAnimated
 
         case .plasmaField, .auroraGradient, .rainGlass, .fluidGradient, .snowfall,
-             .metaballs, .waterCaustics:
+             .metaballs, .waterCaustics, .reactionDiffusionInk:
             .proceduralAndAnimated
         }
     }
@@ -547,6 +548,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             DualTextureMorphDemoView()
         case .temporalFeedbackPortal:
             TemporalFeedbackPortalDemoView()
+        case .reactionDiffusionInk:
+            ReactionDiffusionInkDemoView()
         }
     }
 }
