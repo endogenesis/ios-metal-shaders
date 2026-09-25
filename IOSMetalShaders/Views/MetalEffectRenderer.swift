@@ -19,6 +19,7 @@ final class MetalEffectRenderer {
     private var frameIndex: UInt32 = 0
     private var chemistryTextures: [MTLTexture] = []
     private var chemistryIndex = 0
+    private var particlePipeline: MTLRenderPipelineState?
 
     init?(device: MTLDevice) {
         guard let queue = device.makeCommandQueue(),
@@ -78,7 +79,10 @@ final class MetalEffectRenderer {
         for (index, texture) in textures.enumerated() {
             encoder.setTexture(texture, index: index)
         }
-        encoder.setBytes(&uniforms, length: MemoryLayout<Uniforms>.stride, index: 0)
+        withUnsafeBytes(of: &uniforms) { bytes in
+            guard let baseAddress = bytes.baseAddress else { return }
+            encoder.setBytes(baseAddress, length: bytes.count, index: 0)
+        }
         let groupWidth = min(8, pipeline.threadExecutionWidth)
         encoder.dispatchThreads(
             MTLSize(width: width, height: height, depth: 1),
@@ -119,7 +123,12 @@ final class MetalEffectRenderer {
                 commandBuffer: commandBuffer
             )
         case .particles:
-            return
+            renderParticles(
+                parameters,
+                source: source,
+                output: drawable.texture,
+                commandBuffer: commandBuffer
+            )
         }
         commandBuffer.present(drawable)
         commandBuffer.commit()
@@ -198,7 +207,7 @@ final class MetalEffectRenderer {
             padding: 0,
             center: parameters.center,
             intensity: parameters.intensity,
-            decay: 0.84
+            decay: 0.978
         )
         if frameIndex == 0 {
             dispatch(
@@ -290,6 +299,66 @@ final class MetalEffectRenderer {
         )
         frameIndex &+= 1
     }
+
+    private func renderParticles(
+        _ parameters: MetalEffectParameters,
+        source: MTLTexture,
+        output: MTLTexture,
+        commandBuffer: MTLCommandBuffer
+    ) {
+        if particlePipeline == nil {
+            guard let vertex = library.makeFunction(name: "particleShatterVertex"),
+                  let fragment = library.makeFunction(name: "particleShatterFragment")
+            else { return }
+            let descriptor = MTLRenderPipelineDescriptor()
+            descriptor.vertexFunction = vertex
+            descriptor.fragmentFunction = fragment
+            descriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
+            descriptor.colorAttachments[0].isBlendingEnabled = true
+            descriptor.colorAttachments[0].rgbBlendOperation = .add
+            descriptor.colorAttachments[0].alphaBlendOperation = .add
+            descriptor.colorAttachments[0].sourceRGBBlendFactor = .one
+            descriptor.colorAttachments[0].sourceAlphaBlendFactor = .one
+            descriptor.colorAttachments[0].destinationRGBBlendFactor = .oneMinusSourceAlpha
+            descriptor.colorAttachments[0].destinationAlphaBlendFactor = .oneMinusSourceAlpha
+            particlePipeline = try? device.makeRenderPipelineState(descriptor: descriptor)
+        }
+        guard let particlePipeline else { return }
+
+        let tileSize: UInt32 = 3
+        let columns = (UInt32(source.width) + tileSize - 1) / tileSize
+        let rows = (UInt32(source.height) + tileSize - 1) / tileSize
+        var uniforms = ParticleUniforms(
+            width: UInt32(source.width),
+            height: UInt32(source.height),
+            columns: columns,
+            tileSize: tileSize,
+            progress: min(max(parameters.progress, 0), 1),
+            intensity: parameters.intensity,
+            seed: 0xB47291,
+            padding: 0
+        )
+
+        let pass = MTLRenderPassDescriptor()
+        pass.colorAttachments[0].texture = output
+        pass.colorAttachments[0].loadAction = .clear
+        pass.colorAttachments[0].storeAction = .store
+        pass.colorAttachments[0].clearColor = MTLClearColorMake(0, 0, 0, 0)
+        guard let encoder = commandBuffer.makeRenderCommandEncoder(descriptor: pass) else {
+            return
+        }
+        encoder.setRenderPipelineState(particlePipeline)
+        encoder.setVertexBytes(&uniforms, length: MemoryLayout<ParticleUniforms>.stride, index: 0)
+        encoder.setFragmentTexture(source, index: 0)
+        encoder.setFragmentBytes(&uniforms, length: MemoryLayout<ParticleUniforms>.stride, index: 0)
+        encoder.drawPrimitives(
+            type: .triangle,
+            vertexStart: 0,
+            vertexCount: 6,
+            instanceCount: Int(columns * rows)
+        )
+        encoder.endEncoding()
+    }
 }
 
 struct MorphUniforms {
@@ -321,4 +390,15 @@ struct ReactionUniforms {
     var touch: SIMD2<Float>
     var step: UInt32
     var frameIndex: UInt32
+}
+
+struct ParticleUniforms {
+    var width: UInt32
+    var height: UInt32
+    var columns: UInt32
+    var tileSize: UInt32
+    var progress: Float
+    var intensity: Float
+    var seed: UInt32
+    var padding: UInt32
 }

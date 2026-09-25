@@ -162,6 +162,7 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
     case dualTextureMorph
     case temporalFeedbackPortal
     case reactionDiffusionInk
+    case particleShatter
 
     var id: Self { self }
 
@@ -227,7 +228,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             .transitionsAndMasks
 
         case .lumaKey, .circleReveal, .radialWipe, .chromaKey, .noiseDissolve,
-             .displacementTransition, .linearWipe, .dualTextureMorph:
+             .displacementTransition, .linearWipe, .dualTextureMorph,
+             .particleShatter:
             .transitionsAndMasks
 
         case .fire, .starfield, .smoke:
@@ -550,6 +552,8 @@ enum ShaderDemo: Int, CaseIterable, Identifiable {
             TemporalFeedbackPortalDemoView()
         case .reactionDiffusionInk:
             ReactionDiffusionInkDemoView()
+        case .particleShatter:
+            ParticleShatterDemoView()
         }
     }
 }

@@ -326,6 +326,8 @@
 		A10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */; };
 		A10000000000000000000314 /* ReactionDiffusionInk.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000314 /* ReactionDiffusionInk.metal */; };
 		A10000000000000000000315 /* ReactionDiffusionInkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */; };
+		A10000000000000000000316 /* ParticleShatter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000316 /* ParticleShatter.metal */; };
+		A10000000000000000000317 /* ParticleShatterDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000317 /* ParticleShatterDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -649,6 +651,8 @@
 		B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalFeedbackPortalDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000314 /* ReactionDiffusionInk.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ReactionDiffusionInk.metal; sourceTree = "<group>"; };
 		B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionDiffusionInkDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000316 /* ParticleShatter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ParticleShatter.metal; sourceTree = "<group>"; };
+		B10000000000000000000317 /* ParticleShatterDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleShatterDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -849,6 +853,7 @@
 				B10000000000000000000311 /* DualTextureMorphDemoView.swift */,
 				B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */,
 				B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */,
+				B10000000000000000000317 /* ParticleShatterDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1008,6 +1013,7 @@
 				B10000000000000000000310 /* DualTextureMorph.metal */,
 				B10000000000000000000312 /* TemporalFeedbackPortal.metal */,
 				B10000000000000000000314 /* ReactionDiffusionInk.metal */,
+				B10000000000000000000316 /* ParticleShatter.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1407,6 +1413,8 @@
 				A10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift in Sources */,
 				A10000000000000000000314 /* ReactionDiffusionInk.metal in Sources */,
 				A10000000000000000000315 /* ReactionDiffusionInkDemoView.swift in Sources */,
+				A10000000000000000000316 /* ParticleShatter.metal in Sources */,
+				A10000000000000000000317 /* ParticleShatterDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

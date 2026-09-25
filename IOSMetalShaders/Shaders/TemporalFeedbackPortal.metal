@@ -50,8 +50,8 @@ kernel void temporalFeedback(
         + float2(curl, -curl) * 0.0018;
     float4 oldColor = previous.sample(linearSampler, historyUV);
     float4 newColor = source.read(pixel);
-    float3 combined = newColor.rgb * 0.30
-        + oldColor.rgb * uniforms.decay * 0.68;
+    float3 combined = newColor.rgb * (1.0 - uniforms.decay)
+        + oldColor.rgb * uniforms.decay;
     next.write(float4(clamp(combined, 0.0, 4.0), newColor.a), pixel);
 }
 
