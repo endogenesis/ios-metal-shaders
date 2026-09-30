@@ -84,10 +84,14 @@ final class MetalEffectRenderer {
             encoder.setBytes(baseAddress, length: bytes.count, index: 0)
         }
         let groupWidth = min(8, pipeline.threadExecutionWidth)
-        encoder.dispatchThreads(
-            MTLSize(width: width, height: height, depth: 1),
-            threadsPerThreadgroup: MTLSize(width: groupWidth, height: 8, depth: 1)
+        let groupHeight = min(8, pipeline.maxTotalThreadsPerThreadgroup / groupWidth)
+        let threadsPerGroup = MTLSize(width: groupWidth, height: groupHeight, depth: 1)
+        let groups = MTLSize(
+            width: (width + groupWidth - 1) / groupWidth,
+            height: (height + groupHeight - 1) / groupHeight,
+            depth: 1
         )
+        encoder.dispatchThreadgroups(groups, threadsPerThreadgroup: threadsPerGroup)
         encoder.endEncoding()
     }
 
