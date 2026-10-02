@@ -16,12 +16,14 @@ struct FeedbackLoopDemoView: View {
             summary: "Repeats shrinking, rotating samples to mimic a recursive video feed."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.layerEffect(
                             ShaderLibrary.feedbackLoop(
                                 .float2(proxy.size),
-                                .float(shaderTime(for: timeline.date)),
+                                .float(time),
                                 .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: amount * 1.3, height: amount * 1.3)
@@ -35,7 +37,7 @@ struct FeedbackLoopDemoView: View {
         }
     }
 
-    private func shaderTime(for date: Date) -> Float {
+    private nonisolated func shaderTime(for date: Date) -> Float {
         Float(date.timeIntervalSinceReferenceDate.truncatingRemainder(dividingBy: 60))
     }
 }

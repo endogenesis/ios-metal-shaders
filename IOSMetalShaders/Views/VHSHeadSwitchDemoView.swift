@@ -16,12 +16,14 @@ struct VHSHeadSwitchDemoView: View {
             summary: "Rolls and bends the lower frame like a misaligned VHS head."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 24)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.layerEffect(
                             ShaderLibrary.vhsHeadSwitch(
                             .float2(proxy.size),
-                            .float(shaderTime(for: timeline.date)),
+                            .float(time),
                             .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: 120, height: 120)

@@ -16,7 +16,7 @@ struct RadialWipeDemoView: View {
             summary: "Reveals the image with a rotating radial sweep."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.radialWipe(
                             .float2(proxy.size),

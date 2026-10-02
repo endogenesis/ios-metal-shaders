@@ -16,7 +16,7 @@ struct LinearWipeDemoView: View {
             summary: "Reveals the image behind a clean moving linear edge."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.linearWipe(
                             .float2(proxy.size),

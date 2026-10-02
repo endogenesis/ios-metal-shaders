@@ -16,7 +16,7 @@ struct VignetteDemoView: View {
             summary: "Darkens the frame edges to draw attention toward the center."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [strength] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.vignette(
                             .float2(proxy.size),

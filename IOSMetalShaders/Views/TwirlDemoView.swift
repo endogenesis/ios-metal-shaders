@@ -16,7 +16,7 @@ struct TwirlDemoView: View {
             summary: "Twists the center of the image into a smooth spiral."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.twirl(
                             .float2(proxy.size),

@@ -16,7 +16,7 @@ struct MagnifyingGlassDemoView: View {
             summary: "Magnifies a circular region and draws a subtle glass rim around it."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [zoom] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.magnifyingGlass(
                             .float2(proxy.size),

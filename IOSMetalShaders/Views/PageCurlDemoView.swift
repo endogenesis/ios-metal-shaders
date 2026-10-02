@@ -16,7 +16,7 @@ struct PageCurlDemoView: View {
             summary: "Folds the image edge into a curved page-like transition."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [progress] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.pageCurl(
                             .float2(proxy.size),

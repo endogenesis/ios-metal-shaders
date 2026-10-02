@@ -16,7 +16,7 @@ struct CRTCurvatureDemoView: View {
             summary: "Bows the image toward the curved face of a CRT display."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.crtCurvature(
                             .float2(proxy.size),

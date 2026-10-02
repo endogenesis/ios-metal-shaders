@@ -16,7 +16,7 @@ struct DotMatrixDemoView: View {
             summary: "Reconstructs the image with circular display dots."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.dotMatrix(
                             .float2(proxy.size),

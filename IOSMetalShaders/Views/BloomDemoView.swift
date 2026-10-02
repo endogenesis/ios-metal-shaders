@@ -16,7 +16,7 @@ struct BloomDemoView: View {
             summary: "Spreads bright highlights into a soft luminous bloom."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.bloom(
                             .float2(proxy.size),

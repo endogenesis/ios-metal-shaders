@@ -16,7 +16,7 @@ struct BlueprintDemoView: View {
             summary: "Turns contours into crisp technical drawing lines."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.blueprint(
                             .float2(proxy.size),

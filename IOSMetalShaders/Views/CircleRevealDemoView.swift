@@ -16,7 +16,7 @@ struct CircleRevealDemoView: View {
             summary: "Reveals the image through an expanding circular mask."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.circleReveal(
                             .float2(proxy.size),

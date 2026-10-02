@@ -16,7 +16,7 @@ struct PincushionDistortionDemoView: View {
             summary: "Bends the image inward with a telephoto lens curve."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.pincushionDistortion(
                             .float2(proxy.size),

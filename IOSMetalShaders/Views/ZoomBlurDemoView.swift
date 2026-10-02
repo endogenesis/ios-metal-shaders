@@ -16,7 +16,7 @@ struct ZoomBlurDemoView: View {
             summary: "Stretches samples radially toward the center for a rapid zoom impression."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.zoomBlur(
                             .float2(proxy.size),

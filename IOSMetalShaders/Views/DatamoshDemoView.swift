@@ -16,12 +16,14 @@ struct DatamoshDemoView: View {
             summary: "Smears moving blocks like damaged inter-frame video."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 24)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.layerEffect(
                             ShaderLibrary.datamosh(
                             .float2(proxy.size),
-                            .float(shaderTime(for: timeline.date)),
+                            .float(time),
                             .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: 96, height: 96)

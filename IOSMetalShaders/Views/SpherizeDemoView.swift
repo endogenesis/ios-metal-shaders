@@ -16,7 +16,7 @@ struct SpherizeDemoView: View {
             summary: "Wraps the image across a rounded glass-sphere projection."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [strength] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.spherize(
                             .float2(proxy.size),

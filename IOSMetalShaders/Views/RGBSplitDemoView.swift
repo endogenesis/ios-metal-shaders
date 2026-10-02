@@ -16,7 +16,7 @@ struct RGBSplitDemoView: View {
             summary: "Separates red, green, and blue into offset trails."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.rgbSplit(
                             .float2(proxy.size),

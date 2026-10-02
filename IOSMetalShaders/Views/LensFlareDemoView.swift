@@ -16,12 +16,14 @@ struct LensFlareDemoView: View {
             summary: "Adds a moving optical glow, halo, and small reflections across the lens axis."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [intensity] content, proxy in
                         content.colorEffect(
                             ShaderLibrary.lensFlare(
                                 .float2(proxy.size),
-                                .float(shaderTime(for: timeline.date)),
+                                .float(time),
                                 .float(Float(intensity))
                             )
                         )

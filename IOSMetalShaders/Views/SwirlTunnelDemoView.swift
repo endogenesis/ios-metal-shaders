@@ -16,12 +16,14 @@ struct SwirlTunnelDemoView: View {
             summary: "Pulls the image through a rotating tunnel."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 24)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.distortionEffect(
                             ShaderLibrary.swirlTunnel(
                             .float2(proxy.size),
-                            .float(shaderTime(for: timeline.date)),
+                            .float(time),
                             .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: 120, height: 90)

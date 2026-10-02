@@ -16,7 +16,7 @@ struct IrisRevealDemoView: View {
             summary: "Opens a soft circular aperture from the center of the image."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [progress] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.irisReveal(
                             .float2(proxy.size),

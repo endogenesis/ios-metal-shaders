@@ -16,7 +16,7 @@ struct PixelateDemoView: View {
             summary: "Reduces the image to large adjustable pixels."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.pixelate(
                             .float2(proxy.size),

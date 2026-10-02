@@ -16,7 +16,7 @@ struct DisplacementTransitionDemoView: View {
             summary: "Pushes the image away through a noisy displacement front."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.displacementTransition(
                             .float2(proxy.size),

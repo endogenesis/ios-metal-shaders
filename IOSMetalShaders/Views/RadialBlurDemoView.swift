@@ -16,7 +16,7 @@ struct RadialBlurDemoView: View {
             summary: "Streaks pixels outward from the image center."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.radialBlur(
                             .float2(proxy.size),

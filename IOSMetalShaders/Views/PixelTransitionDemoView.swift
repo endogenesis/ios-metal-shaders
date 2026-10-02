@@ -16,7 +16,7 @@ struct PixelTransitionDemoView: View {
             summary: "Reveals the image in randomized pixel blocks across the frame."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [progress] content, proxy in
                     content.colorEffect(
                         ShaderLibrary.pixelTransition(
                             .float2(proxy.size),

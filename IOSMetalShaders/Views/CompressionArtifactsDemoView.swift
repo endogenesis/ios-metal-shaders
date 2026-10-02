@@ -16,7 +16,7 @@ struct CompressionArtifactsDemoView: View {
             summary: "Introduces block quantization and ringing from heavy video compression."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.compressionArtifacts(
                             .float2(proxy.size),

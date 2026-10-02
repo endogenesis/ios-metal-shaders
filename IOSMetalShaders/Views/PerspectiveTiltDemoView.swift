@@ -16,7 +16,7 @@ struct PerspectiveTiltDemoView: View {
             summary: "Compresses opposite edges to give the image a tilted perspective plane."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.perspectiveTilt(
                             .float2(proxy.size),

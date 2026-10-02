@@ -16,7 +16,7 @@ struct UnsharpMaskDemoView: View {
             summary: "Sharpens local detail by subtracting a soft blur."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.unsharpMask(
                             .float2(proxy.size),

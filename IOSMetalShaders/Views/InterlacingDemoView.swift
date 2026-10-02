@@ -16,7 +16,7 @@ struct InterlacingDemoView: View {
             summary: "Separates alternating video fields into visible interlaced lines."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.interlacing(
                             .float2(proxy.size),

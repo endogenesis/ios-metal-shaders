@@ -16,7 +16,7 @@ struct BarrelDistortionDemoView: View {
             summary: "Bows straight lines outward with a classic wide-angle barrel curve."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [strength] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.barrelDistortion(
                             .float2(proxy.size),

@@ -16,7 +16,7 @@ struct TiltShiftDemoView: View {
             summary: "Keeps a narrow focus band sharp while softening the foreground and distance."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [radius] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.tiltShift(
                             .float2(proxy.size),

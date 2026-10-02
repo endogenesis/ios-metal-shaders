@@ -16,7 +16,7 @@ struct DoubleVisionDemoView: View {
             summary: "Overlaps two offset views into a disorienting duplicate image."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.doubleVision(
                             .float2(proxy.size),

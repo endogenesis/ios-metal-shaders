@@ -16,12 +16,14 @@ struct DisplacementNoiseDemoView: View {
             summary: "Warps the image with blocky animated noise."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 24)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.layerEffect(
                             ShaderLibrary.displacementNoise(
                             .float2(proxy.size),
-                            .float(shaderTime(for: timeline.date)),
+                            .float(time),
                             .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: 96, height: 96)

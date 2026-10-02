@@ -16,7 +16,7 @@ struct OutlineDemoView: View {
             summary: "Extracts image contours into a clean graphic outline."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.outline(
                             .float2(proxy.size),

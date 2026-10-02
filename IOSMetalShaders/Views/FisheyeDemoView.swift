@@ -16,7 +16,7 @@ struct FisheyeDemoView: View {
             summary: "Curves the image through an ultra-wide fisheye lens."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.fisheye(
                             .float2(proxy.size),

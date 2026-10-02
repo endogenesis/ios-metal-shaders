@@ -16,7 +16,7 @@ struct PolarWarpDemoView: View {
             summary: "Wraps Cartesian space into a polar spiral."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.polarWarp(
                             .float2(proxy.size),

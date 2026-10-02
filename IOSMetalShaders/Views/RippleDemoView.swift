@@ -16,12 +16,14 @@ struct RippleDemoView: View {
             summary: "Sends animated circular waves outward from the image center."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amplitude] content, proxy in
                         content.distortionEffect(
                             ShaderLibrary.ripple(
                                 .float2(proxy.size),
-                                .float(shaderTime(for: timeline.date)),
+                                .float(time),
                                 .float(Float(amplitude)),
                                 .float(15)
                             ),

@@ -16,7 +16,7 @@ struct SoftGlowDemoView: View {
             summary: "Wraps the image in a gentle diffused glow."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.softGlow(
                             .float2(proxy.size),

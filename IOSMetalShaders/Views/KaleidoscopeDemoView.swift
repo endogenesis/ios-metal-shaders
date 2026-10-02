@@ -16,7 +16,7 @@ struct KaleidoscopeDemoView: View {
             summary: "Folds the image into repeating mirrored wedges."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.kaleidoscope(
                             .float2(proxy.size),

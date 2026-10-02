@@ -16,7 +16,7 @@ struct PinchDemoView: View {
             summary: "Pulls image detail tightly toward the center."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.pinch(
                             .float2(proxy.size),

@@ -16,7 +16,7 @@ struct EmbossDemoView: View {
             summary: "Raises image detail into metallic relief."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.emboss(
                             .float2(proxy.size),

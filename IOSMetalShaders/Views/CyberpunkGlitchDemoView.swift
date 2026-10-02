@@ -16,12 +16,14 @@ struct CyberpunkGlitchDemoView: View {
             summary: "Cuts the image into neon, channel-shifted scan bands."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 24)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [amount] content, proxy in
                         content.layerEffect(
                             ShaderLibrary.cyberpunkGlitch(
                             .float2(proxy.size),
-                            .float(shaderTime(for: timeline.date)),
+                            .float(time),
                             .float(Float(amount))
                             ),
                             maxSampleOffset: CGSize(width: 96, height: 96)

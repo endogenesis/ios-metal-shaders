@@ -16,7 +16,7 @@ struct ChromaticAberrationDemoView: View {
             summary: "Separates red and blue channels toward the edges like an imperfect lens."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.chromaticAberration(
                             .float2(proxy.size),

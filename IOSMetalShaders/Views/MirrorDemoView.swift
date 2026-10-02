@@ -16,7 +16,7 @@ struct MirrorDemoView: View {
             summary: "Reflects the frame inward from both sides."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.mirror(
                             .float2(proxy.size),

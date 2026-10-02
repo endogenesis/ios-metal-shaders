@@ -16,7 +16,7 @@ struct LensRefractionDemoView: View {
             summary: "Refracts the image through a rounded optical lens."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.lensRefraction(
                             .float2(proxy.size),

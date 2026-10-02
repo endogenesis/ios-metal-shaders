@@ -16,12 +16,14 @@ struct WaterDropletsDemoView: View {
             summary: "Ripples the image through a field of animated glass droplets."
         ) {
             TimelineView(.animation(minimumInterval: 1 / 30)) { timeline in
+                let time = shaderTime(for: timeline.date)
+
                 ShaderCanvasView()
-                    .visualEffect { content, proxy in
+                    .visualEffect { [strength] content, proxy in
                         content.distortionEffect(
                             ShaderLibrary.waterDroplets(
                                 .float2(proxy.size),
-                                .float(shaderTime(for: timeline.date)),
+                                .float(time),
                                 .float(Float(strength))
                             ),
                             maxSampleOffset: CGSize(width: strength, height: strength)

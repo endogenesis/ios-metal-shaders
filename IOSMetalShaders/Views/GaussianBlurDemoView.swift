@@ -16,7 +16,7 @@ struct GaussianBlurDemoView: View {
             summary: "Softens detail with a balanced Gaussian kernel."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.gaussianBlur(
                             .float2(proxy.size),

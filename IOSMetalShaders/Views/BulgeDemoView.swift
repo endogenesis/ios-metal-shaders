@@ -16,7 +16,7 @@ struct BulgeDemoView: View {
             summary: "Magnifies the center with a rounded bulging lens."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.distortionEffect(
                         ShaderLibrary.bulge(
                             .float2(proxy.size),

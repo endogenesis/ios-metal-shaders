@@ -16,7 +16,7 @@ struct MosaicDemoView: View {
             summary: "Rebuilds the image from adjustable square tiles."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.mosaic(
                             .float2(proxy.size),

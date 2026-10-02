@@ -16,7 +16,7 @@ struct ToonShadeDemoView: View {
             summary: "Flattens color and inks edges like cel animation."
         ) {
             ShaderCanvasView()
-                .visualEffect { content, proxy in
+                .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.toonShade(
                             .float2(proxy.size),
