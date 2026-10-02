@@ -113,8 +113,6 @@ extension PixelSortingMetalView {
             var descending: UInt32
         }
 
-        private static var itemStride: Int { 16 }
-
         private var commandQueue: MTLCommandQueue?
         private var computePipeline: MTLComputePipelineState?
         private var sourceTexture: MTLTexture?
@@ -289,14 +287,9 @@ extension PixelSortingMetalView {
                 return
             }
 
-            let lineLength = Int(uniforms.direction == 1 ? uniforms.height : uniforms.width)
-            let lineCount = Int(uniforms.direction == 1 ? uniforms.width : uniforms.height)
-            guard
-                lineLength > 0,
-                lineCount > 0,
-                lineLength <= computePipeline.maxTotalThreadsPerThreadgroup,
-                lineLength * Self.itemStride <= (view.device?.maxThreadgroupMemoryLength ?? 0)
-            else {
+            let width = Int(uniforms.width)
+            let height = Int(uniforms.height)
+            guard width > 0, height > 0 else {
                 return
             }
 
@@ -304,10 +297,21 @@ extension PixelSortingMetalView {
             encoder.setTexture(sourceTexture, index: 0)
             encoder.setTexture(drawable.texture, index: 1)
             encoder.setBytes(&uniforms, length: MemoryLayout<Uniforms>.stride, index: 0)
-            encoder.setThreadgroupMemoryLength(lineLength * Self.itemStride, index: 0)
+
+            let threadgroupWidth = min(computePipeline.threadExecutionWidth, width)
+            let availableRows = computePipeline.maxTotalThreadsPerThreadgroup / threadgroupWidth
+            let threadgroupHeight = min(max(availableRows, 1), min(8, height))
             encoder.dispatchThreadgroups(
-                MTLSize(width: lineCount, height: 1, depth: 1),
-                threadsPerThreadgroup: MTLSize(width: lineLength, height: 1, depth: 1)
+                MTLSize(
+                    width: (width + threadgroupWidth - 1) / threadgroupWidth,
+                    height: (height + threadgroupHeight - 1) / threadgroupHeight,
+                    depth: 1
+                ),
+                threadsPerThreadgroup: MTLSize(
+                    width: threadgroupWidth,
+                    height: threadgroupHeight,
+                    depth: 1
+                )
             )
             encoder.endEncoding()
 

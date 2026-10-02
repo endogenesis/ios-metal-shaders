@@ -19,12 +19,6 @@ struct PixelSortUniforms {
     uint descending;
 };
 
-struct PixelSortItem {
-    half4 color;
-    float key;
-    uint isActive;
-};
-
 float pixelSortLuminance(half3 color) {
     return dot(float3(color), float3(0.2126f, 0.7152f, 0.0722f));
 }
@@ -68,70 +62,104 @@ float pixelSortKey(half3 color, uint keyMode) {
     return pixelSortLuminance(color);
 }
 
-// Each threadgroup owns one complete row or column. All pixels are first loaded
-// into threadgroup memory, then an odd-even transposition network sorts every
-// contiguous threshold-qualified run without allowing pixels to cross inactive
-// boundaries. Unlike a fragment approximation, this performs real compare/swap
-// operations and writes the reordered colors back to the output texture.
+bool pixelSortIsActive(
+    half4 color,
+    float key,
+    constant PixelSortUniforms &uniforms
+) {
+    return key >= uniforms.thresholdMinimum
+        && key <= uniforms.thresholdMaximum
+        && color.a > 0.001h;
+}
+
+uint2 pixelSortCoordinate(
+    uint lineIndex,
+    uint position,
+    bool isVertical
+) {
+    return isVertical
+        ? uint2(lineIndex, position)
+        : uint2(position, lineIndex);
+}
+
+// Every thread ranks one pixel inside its contiguous threshold-qualified run,
+// then scatters it to its sorted position. Including the original position as
+// a tie-breaker gives each source pixel a unique destination. This avoids the
+// previous requirement that an entire row or column fit in one threadgroup,
+// which caused the renderer to silently skip the effect on some GPUs.
 kernel void truePixelSort(
     texture2d<half, access::read> source [[texture(0)]],
     texture2d<half, access::write> destination [[texture(1)]],
     constant PixelSortUniforms &uniforms [[buffer(0)]],
-    threadgroup PixelSortItem *items [[threadgroup(0)]],
-    uint threadIndex [[thread_index_in_threadgroup]],
-    uint3 groupPosition [[threadgroup_position_in_grid]]
+    uint2 position [[thread_position_in_grid]]
 ) {
-    bool isVertical = uniforms.direction == 1u;
-    uint lineLength = isVertical ? uniforms.height : uniforms.width;
-    uint lineIndex = groupPosition.x;
-
-    if (threadIndex >= lineLength) {
+    if (position.x >= uniforms.width || position.y >= uniforms.height) {
         return;
     }
 
-    uint2 coordinate = isVertical
-        ? uint2(lineIndex, threadIndex)
-        : uint2(threadIndex, lineIndex);
+    bool isVertical = uniforms.direction == 1u;
+    uint lineLength = isVertical ? uniforms.height : uniforms.width;
+    uint lineIndex = isVertical ? position.x : position.y;
+    uint linePosition = isVertical ? position.y : position.x;
+    uint2 coordinate = pixelSortCoordinate(lineIndex, linePosition, isVertical);
 
     half4 sourceColor = source.read(coordinate);
     float key = pixelSortKey(sourceColor.rgb, uniforms.keyMode);
-    bool isActive = key >= uniforms.thresholdMinimum
-        && key <= uniforms.thresholdMaximum
-        && sourceColor.a > 0.001h;
-
-    items[threadIndex].color = sourceColor;
-    items[threadIndex].key = key;
-    items[threadIndex].isActive = isActive ? 1u : 0u;
-
-    threadgroup_barrier(mem_flags::mem_threadgroup);
-
-    // Odd and even phases alternate adjacent compare/swap pairs. Inactive
-    // pixels behave as hard barriers, so separate brightness runs are sorted
-    // independently while keeping the rest of the image fixed in place.
-    for (uint phase = 0u; phase < lineLength; phase++) {
-        uint leftIndex = threadIndex * 2u + (phase & 1u);
-        uint rightIndex = leftIndex + 1u;
-
-        if (rightIndex < lineLength) {
-            PixelSortItem left = items[leftIndex];
-            PixelSortItem right = items[rightIndex];
-
-            if (left.isActive != 0u && right.isActive != 0u) {
-                bool shouldSwap = uniforms.descending != 0u
-                    ? left.key < right.key
-                    : left.key > right.key;
-
-                if (shouldSwap) {
-                    items[leftIndex] = right;
-                    items[rightIndex] = left;
-                }
-            }
-        }
-
-        threadgroup_barrier(mem_flags::mem_threadgroup);
+    if (!pixelSortIsActive(sourceColor, key, uniforms)) {
+        destination.write(sourceColor, coordinate);
+        return;
     }
 
+    uint runStart = linePosition;
+    while (runStart > 0u) {
+        uint candidatePosition = runStart - 1u;
+        half4 candidate = source.read(
+            pixelSortCoordinate(lineIndex, candidatePosition, isVertical)
+        );
+        float candidateKey = pixelSortKey(candidate.rgb, uniforms.keyMode);
+        if (!pixelSortIsActive(candidate, candidateKey, uniforms)) {
+            break;
+        }
+        runStart = candidatePosition;
+    }
+
+    uint runEnd = linePosition + 1u;
+    while (runEnd < lineLength) {
+        half4 candidate = source.read(
+            pixelSortCoordinate(lineIndex, runEnd, isVertical)
+        );
+        float candidateKey = pixelSortKey(candidate.rgb, uniforms.keyMode);
+        if (!pixelSortIsActive(candidate, candidateKey, uniforms)) {
+            break;
+        }
+        runEnd += 1u;
+    }
+
+    uint rank = 0u;
+    for (uint candidatePosition = runStart;
+         candidatePosition < runEnd;
+         candidatePosition += 1u) {
+        half4 candidate = source.read(
+            pixelSortCoordinate(lineIndex, candidatePosition, isVertical)
+        );
+        float candidateKey = pixelSortKey(candidate.rgb, uniforms.keyMode);
+        bool hasPriority = uniforms.descending != 0u
+            ? candidateKey > key
+            : candidateKey < key;
+        bool isEarlierTie = candidateKey == key
+            && candidatePosition < linePosition;
+        rank += hasPriority || isEarlierTie ? 1u : 0u;
+    }
+
+    uint2 destinationCoordinate = pixelSortCoordinate(
+        lineIndex,
+        runStart + rank,
+        isVertical
+    );
     half amount = half(clamp(uniforms.amount, 0.0f, 1.0f));
-    half4 sortedColor = items[threadIndex].color;
-    destination.write(mix(sourceColor, sortedColor, amount), coordinate);
+    half4 originalDestinationColor = source.read(destinationCoordinate);
+    destination.write(
+        mix(originalDestinationColor, sourceColor, amount),
+        destinationCoordinate
+    );
 }
