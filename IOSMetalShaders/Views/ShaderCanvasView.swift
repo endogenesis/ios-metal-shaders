@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ShaderCanvasView: View {
+    let cornerRadius: CGFloat
+
+    init(cornerRadius: CGFloat = AppTheme.previewCornerRadius) {
+        self.cornerRadius = cornerRadius
+    }
+
     var body: some View {
         ZStack {
             LinearGradient(
@@ -33,6 +39,6 @@ struct ShaderCanvasView: View {
         }
         .frame(maxWidth: .infinity)
         .aspectRatio(16 / 10, contentMode: .fit)
-        .clipShape(.rect(cornerRadius: AppTheme.previewCornerRadius))
+        .clipShape(.rect(cornerRadius: cornerRadius))
     }
 }

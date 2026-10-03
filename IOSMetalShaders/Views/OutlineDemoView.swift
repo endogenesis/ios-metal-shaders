@@ -13,20 +13,21 @@ struct OutlineDemoView: View {
     var body: some View {
         ShaderPreviewCard(
             "Outline",
-            summary: "Extracts image contours into a clean graphic outline."
+            summary: "Adds a clean dark outline along image contours."
         ) {
-            ShaderCanvasView()
+            ShaderCanvasView(cornerRadius: 0)
                 .visualEffect { [amount] content, proxy in
                     content.layerEffect(
                         ShaderLibrary.outline(
                             .float2(proxy.size),
                             .float(Float(amount))
                         ),
-                        maxSampleOffset: CGSize(width: 96, height: 96)
+                        maxSampleOffset: CGSize(width: 5, height: 5)
                     )
                 }
+                .clipShape(.rect(cornerRadius: AppTheme.previewCornerRadius))
         } controls: {
-            LabeledContent("Amount") {
+            LabeledContent("Outline strength") {
                 Slider(value: $amount, in: 0...1)
             }
         }

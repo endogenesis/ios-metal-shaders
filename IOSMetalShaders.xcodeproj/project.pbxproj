@@ -138,11 +138,6 @@
 		A10000000000000000000130 /* ColorBandShift.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000130 /* ColorBandShift.metal */; };
 		A10000000000000000000131 /* TritoneDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000131 /* TritoneDemoView.swift */; };
 		A10000000000000000000132 /* Tritone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000132 /* Tritone.metal */; };
-		A20000000000000000000001 /* ShaderSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* ShaderSortOrder.swift */; };
-		A20000000000000000000002 /* ShaderCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* ShaderCategory.swift */; };
-		A20000000000000000000003 /* ShaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* ShaderDemo.swift */; };
-		A20000000000000000000004 /* ShaderDemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* ShaderDemoList.swift */; };
-		A20000000000000000000005 /* ShaderCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* ShaderCategoryHeader.swift */; };
 		A10000000000000000000133 /* TimeDisplacementDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000133 /* TimeDisplacementDemoView.swift */; };
 		A10000000000000000000134 /* TimeDisplacement.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000134 /* TimeDisplacement.metal */; };
 		A10000000000000000000135 /* BlueprintDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000135 /* BlueprintDemoView.swift */; };
@@ -328,6 +323,11 @@
 		A10000000000000000000315 /* ReactionDiffusionInkDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */; };
 		A10000000000000000000316 /* ParticleShatter.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000316 /* ParticleShatter.metal */; };
 		A10000000000000000000317 /* ParticleShatterDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000317 /* ParticleShatterDemoView.swift */; };
+		A20000000000000000000001 /* ShaderSortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* ShaderSortOrder.swift */; };
+		A20000000000000000000002 /* ShaderCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* ShaderCategory.swift */; };
+		A20000000000000000000003 /* ShaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* ShaderDemo.swift */; };
+		A20000000000000000000004 /* ShaderDemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* ShaderDemoList.swift */; };
+		A20000000000000000000005 /* ShaderCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* ShaderCategoryHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -340,6 +340,7 @@
 		B10000000000000000000007 /* ScanlinesDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanlinesDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000008 /* WaveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000009 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10000000000000000000011 /* OilPaintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilPaintDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000012 /* OilPaint.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OilPaint.metal; sourceTree = "<group>"; };
 		B10000000000000000000013 /* HueRotationDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotationDemoView.swift; sourceTree = "<group>"; };
@@ -362,7 +363,6 @@
 		B10000000000000000000030 /* ChromaticAberration.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChromaticAberration.metal; sourceTree = "<group>"; };
 		B10000000000000000000031 /* BarcodeGlitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGlitchDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000032 /* BarcodeGlitch.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BarcodeGlitch.metal; sourceTree = "<group>"; };
-		B10000000000000000000010 /* IOSMetalShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMetalShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10000000000000000000033 /* HexBokehDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexBokehDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000034 /* HexBokeh.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HexBokeh.metal; sourceTree = "<group>"; };
 		B10000000000000000000035 /* FeedbackLoopDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackLoopDemoView.swift; sourceTree = "<group>"; };
@@ -463,11 +463,6 @@
 		B10000000000000000000130 /* ColorBandShift.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBandShift.metal; sourceTree = "<group>"; };
 		B10000000000000000000131 /* TritoneDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TritoneDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000132 /* Tritone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Tritone.metal; sourceTree = "<group>"; };
-		B20000000000000000000001 /* ShaderSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderSortOrder.swift; sourceTree = "<group>"; };
-		B20000000000000000000002 /* ShaderCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategory.swift; sourceTree = "<group>"; };
-		B20000000000000000000003 /* ShaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemo.swift; sourceTree = "<group>"; };
-		B20000000000000000000004 /* ShaderDemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemoList.swift; sourceTree = "<group>"; };
-		B20000000000000000000005 /* ShaderCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategoryHeader.swift; sourceTree = "<group>"; };
 		B10000000000000000000133 /* TimeDisplacementDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDisplacementDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000134 /* TimeDisplacement.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TimeDisplacement.metal; sourceTree = "<group>"; };
 		B10000000000000000000135 /* BlueprintDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoView.swift; sourceTree = "<group>"; };
@@ -653,6 +648,11 @@
 		B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionDiffusionInkDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000316 /* ParticleShatter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ParticleShatter.metal; sourceTree = "<group>"; };
 		B10000000000000000000317 /* ParticleShatterDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleShatterDemoView.swift; sourceTree = "<group>"; };
+		B20000000000000000000001 /* ShaderSortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderSortOrder.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* ShaderCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategory.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* ShaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemo.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* ShaderDemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemoList.swift; sourceTree = "<group>"; };
+		B20000000000000000000005 /* ShaderCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategoryHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1458,7 +1458,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-		};
+			};
 			name = Release;
 		};
 		F10000000000000000000005 /* Debug */ = {
@@ -1467,6 +1467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = FK7P698MNG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1493,6 +1494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = FK7P698MNG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
