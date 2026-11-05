@@ -14,6 +14,7 @@ struct PixelSortingDemoView: View {
     @State private var direction = Direction.horizontal
     @State private var key = SortKey.luminance
     @State private var descending = false
+    @State private var renderingError: String?
 
     var body: some View {
         ShaderPreviewCard(
@@ -31,7 +32,8 @@ struct PixelSortingDemoView: View {
                     thresholdMaximum: Float(max(thresholdMinimum, thresholdMaximum)),
                     direction: direction.rawValue,
                     keyMode: key.rawValue,
-                    descending: descending
+                    descending: descending,
+                    onRenderingError: { renderingError = $0 }
                 ) {
                     ShaderCanvasView()
                 }
@@ -40,6 +42,15 @@ struct PixelSortingDemoView: View {
             .frame(maxWidth: .infinity)
             .aspectRatio(16 / 10, contentMode: .fit)
             .clipShape(.rect(cornerRadius: AppTheme.previewCornerRadius))
+            .overlay(alignment: .bottom) {
+                if let renderingError {
+                    Label(renderingError, systemImage: "exclamationmark.triangle")
+                        .font(.caption)
+                        .padding(8)
+                        .background(.regularMaterial, in: .rect(cornerRadius: 8))
+                        .padding(8)
+                }
+            }
         } controls: {
             VStack {
                 Picker("Direction", selection: $direction) {

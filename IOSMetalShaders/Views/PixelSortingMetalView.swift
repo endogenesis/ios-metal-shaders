@@ -17,6 +17,7 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
     let direction: UInt32
     let keyMode: UInt32
     let descending: Bool
+    let onRenderingError: @MainActor (String?) -> Void
 
     @ViewBuilder private let content: Content
 
@@ -27,6 +28,7 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
         direction: UInt32,
         keyMode: UInt32,
         descending: Bool,
+        onRenderingError: @escaping @MainActor (String?) -> Void,
         @ViewBuilder content: () -> Content
     ) {
         self.amount = amount
@@ -35,6 +37,7 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
         self.direction = direction
         self.keyMode = keyMode
         self.descending = descending
+        self.onRenderingError = onRenderingError
         self.content = content()
     }
 
@@ -43,15 +46,21 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
     }
 
     func makeUIView(context: Context) -> MTKView {
-        let view = MTKView(frame: .zero, device: MTLCreateSystemDefaultDevice())
+        let view = PixelSortingRenderView(frame: .zero, device: MTLCreateSystemDefaultDevice())
+        context.coordinator.onRenderingError = onRenderingError
         context.coordinator.configure(view)
-        update(view, coordinator: context.coordinator, shouldRefreshSource: true)
+        update(view, coordinator: context.coordinator)
         return view
     }
 
     func updateUIView(_ view: MTKView, context: Context) {
-        update(view, coordinator: context.coordinator, shouldRefreshSource: false)
-        context.coordinator.drawWhenReady(in: view)
+        update(view, coordinator: context.coordinator)
+    }
+
+    static func dismantleUIView(_ view: MTKView, coordinator: Coordinator) {
+        view.delegate = nil
+        coordinator.makeSourceImage = nil
+        coordinator.onRenderingError = nil
     }
 
     func sizeThatFits(
@@ -68,12 +77,12 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
 
     private func update(
         _ view: MTKView,
-        coordinator: Coordinator,
-        shouldRefreshSource: Bool
+        coordinator: Coordinator
     ) {
-        if shouldRefreshSource, let image = makeSourceImage() {
-            coordinator.setSourceImage(image, in: view)
-        }
+        // Capture after attachment/layout, not during SwiftUI's makeUIView.
+        // Keep the provider so a failed first capture can be retried.
+        coordinator.makeSourceImage = makeSourceImage
+        coordinator.onRenderingError = onRenderingError
 
         coordinator.update(
             amount: amount,
@@ -102,6 +111,9 @@ struct PixelSortingMetalView<Content: View>: UIViewRepresentable {
 extension PixelSortingMetalView {
     @MainActor
     final class Coordinator: NSObject, MTKViewDelegate {
+        var makeSourceImage: (@MainActor () -> CGImage?)?
+        var onRenderingError: (@MainActor (String?) -> Void)?
+
         private struct Uniforms {
             var width: UInt32
             var height: UInt32
@@ -116,6 +128,7 @@ extension PixelSortingMetalView {
         private var commandQueue: MTLCommandQueue?
         private var computePipeline: MTLComputePipelineState?
         private var sourceTexture: MTLTexture?
+        private var renderingError: String?
         private var uniforms = Uniforms(
             width: 0,
             height: 0,
@@ -141,6 +154,7 @@ extension PixelSortingMetalView {
                 let library = device.makeDefaultLibrary(),
                 let function = library.makeFunction(name: "truePixelSort")
             else {
+                reportError("Pixel sorting is unavailable on this device.")
                 return
             }
 
@@ -148,6 +162,8 @@ extension PixelSortingMetalView {
             do {
                 computePipeline = try device.makeComputePipelineState(function: function)
             } catch {
+                print("PixelSorting: pipeline creation failed: \(error)")
+                reportError("Pixel sorting could not start.")
                 return
             }
 
@@ -169,6 +185,7 @@ extension PixelSortingMetalView {
             }
 
             guard let texture = makeSourceTexture(from: image, device: device) else {
+                reportError("Pixel sorting could not load the preview image.")
                 return
             }
             sourceTexture = texture
@@ -176,7 +193,6 @@ extension PixelSortingMetalView {
             uniforms.width = UInt32(image.width)
             uniforms.height = UInt32(image.height)
             view.drawableSize = CGSize(width: image.width, height: image.height)
-            view.setNeedsDisplay()
         }
 
         private func makeSourceTexture(
@@ -242,13 +258,16 @@ extension PixelSortingMetalView {
             return texture
         }
 
-        func drawWhenReady(in view: MTKView) {
-            // setNeedsDisplay() can be consumed before an MTKView installed by
-            // SwiftUI has a window/currentDrawable. Retry on the next main-actor
-            // turn, when the view has completed layout.
-            Task { @MainActor [weak view] in
-                await Task.yield()
-                view?.draw()
+        private func reportError(_ message: String?) {
+            guard renderingError != message else { return }
+            renderingError = message
+            if let message {
+                print("PixelSorting: \(message)")
+            }
+            // Errors can originate in makeUIView or a Metal completion handler.
+            // Publish outside the current SwiftUI view update.
+            Task { @MainActor [weak self] in
+                self?.onRenderingError?(message)
             }
         }
 
@@ -271,12 +290,20 @@ extension PixelSortingMetalView {
         }
 
         func draw(in view: MTKView) {
-            guard let sourceTexture else {
+            guard view.window != nil, view.bounds.width > 0, view.bounds.height > 0 else {
                 return
             }
             guard let computePipeline, let commandQueue else {
                 return
             }
+            if sourceTexture == nil {
+                guard let image = makeSourceImage?() else {
+                    reportError("Pixel sorting could not capture the preview image.")
+                    return
+                }
+                setSourceImage(image, in: view)
+            }
+            guard let sourceTexture else { return }
             guard let drawable = view.currentDrawable else {
                 return
             }
@@ -284,6 +311,7 @@ extension PixelSortingMetalView {
                 let commandBuffer = commandQueue.makeCommandBuffer(),
                 let encoder = commandBuffer.makeComputeCommandEncoder()
             else {
+                reportError("Pixel sorting could not render this frame.")
                 return
             }
 
@@ -315,9 +343,18 @@ extension PixelSortingMetalView {
             )
             encoder.endEncoding()
 
+            let reportCompletion: @MainActor @Sendable (String?) -> Void = { [weak self] message in
+                self?.reportError(message)
+            }
             commandBuffer.addCompletedHandler { commandBuffer in
-                if let error = commandBuffer.error {
-                    print("PixelSorting: command buffer failed: \(error)")
+                let errorDescription = commandBuffer.error?.localizedDescription
+                if let errorDescription {
+                    print("PixelSorting: command buffer failed: \(errorDescription)")
+                }
+                Task { @MainActor in
+                    reportCompletion(
+                        errorDescription == nil ? nil : "Pixel sorting could not render this frame."
+                    )
                 }
             }
             commandBuffer.present(drawable)
@@ -325,6 +362,24 @@ extension PixelSortingMetalView {
         }
 
         func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
+        }
+    }
+}
+
+// A paused MTKView must be invalidated when UIKit actually attaches and lays it
+// out. Task.yield() does not guarantee either event has happened in a LazyVStack.
+private final class PixelSortingRenderView: MTKView {
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        if window != nil {
+            setNeedsDisplay()
+        }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if window != nil, bounds.width > 0, bounds.height > 0 {
+            setNeedsDisplay()
         }
     }
 }
