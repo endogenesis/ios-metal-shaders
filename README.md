@@ -7,6 +7,7 @@ runnable SwiftUI example and live controls.
 ## Highlights
 
 - 150+ shader demos across eight categories
+- Search by shader name, with newest-first and category sorting
 - Animated shaders driven by `TimelineView`
 - No third-party dependencies
 
@@ -69,7 +70,8 @@ IOSMetalShaders/
 
 1. Add a `[[ stitchable ]]` function in `IOSMetalShaders/Shaders`.
 2. Create a matching `*DemoView.swift` with a preview and controls.
-3. Register the demo in `ShaderDemo`.
+3. Register the demo in `ShaderDemo`, using the card title as its string raw value
+   so it can be found by name.
 4. Assign it to one of the categories in `ShaderDemo.category`.
 5. Build and test the effect on a simulator or device.
 

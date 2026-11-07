@@ -9,28 +9,47 @@ import SwiftUI
 
 struct ShaderDemoList: View {
     let sortOrder: ShaderSortOrder
+    let searchText: String
 
-    var body: some View {
-        switch sortOrder {
-        case .newest:
-            ForEach(ShaderDemo.allCases.reversed()) { shader in
-                shader.content
-            }
+    private var searchQuery: String {
+        searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 
-        case .category:
-            ForEach(ShaderCategory.allCases) { category in
-                Section {
-                    ForEach(shaders(in: category)) { shader in
-                        shader.content
-                    }
-                } header: {
-                    ShaderCategoryHeader(category: category)
-                }
-            }
+    private var matchingShaders: [ShaderDemo] {
+        let query = searchQuery
+        return ShaderDemo.allCases.reversed().filter {
+            query.isEmpty || $0.name.localizedStandardContains(query)
         }
     }
 
-    private func shaders(in category: ShaderCategory) -> [ShaderDemo] {
-        ShaderDemo.allCases.reversed().filter { $0.category == category }
+    var body: some View {
+        let shaders = matchingShaders
+
+        if shaders.isEmpty {
+            ContentUnavailableView.search(text: searchQuery)
+                .frame(maxWidth: .infinity)
+        } else {
+            switch sortOrder {
+            case .newest:
+                ForEach(shaders) { shader in
+                    shader.content
+                }
+
+            case .category:
+                let groupedShaders = Dictionary(grouping: shaders, by: \.category)
+
+                ForEach(ShaderCategory.allCases) { category in
+                    if let categoryShaders = groupedShaders[category] {
+                        Section {
+                            ForEach(categoryShaders) { shader in
+                                shader.content
+                            }
+                        } header: {
+                            ShaderCategoryHeader(category: category)
+                        }
+                    }
+                }
+            }
+        }
     }
 }

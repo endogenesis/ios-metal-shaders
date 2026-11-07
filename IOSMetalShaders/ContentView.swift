@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchText = ""
     @State private var sortOrder = ShaderSortOrder.newest
 
     private let topAnchor = "shader-gallery-top"
@@ -30,11 +31,21 @@ struct ContentView: View {
                         }
                         .id(topAnchor)
 
-                        ShaderDemoList(sortOrder: sortOrder)
+                        ShaderDemoList(sortOrder: sortOrder, searchText: searchText)
                     }
                     .padding()
                 }
                 .navigationTitle("Metal Shader Lab")
+                .searchable(
+                    text: $searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Search shaders by name"
+                )
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .onChange(of: searchText) {
+                    proxy.scrollTo(topAnchor, anchor: .top)
+                }
                 .toolbar {
                     ToolbarItemGroup(placement: .topBarTrailing) {
                         Menu("Sort Shaders", systemImage: "arrow.up.arrow.down") {
@@ -47,6 +58,7 @@ struct ContentView: View {
                         }
 
                         Button("Latest Shader", systemImage: "clock.arrow.circlepath") {
+                            searchText = ""
                             sortOrder = .newest
 
                             withAnimation {

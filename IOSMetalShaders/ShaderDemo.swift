@@ -7,164 +7,166 @@
 
 import SwiftUI
 
-enum ShaderDemo: Int, CaseIterable, Identifiable {
-    case grayscale
-    case scanlines
-    case wave
-    case oilPaint
-    case hueRotation
-    case pencilSketch
-    case macroblockError
-    case frostedNoise
-    case tapeWrinkle
-    case channelFreeze
-    case signalScramble
-    case burnDissolve
-    case chromaticAberration
-    case barcodeGlitch
-    case hexBokeh
-    case feedbackLoop
-    case crosshatch
-    case sharpen
-    case rollingScanlines
-    case duotone
-    case blockDisplacement
-    case pageCurl
-    case sobelEdges
-    case waterDroplets
-    case crtSyncLoss
-    case fire
-    case channelSwap
-    case tiltShift
-    case vignette
-    case watercolor
-    case laplacianEdges
-    case vhsTracking
-    case boxBlur
-    case starfield
-    case perspectiveTilt
-    case halftone
-    case bayerDither
-    case colorInvert
-    case echoFrames
-    case pixelTransition
-    case irisReveal
-    case ripple
-    case filmGrain
-    case brightness
-    case directionalBlur
-    case blueNoiseDither
-    case magnifyingGlass
-    case stipple
-    case spherize
-    case zoomBlur
-    case barrelDistortion
-    case voronoiCells
-    case canvasTexture
-    case motionBlur
-    case lensFlare
-    case smoke
-    case tint
-    case gamma
-    case solarize
-    case colorCurves
-    case shadowsHighlights
-    case colorBandShift
-    case tritone
-    case timeDisplacement
-    case blueprint
-    case exposure
-    case displacementNoise
-    case paperGrain
-    case plasmaField
-    case gaussianBlur
-    case auroraGradient
-    case mosaic
-    case datamosh
-    case liquidGlass
-    case swirlTunnel
-    case cyberpunkGlitch
-    case bloom
-    case pincushionDistortion
-    case radialBlur
-    case checkerPattern
-    case dataCorruption
-    case softGlow
-    case rgbSplit
-    case contrast
-    case noiseWarp
-    case emboss
-    case scanlineJitter
-    case rainGlass
-    case unsharpMask
-    case channelDrift
-    case fluidGradient
-    case pinch
-    case waveInterference
-    case lumaKey
-    case bulge
-    case digitalStatic
-    case circleReveal
-    case sepia
-    case snowfall
-    case polarWarp
-    case lightLeak
-    case colorQuantizationGlitch
-    case godRays
-    case flagDistortion
-    case analogStatic
-    case stuckPixels
-    case terminalGlitch
-    case dotMatrix
-    case signalNoise
-    case metaballs
-    case posterize
-    case radialWipe
-    case lineDropout
-    case levels
-    case ghosting
-    case doubleVision
-    case horizontalTear
-    case compressionArtifacts
-    case chromaKey
-    case fisheye
-    case deadPixels
-    case verticalTear
-    case kaleidoscope
-    case glitchMosaic
-    case heatHaze
-    case sliceGlitch
-    case colorBalance
-    case toonShade
-    case vhsHeadSwitch
-    case pixelate
-    case vibrance
-    case noiseDissolve
-    case interlacing
-    case lensRefraction
-    case displacementTransition
-    case saturation
-    case mirror
-    case temperature
-    case bitCrush
-    case outline
-    case threshold
-    case fragmentShuffle
-    case twirl
-    case thermalVision
-    case frameJitter
-    case crtPhosphorMask
-    case linearWipe
-    case waterCaustics
-    case crtCurvature
-    case brokenLCD
-    case pixelSorting
-    case dualTextureMorph
-    case temporalFeedbackPortal
-    case reactionDiffusionInk
-    case particleShatter
+enum ShaderDemo: String, CaseIterable, Identifiable {
+    case grayscale = "Grayscale"
+    case scanlines = "Scanlines"
+    case wave = "Wave"
+    case oilPaint = "Oil Paint"
+    case hueRotation = "Hue Rotation"
+    case pencilSketch = "Pencil Sketch"
+    case macroblockError = "Macroblock Error"
+    case frostedNoise = "Frosted Noise"
+    case tapeWrinkle = "Tape Wrinkle"
+    case channelFreeze = "Channel Freeze"
+    case signalScramble = "Signal Scramble"
+    case burnDissolve = "Burn Dissolve"
+    case chromaticAberration = "Chromatic Aberration"
+    case barcodeGlitch = "Barcode Glitch"
+    case hexBokeh = "Hex Bokeh"
+    case feedbackLoop = "Feedback Loop"
+    case crosshatch = "Crosshatch"
+    case sharpen = "Sharpen"
+    case rollingScanlines = "Rolling Scanlines"
+    case duotone = "Duotone"
+    case blockDisplacement = "Block Displacement"
+    case pageCurl = "Page Curl"
+    case sobelEdges = "Sobel Edges"
+    case waterDroplets = "Water Droplets"
+    case crtSyncLoss = "CRT Sync Loss"
+    case fire = "Fire"
+    case channelSwap = "Channel Swap"
+    case tiltShift = "Tilt Shift"
+    case vignette = "Vignette"
+    case watercolor = "Watercolor"
+    case laplacianEdges = "Laplacian Edges"
+    case vhsTracking = "VHS Tracking"
+    case boxBlur = "Box Blur"
+    case starfield = "Starfield"
+    case perspectiveTilt = "Perspective Tilt"
+    case halftone = "Halftone"
+    case bayerDither = "Bayer Dither"
+    case colorInvert = "Color Invert"
+    case echoFrames = "Echo Frames"
+    case pixelTransition = "Pixel Transition"
+    case irisReveal = "Iris Reveal"
+    case ripple = "Ripple"
+    case filmGrain = "Film Grain"
+    case brightness = "Brightness"
+    case directionalBlur = "Directional Blur"
+    case blueNoiseDither = "Blue Noise Dither"
+    case magnifyingGlass = "Magnifying Glass"
+    case stipple = "Stipple"
+    case spherize = "Spherize"
+    case zoomBlur = "Zoom Blur"
+    case barrelDistortion = "Barrel Distortion"
+    case voronoiCells = "Voronoi Cells"
+    case canvasTexture = "Canvas Texture"
+    case motionBlur = "Motion Blur"
+    case lensFlare = "Lens Flare"
+    case smoke = "Smoke"
+    case tint = "Tint"
+    case gamma = "Gamma"
+    case solarize = "Solarize"
+    case colorCurves = "Color Curves"
+    case shadowsHighlights = "Shadows & Highlights"
+    case colorBandShift = "Color Band Shift"
+    case tritone = "Tritone"
+    case timeDisplacement = "Time Displacement"
+    case blueprint = "Blueprint"
+    case exposure = "Exposure"
+    case displacementNoise = "Displacement Noise"
+    case paperGrain = "Paper Grain"
+    case plasmaField = "Plasma Field"
+    case gaussianBlur = "Gaussian Blur"
+    case auroraGradient = "Aurora Gradient"
+    case mosaic = "Mosaic"
+    case datamosh = "Datamosh"
+    case liquidGlass = "Liquid Glass"
+    case swirlTunnel = "Swirl Tunnel"
+    case cyberpunkGlitch = "Cyberpunk Glitch"
+    case bloom = "Bloom"
+    case pincushionDistortion = "Pincushion Distortion"
+    case radialBlur = "Radial Blur"
+    case checkerPattern = "Checker Pattern"
+    case dataCorruption = "Data Corruption"
+    case softGlow = "Soft Glow"
+    case rgbSplit = "RGB Split"
+    case contrast = "Contrast"
+    case noiseWarp = "Noise Warp"
+    case emboss = "Emboss"
+    case scanlineJitter = "Scanline Jitter"
+    case rainGlass = "Rain Glass"
+    case unsharpMask = "Unsharp Mask"
+    case channelDrift = "Channel Drift"
+    case fluidGradient = "Fluid Gradient"
+    case pinch = "Pinch"
+    case waveInterference = "Wave Interference"
+    case lumaKey = "Luma Key"
+    case bulge = "Bulge"
+    case digitalStatic = "Digital Static"
+    case circleReveal = "Circle Reveal"
+    case sepia = "Sepia"
+    case snowfall = "Snowfall"
+    case polarWarp = "Polar Warp"
+    case lightLeak = "Light Leak"
+    case colorQuantizationGlitch = "Color Quantization Glitch"
+    case godRays = "God Rays"
+    case flagDistortion = "Flag Distortion"
+    case analogStatic = "Analog Static"
+    case stuckPixels = "Stuck Pixels"
+    case terminalGlitch = "Terminal Glitch"
+    case dotMatrix = "Dot Matrix"
+    case signalNoise = "Signal Noise"
+    case metaballs = "Metaballs"
+    case posterize = "Posterize"
+    case radialWipe = "Radial Wipe"
+    case lineDropout = "Line Dropout"
+    case levels = "Levels"
+    case ghosting = "Ghosting"
+    case doubleVision = "Double Vision"
+    case horizontalTear = "Horizontal Tear"
+    case compressionArtifacts = "Compression Artifacts"
+    case chromaKey = "Chroma Key"
+    case fisheye = "Fisheye"
+    case deadPixels = "Dead Pixels"
+    case verticalTear = "Vertical Tear"
+    case kaleidoscope = "Kaleidoscope"
+    case glitchMosaic = "Glitch Mosaic"
+    case heatHaze = "Heat Haze"
+    case sliceGlitch = "Slice Glitch"
+    case colorBalance = "Color Balance"
+    case toonShade = "Toon Shade"
+    case vhsHeadSwitch = "VHS Head Switch"
+    case pixelate = "Pixelate"
+    case vibrance = "Vibrance"
+    case noiseDissolve = "Noise Dissolve"
+    case interlacing = "Interlacing"
+    case lensRefraction = "Lens Refraction"
+    case displacementTransition = "Displacement Transition"
+    case saturation = "Saturation"
+    case mirror = "Mirror"
+    case temperature = "Temperature"
+    case bitCrush = "Bit Crush"
+    case outline = "Outline"
+    case threshold = "Threshold"
+    case fragmentShuffle = "Fragment Shuffle"
+    case twirl = "Twirl"
+    case thermalVision = "Thermal Vision"
+    case frameJitter = "Frame Jitter"
+    case crtPhosphorMask = "CRT Phosphor Mask"
+    case linearWipe = "Linear Wipe"
+    case waterCaustics = "Water Caustics"
+    case crtCurvature = "CRT Curvature"
+    case brokenLCD = "Broken LCD"
+    case pixelSorting = "Pixel Sorting"
+    case dualTextureMorph = "Dual-Texture Morph"
+    case temporalFeedbackPortal = "Temporal Feedback Portal"
+    case reactionDiffusionInk = "Reaction-Diffusion Ink"
+    case particleShatter = "Particle Shatter / Reassemble"
 
     var id: Self { self }
+
+    var name: String { rawValue }
 
     var category: ShaderCategory {
         switch self {
