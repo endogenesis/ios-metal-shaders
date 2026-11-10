@@ -163,6 +163,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case temporalFeedbackPortal = "Temporal Feedback Portal"
     case reactionDiffusionInk = "Reaction-Diffusion Ink"
     case particleShatter = "Particle Shatter / Reassemble"
+    case borderBeam = "Border Beam"
 
     var id: Self { self }
 
@@ -238,7 +239,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             .proceduralAndAnimated
 
         case .plasmaField, .auroraGradient, .rainGlass, .fluidGradient, .snowfall,
-             .metaballs, .waterCaustics, .reactionDiffusionInk:
+             .metaballs, .waterCaustics, .reactionDiffusionInk, .borderBeam:
             .proceduralAndAnimated
         }
     }
@@ -556,6 +557,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             ReactionDiffusionInkDemoView()
         case .particleShatter:
             ParticleShatterDemoView()
+        case .borderBeam:
+            BorderBeamDemoView()
         }
     }
 }

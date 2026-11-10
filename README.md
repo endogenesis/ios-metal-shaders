@@ -22,7 +22,7 @@ runnable SwiftUI example and live controls.
 | Pixel & Texture | Bayer Dither, Voronoi Cells, Paper Grain, Pixelate |
 | Stylization & Edges | Oil Paint, Watercolor, Toon Shade, Sobel Edges |
 | Transitions & Masks | Burn Dissolve, Iris Reveal, Chroma Key, Linear Wipe |
-| Procedural & Animated | Fire, Starfield, Metaballs, Water Caustics |
+| Procedural & Animated | Border Beam, Fire, Starfield, Metaballs, Water Caustics |
 
 ## How SwiftUI finds a shader
 

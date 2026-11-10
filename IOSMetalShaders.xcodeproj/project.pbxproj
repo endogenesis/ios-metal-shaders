@@ -328,6 +328,15 @@
 		A20000000000000000000003 /* ShaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* ShaderDemo.swift */; };
 		A20000000000000000000004 /* ShaderDemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* ShaderDemoList.swift */; };
 		A20000000000000000000005 /* ShaderCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* ShaderCategoryHeader.swift */; };
+		A10000000000000000000318 /* BorderBeam.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000318 /* BorderBeam.metal */; };
+		A10000000000000000000319 /* BeamConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000319 /* BeamConfiguration.swift */; };
+		A10000000000000000000320 /* BorderBeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000320 /* BorderBeam.swift */; };
+		A10000000000000000000321 /* BorderBeamModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000321 /* BorderBeamModifier.swift */; };
+		A10000000000000000000322 /* BorderBeamDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000322 /* BorderBeamDemoView.swift */; };
+		A10000000000000000000323 /* BorderBeamPalettePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000323 /* BorderBeamPalettePreset.swift */; };
+		A10000000000000000000324 /* BorderBeamPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000324 /* BorderBeamPreview.swift */; };
+		A10000000000000000000325 /* BorderBeam-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000325 /* BorderBeam-LICENSE.txt */; };
+		A10000000000000000000326 /* BorderBeamMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000326 /* BorderBeamMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -653,6 +662,15 @@
 		B20000000000000000000003 /* ShaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemo.swift; sourceTree = "<group>"; };
 		B20000000000000000000004 /* ShaderDemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderDemoList.swift; sourceTree = "<group>"; };
 		B20000000000000000000005 /* ShaderCategoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderCategoryHeader.swift; sourceTree = "<group>"; };
+		B10000000000000000000318 /* BorderBeam.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BorderBeam.metal; sourceTree = "<group>"; };
+		B10000000000000000000319 /* BeamConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeamConfiguration.swift; sourceTree = "<group>"; };
+		B10000000000000000000320 /* BorderBeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeam.swift; sourceTree = "<group>"; };
+		B10000000000000000000321 /* BorderBeamModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamModifier.swift; sourceTree = "<group>"; };
+		B10000000000000000000322 /* BorderBeamDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000323 /* BorderBeamPalettePreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamPalettePreset.swift; sourceTree = "<group>"; };
+		B10000000000000000000324 /* BorderBeamPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamPreview.swift; sourceTree = "<group>"; };
+		B10000000000000000000325 /* BorderBeam-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ThirdPartyNotices/BorderBeam-LICENSE.txt"; sourceTree = SOURCE_ROOT; };
+		B10000000000000000000326 /* BorderBeamMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -671,6 +689,7 @@
 			children = (
 				D10000000000000000000002 /* IOSMetalShaders */,
 				D10000000000000000000005 /* Products */,
+				B10000000000000000000325 /* BorderBeam-LICENSE.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -854,6 +873,13 @@
 				B10000000000000000000313 /* TemporalFeedbackPortalDemoView.swift */,
 				B10000000000000000000315 /* ReactionDiffusionInkDemoView.swift */,
 				B10000000000000000000317 /* ParticleShatterDemoView.swift */,
+				B10000000000000000000326 /* BorderBeamMenu.swift */,
+				B10000000000000000000324 /* BorderBeamPreview.swift */,
+				B10000000000000000000323 /* BorderBeamPalettePreset.swift */,
+				B10000000000000000000322 /* BorderBeamDemoView.swift */,
+				B10000000000000000000321 /* BorderBeamModifier.swift */,
+				B10000000000000000000320 /* BorderBeam.swift */,
+				B10000000000000000000319 /* BeamConfiguration.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1014,6 +1040,7 @@
 				B10000000000000000000312 /* TemporalFeedbackPortal.metal */,
 				B10000000000000000000314 /* ReactionDiffusionInk.metal */,
 				B10000000000000000000316 /* ParticleShatter.metal */,
+				B10000000000000000000318 /* BorderBeam.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1084,6 +1111,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10000000000000000000325 /* BorderBeam-LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1415,6 +1443,14 @@
 				A10000000000000000000315 /* ReactionDiffusionInkDemoView.swift in Sources */,
 				A10000000000000000000316 /* ParticleShatter.metal in Sources */,
 				A10000000000000000000317 /* ParticleShatterDemoView.swift in Sources */,
+				A10000000000000000000326 /* BorderBeamMenu.swift in Sources */,
+				A10000000000000000000324 /* BorderBeamPreview.swift in Sources */,
+				A10000000000000000000323 /* BorderBeamPalettePreset.swift in Sources */,
+				A10000000000000000000322 /* BorderBeamDemoView.swift in Sources */,
+				A10000000000000000000321 /* BorderBeamModifier.swift in Sources */,
+				A10000000000000000000320 /* BorderBeam.swift in Sources */,
+				A10000000000000000000319 /* BeamConfiguration.swift in Sources */,
+				A10000000000000000000318 /* BorderBeam.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
