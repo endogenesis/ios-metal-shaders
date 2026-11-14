@@ -337,6 +337,9 @@
 		A10000000000000000000324 /* BorderBeamPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000324 /* BorderBeamPreview.swift */; };
 		A10000000000000000000325 /* BorderBeam-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000325 /* BorderBeam-LICENSE.txt */; };
 		A10000000000000000000326 /* BorderBeamMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000326 /* BorderBeamMenu.swift */; };
+		A10000000000000000000400 /* HolographicFoilDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000400 /* HolographicFoilDemoView.swift */; };
+		A10000000000000000000401 /* HolographicFoil.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000401 /* HolographicFoil.metal */; };
+		A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000402 /* InteractiveShaderCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -671,6 +674,9 @@
 		B10000000000000000000324 /* BorderBeamPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamPreview.swift; sourceTree = "<group>"; };
 		B10000000000000000000325 /* BorderBeam-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ThirdPartyNotices/BorderBeam-LICENSE.txt"; sourceTree = SOURCE_ROOT; };
 		B10000000000000000000326 /* BorderBeamMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderBeamMenu.swift; sourceTree = "<group>"; };
+		B10000000000000000000400 /* HolographicFoilDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolographicFoilDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000401 /* HolographicFoil.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HolographicFoil.metal; sourceTree = "<group>"; };
+		B10000000000000000000402 /* InteractiveShaderCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveShaderCanvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -880,6 +886,8 @@
 				B10000000000000000000321 /* BorderBeamModifier.swift */,
 				B10000000000000000000320 /* BorderBeam.swift */,
 				B10000000000000000000319 /* BeamConfiguration.swift */,
+				B10000000000000000000400 /* HolographicFoilDemoView.swift */,
+				B10000000000000000000402 /* InteractiveShaderCanvas.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1041,6 +1049,7 @@
 				B10000000000000000000314 /* ReactionDiffusionInk.metal */,
 				B10000000000000000000316 /* ParticleShatter.metal */,
 				B10000000000000000000318 /* BorderBeam.metal */,
+				B10000000000000000000401 /* HolographicFoil.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1451,6 +1460,9 @@
 				A10000000000000000000320 /* BorderBeam.swift in Sources */,
 				A10000000000000000000319 /* BeamConfiguration.swift in Sources */,
 				A10000000000000000000318 /* BorderBeam.metal in Sources */,
+				A10000000000000000000400 /* HolographicFoilDemoView.swift in Sources */,
+				A10000000000000000000401 /* HolographicFoil.metal in Sources */,
+				A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

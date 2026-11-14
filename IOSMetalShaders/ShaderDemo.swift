@@ -164,6 +164,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case reactionDiffusionInk = "Reaction-Diffusion Ink"
     case particleShatter = "Particle Shatter / Reassemble"
     case borderBeam = "Border Beam"
+    case holographicFoil = "Holographic Foil"
 
     var id: Self { self }
 
@@ -171,6 +172,10 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
 
     var category: ShaderCategory {
         switch self {
+
+        case .holographicFoil:
+            .stylizationAndEdges
+
         case .scanlines, .macroblockError, .tapeWrinkle, .channelFreeze,
              .signalScramble, .chromaticAberration, .barcodeGlitch, .feedbackLoop,
              .pixelSorting, .rollingScanlines, .blockDisplacement, .crtSyncLoss,
@@ -559,6 +564,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             ParticleShatterDemoView()
         case .borderBeam:
             BorderBeamDemoView()
+        case .holographicFoil:
+            HolographicFoilDemoView()
         }
     }
 }
