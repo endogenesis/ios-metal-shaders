@@ -340,6 +340,8 @@
 		A10000000000000000000400 /* HolographicFoilDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000400 /* HolographicFoilDemoView.swift */; };
 		A10000000000000000000401 /* HolographicFoil.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000401 /* HolographicFoil.metal */; };
 		A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000402 /* InteractiveShaderCanvas.swift */; };
+		A10000000000000000000410 /* LiquidMetalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000410 /* LiquidMetalDemoView.swift */; };
+		A10000000000000000000411 /* LiquidMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000411 /* LiquidMetal.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -677,6 +679,8 @@
 		B10000000000000000000400 /* HolographicFoilDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolographicFoilDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000401 /* HolographicFoil.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HolographicFoil.metal; sourceTree = "<group>"; };
 		B10000000000000000000402 /* InteractiveShaderCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveShaderCanvas.swift; sourceTree = "<group>"; };
+		B10000000000000000000410 /* LiquidMetalDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidMetalDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000411 /* LiquidMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidMetal.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -888,6 +892,7 @@
 				B10000000000000000000319 /* BeamConfiguration.swift */,
 				B10000000000000000000400 /* HolographicFoilDemoView.swift */,
 				B10000000000000000000402 /* InteractiveShaderCanvas.swift */,
+				B10000000000000000000410 /* LiquidMetalDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1050,6 +1055,7 @@
 				B10000000000000000000316 /* ParticleShatter.metal */,
 				B10000000000000000000318 /* BorderBeam.metal */,
 				B10000000000000000000401 /* HolographicFoil.metal */,
+				B10000000000000000000411 /* LiquidMetal.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1463,6 +1469,8 @@
 				A10000000000000000000400 /* HolographicFoilDemoView.swift in Sources */,
 				A10000000000000000000401 /* HolographicFoil.metal in Sources */,
 				A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */,
+				A10000000000000000000410 /* LiquidMetalDemoView.swift in Sources */,
+				A10000000000000000000411 /* LiquidMetal.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -165,6 +165,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case particleShatter = "Particle Shatter / Reassemble"
     case borderBeam = "Border Beam"
     case holographicFoil = "Holographic Foil"
+    case liquidMetal = "Liquid Metal"
 
     var id: Self { self }
 
@@ -172,6 +173,12 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
 
     var category: ShaderCategory {
         switch self {
+
+
+
+
+        case .liquidMetal:
+            .proceduralAndAnimated
 
         case .holographicFoil:
             .stylizationAndEdges
@@ -249,7 +256,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
         }
     }
 
-    @ViewBuilder
+    @MainActor @ViewBuilder
     var content: some View {
         switch self {
         case .grayscale:
@@ -566,6 +573,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             BorderBeamDemoView()
         case .holographicFoil:
             HolographicFoilDemoView()
+        case .liquidMetal:
+            LiquidMetalDemoView()
         }
     }
 }
