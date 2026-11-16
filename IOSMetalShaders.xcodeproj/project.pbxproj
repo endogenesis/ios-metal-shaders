@@ -342,6 +342,8 @@
 		A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000402 /* InteractiveShaderCanvas.swift */; };
 		A10000000000000000000410 /* LiquidMetalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000410 /* LiquidMetalDemoView.swift */; };
 		A10000000000000000000411 /* LiquidMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000411 /* LiquidMetal.metal */; };
+		A10000000000000000000420 /* ASCIIArtDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000420 /* ASCIIArtDemoView.swift */; };
+		A10000000000000000000421 /* ASCIIArt.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000421 /* ASCIIArt.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -681,6 +683,8 @@
 		B10000000000000000000402 /* InteractiveShaderCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveShaderCanvas.swift; sourceTree = "<group>"; };
 		B10000000000000000000410 /* LiquidMetalDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidMetalDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000411 /* LiquidMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidMetal.metal; sourceTree = "<group>"; };
+		B10000000000000000000420 /* ASCIIArtDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIIArtDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000421 /* ASCIIArt.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ASCIIArt.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -893,6 +897,7 @@
 				B10000000000000000000400 /* HolographicFoilDemoView.swift */,
 				B10000000000000000000402 /* InteractiveShaderCanvas.swift */,
 				B10000000000000000000410 /* LiquidMetalDemoView.swift */,
+				B10000000000000000000420 /* ASCIIArtDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1056,6 +1061,7 @@
 				B10000000000000000000318 /* BorderBeam.metal */,
 				B10000000000000000000401 /* HolographicFoil.metal */,
 				B10000000000000000000411 /* LiquidMetal.metal */,
+				B10000000000000000000421 /* ASCIIArt.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1471,6 +1477,8 @@
 				A10000000000000000000402 /* InteractiveShaderCanvas.swift in Sources */,
 				A10000000000000000000410 /* LiquidMetalDemoView.swift in Sources */,
 				A10000000000000000000411 /* LiquidMetal.metal in Sources */,
+				A10000000000000000000420 /* ASCIIArtDemoView.swift in Sources */,
+				A10000000000000000000421 /* ASCIIArt.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

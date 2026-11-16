@@ -166,6 +166,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case borderBeam = "Border Beam"
     case holographicFoil = "Holographic Foil"
     case liquidMetal = "Liquid Metal"
+    case asciiArt = "ASCII Art"
 
     var id: Self { self }
 
@@ -176,6 +177,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
 
 
 
+        case .asciiArt:
+            .stylizationAndEdges
 
         case .liquidMetal:
             .proceduralAndAnimated
@@ -575,6 +578,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             HolographicFoilDemoView()
         case .liquidMetal:
             LiquidMetalDemoView()
+        case .asciiArt:
+            ASCIIArtDemoView()
         }
     }
 }
