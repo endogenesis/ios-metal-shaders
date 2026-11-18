@@ -344,6 +344,8 @@
 		A10000000000000000000411 /* LiquidMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000411 /* LiquidMetal.metal */; };
 		A10000000000000000000420 /* ASCIIArtDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000420 /* ASCIIArtDemoView.swift */; };
 		A10000000000000000000421 /* ASCIIArt.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000421 /* ASCIIArt.metal */; };
+		A10000000000000000000430 /* StainedGlassDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000430 /* StainedGlassDemoView.swift */; };
+		A10000000000000000000431 /* StainedGlass.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000431 /* StainedGlass.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -685,6 +687,8 @@
 		B10000000000000000000411 /* LiquidMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LiquidMetal.metal; sourceTree = "<group>"; };
 		B10000000000000000000420 /* ASCIIArtDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIIArtDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000421 /* ASCIIArt.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ASCIIArt.metal; sourceTree = "<group>"; };
+		B10000000000000000000430 /* StainedGlassDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StainedGlassDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000431 /* StainedGlass.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = StainedGlass.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -898,6 +902,7 @@
 				B10000000000000000000402 /* InteractiveShaderCanvas.swift */,
 				B10000000000000000000410 /* LiquidMetalDemoView.swift */,
 				B10000000000000000000420 /* ASCIIArtDemoView.swift */,
+				B10000000000000000000430 /* StainedGlassDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1062,6 +1067,7 @@
 				B10000000000000000000401 /* HolographicFoil.metal */,
 				B10000000000000000000411 /* LiquidMetal.metal */,
 				B10000000000000000000421 /* ASCIIArt.metal */,
+				B10000000000000000000431 /* StainedGlass.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1479,6 +1485,8 @@
 				A10000000000000000000411 /* LiquidMetal.metal in Sources */,
 				A10000000000000000000420 /* ASCIIArtDemoView.swift in Sources */,
 				A10000000000000000000421 /* ASCIIArt.metal in Sources */,
+				A10000000000000000000430 /* StainedGlassDemoView.swift in Sources */,
+				A10000000000000000000431 /* StainedGlass.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
