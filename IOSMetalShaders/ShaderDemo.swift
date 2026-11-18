@@ -168,6 +168,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case liquidMetal = "Liquid Metal"
     case asciiArt = "ASCII Art"
     case stainedGlass = "Stained Glass"
+    case electricArc = "Electric Arc"
 
     var id: Self { self }
 
@@ -176,6 +177,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     var category: ShaderCategory {
         switch self {
 
+        case .electricArc:
+            .proceduralAndAnimated
 
         case .stainedGlass:
             .stylizationAndEdges
@@ -585,6 +588,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             ASCIIArtDemoView()
         case .stainedGlass:
             StainedGlassDemoView()
+        case .electricArc:
+            ElectricArcDemoView()
         }
     }
 }
