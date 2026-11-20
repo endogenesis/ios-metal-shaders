@@ -1,12 +1,12 @@
 # iOS Metal Shaders
 
-A dependency-free gallery of 150+ interactive Metal shader demos built with
+A dependency-free gallery of 160+ interactive Metal shader demos built with
 SwiftUI. Each effect pairs a focused `[[ stitchable ]]` Metal function with a
 runnable SwiftUI example and live controls.
 
 ## Highlights
 
-- 150+ shader demos across eight categories
+- 160+ shader demos across eight categories
 - Search by shader name, with newest-first and category sorting
 - Animated shaders driven by `TimelineView`
 - No third-party dependencies
@@ -23,6 +23,22 @@ runnable SwiftUI example and live controls.
 | Stylization & Edges | Oil Paint, Watercolor, Toon Shade, Sobel Edges |
 | Transitions & Masks | Burn Dissolve, Iris Reveal, Chroma Key, Linear Wipe |
 | Procedural & Animated | Border Beam, Fire, Starfield, Metaballs, Water Caustics |
+
+## Materials and stylization
+
+Find these demos using the gallery search:
+
+| Demo | Controls |
+| --- | --- |
+| Holographic Foil | Drag the light direction; adjust foil strength and groove density. |
+| Liquid Metal | Drag a dent in the chrome; adjust the blend and flow speed. |
+| ASCII Art | Change character size and switch between original colors and green text. |
+| Stained Glass | Adjust glass piece size and lead seam width. |
+| Electric Arc | Drag the lightning endpoint; adjust energy and choose blue or violet. |
+| Embroidery | Adjust cross-stitch size and thread relief. |
+
+The new animated materials pause when their previews disappear. With Reduce Motion
+enabled, they render a still frame while keeping drag controls available.
 
 ## How SwiftUI finds a shader
 
