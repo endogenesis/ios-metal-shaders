@@ -350,6 +350,8 @@
 		A10000000000000000000441 /* ElectricArc.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000441 /* ElectricArc.metal */; };
 		A10000000000000000000450 /* EmbroideryDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000450 /* EmbroideryDemoView.swift */; };
 		A10000000000000000000451 /* Embroidery.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000451 /* Embroidery.metal */; };
+		A10000000000000000000460 /* DustDissolveDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000460 /* DustDissolveDemoView.swift */; };
+		A10000000000000000000461 /* DustDissolve.metal in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000461 /* DustDissolve.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -697,6 +699,8 @@
 		B10000000000000000000441 /* ElectricArc.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ElectricArc.metal; sourceTree = "<group>"; };
 		B10000000000000000000450 /* EmbroideryDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbroideryDemoView.swift; sourceTree = "<group>"; };
 		B10000000000000000000451 /* Embroidery.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Embroidery.metal; sourceTree = "<group>"; };
+		B10000000000000000000460 /* DustDissolveDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustDissolveDemoView.swift; sourceTree = "<group>"; };
+		B10000000000000000000461 /* DustDissolve.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = DustDissolve.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -913,6 +917,7 @@
 				B10000000000000000000430 /* StainedGlassDemoView.swift */,
 				B10000000000000000000440 /* ElectricArcDemoView.swift */,
 				B10000000000000000000450 /* EmbroideryDemoView.swift */,
+				B10000000000000000000460 /* DustDissolveDemoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1080,6 +1085,7 @@
 				B10000000000000000000431 /* StainedGlass.metal */,
 				B10000000000000000000441 /* ElectricArc.metal */,
 				B10000000000000000000451 /* Embroidery.metal */,
+				B10000000000000000000461 /* DustDissolve.metal */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1503,6 +1509,8 @@
 				A10000000000000000000441 /* ElectricArc.metal in Sources */,
 				A10000000000000000000450 /* EmbroideryDemoView.swift in Sources */,
 				A10000000000000000000451 /* Embroidery.metal in Sources */,
+				A10000000000000000000460 /* DustDissolveDemoView.swift in Sources */,
+				A10000000000000000000461 /* DustDissolve.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

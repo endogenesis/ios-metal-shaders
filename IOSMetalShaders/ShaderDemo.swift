@@ -170,6 +170,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
     case stainedGlass = "Stained Glass"
     case electricArc = "Electric Arc"
     case embroidery = "Embroidery"
+    case dustDissolve = "Dust Dissolve"
 
     var id: Self { self }
 
@@ -256,7 +257,7 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
 
         case .lumaKey, .circleReveal, .radialWipe, .chromaKey, .noiseDissolve,
              .displacementTransition, .linearWipe, .dualTextureMorph,
-             .particleShatter:
+             .particleShatter, .dustDissolve:
             .transitionsAndMasks
 
         case .fire, .starfield, .smoke:
@@ -595,6 +596,8 @@ enum ShaderDemo: String, CaseIterable, Identifiable {
             ElectricArcDemoView()
         case .embroidery:
             EmbroideryDemoView()
+        case .dustDissolve:
+            DustDissolveDemoView()
         }
     }
 }

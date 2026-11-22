@@ -40,6 +40,17 @@ Find these demos using the gallery search:
 The new animated materials pause when their previews disappear. With Reduce Motion
 enabled, they render a still frame while keeping drag controls available.
 
+## Dust Dissolve
+
+Find **Dust Dissolve** in Transitions & Masks or through search. Scrub the progress,
+choose one of five erosion directions, adjust the grain size, and move the shimmer
+across the image. Dissolve and Restore animate the transition; Reduce Motion uses
+an opacity fade. The preview uses the gallery's standard canvas and card.
+
+The Metal function is adapted from
+[ismnoiet's Dust Dissolve shader](https://github.com/ismnoiet/repgem-catalog/blob/main/packages/ios/dust-dissolve-ios/Sources/DustDissolve/Shaders/DustDissolve.metal).
+Its MIT notice is preserved in `DustDissolve.metal`.
+
 ## How SwiftUI finds a shader
 
 Functions marked `[[ stitchable ]]` are compiled into the app's default Metal
